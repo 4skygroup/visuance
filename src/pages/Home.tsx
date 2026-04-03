@@ -1,5 +1,6 @@
 import ConceptSection from "../components/ConceptSection";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 import type { ConceptSectionType } from "../types/content";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       additionnalClassName:
         "bg-linear-to-b from-gradient-red-strong-light from-70% to-gradient-red-strong-dark",
       link: "",
+      index: "identity",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
@@ -65,7 +67,7 @@ export default function Home() {
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
-      src: "/images/StoryTelling.png",
+      src: "/images/Story Telling.png",
       alt: "StoryTelling",
       catchphrase: "Brand Storytelling and Content",
       className: conceptSectionsClassName,
@@ -96,6 +98,87 @@ export default function Home() {
   ];
   return (
     <div className="home">
+      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full">
+        <Header />
+        <div className="w-full flex px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-12 rounded-[50px] gap-x-12.5">
+          <div className="flex flex-col gap-y-31.25">
+            <img
+              src="/images/Visuance Logo.png"
+              alt="Visuance Logo"
+              className="w-52.5 h-17.5"
+            />
+            <div className="flex flex-col gap-y-5 pb-9">
+              <img
+                src="/images/Branding Outdated.png"
+                alt="Branding Image"
+                className="w-75"
+              />
+              <div className="w-full justify-between flex bg-white/70 px-8.75 py-2.5 rounded-full">
+                <span className="uppercase text-white font-bold text-lg">
+                  In The News
+                </span>
+                <span className="capitalize text-dark-gray text-base">
+                  Today
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-y-28 w-full">
+            <p className="text-3xl max-w-170">
+              The universe doesn’t move because of technology. It moves because
+              someone imagined something new.
+            </p>
+            <div className="flex flex-col gap-y-5 pb-9 w-full h-full justify-between">
+              <div className="w-fit flex flex-col items-center">
+                <img
+                  src="/images/Visuance Logo.png"
+                  alt="Visuance Logo"
+                  className="w-52.5 h-17.5"
+                />
+                <span>PRODUCTION</span>
+              </div>
+              <div className="flex self-end gap-x-2.5">
+                <a
+                  href="#identity"
+                  className="w-fit h-12.5 p-5 bg-black rounded-full flex items-center justify-center"
+                >
+                  OUR FIELDS
+                </a>
+                <a
+                  href="#identity"
+                  className="w-12.5 h-12.5 aspect-square bg-black rounded-full flex"
+                >
+                  <svg
+                    width="11"
+                    height="14"
+                    className="m-auto"
+                    viewBox="0 0 11 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.0310984 13.2533C0.121673 13.5354 0.419812 13.7929 0.800979 13.9216C0.993449 13.9846 1.07648 13.9983 1.3482 13.9956C1.95203 13.9956 1.54444 14.2585 6.4128 10.7306C9.34892 8.60235 10.7717 7.55329 10.8358 7.46838C10.983 7.26843 11.0359 7.03561 10.9755 6.82744C10.9491 6.73431 10.8849 6.6001 10.8358 6.53162C10.7717 6.44671 9.34892 5.39765 6.4128 3.26939C1.54444 -0.258525 1.95203 0.00442505 1.3482 0.00442505C1.07648 0.00442505 0.993448 0.0153818 0.79343 0.0811195C0.0990286 0.311201 -0.195337 0.924752 0.14809 1.426C0.197151 1.49722 1.53689 2.48876 3.9824 4.26641L7.745 7L3.9824 9.73359C1.52557 11.5195 0.197151 12.5028 0.14809 12.574C0.00845432 12.7822 -0.0368319 13.0396 0.0310984 13.2533Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href=""
+          className="backdrop-blur-2xl bg-light-gray/20 w-full flex items-center justify-between px-17.5 py-13.75 rounded-full"
+        >
+          <div className="flex flex-col gap-y-4">
+            <p className="text-4xl">Let’s analyze your marketing strategy !</p>
+            <p className="text-2xl">
+              Discover the weaknesses in your digital strategy in seconds
+            </p>
+          </div>
+          <img src="/images/Link.png" alt="Link" />
+        </a>
+      </div>
       {conceptSections.map((section, index) => (
         <ConceptSection
           key={index}

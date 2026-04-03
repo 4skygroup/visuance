@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/our-group",
+    path: "/the-group",
     element: <Group />,
   },
   {

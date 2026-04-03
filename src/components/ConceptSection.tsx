@@ -27,7 +27,11 @@ export default function ConceptSection({
           View Projects &gt;
         </Link>
       </div>
-      <img src={src} alt={alt} className="max-h-full" />
+      <img
+        src={src}
+        alt={alt}
+        className="max-h-full w-100 object-cover object-bottom-left scale-105 transition-transform "
+      />
     </section>
   );
 }
