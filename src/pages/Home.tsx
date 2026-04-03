@@ -1,4 +1,5 @@
 import ConceptSection from "../components/ConceptSection";
+import Footer from "../components/Footer";
 import type { ConceptSectionType } from "../types/content";
 
 export default function Home() {
@@ -107,6 +108,7 @@ export default function Home() {
           index={section.index}
         />
       ))}
+      <Footer />
     </div>
   );
 }

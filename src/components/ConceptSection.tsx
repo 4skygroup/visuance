@@ -27,7 +27,7 @@ export default function ConceptSection({
           View Projects &gt;
         </Link>
       </div>
-      <img src={src} alt={alt} />
+      <img src={src} alt={alt} className="max-h-full" />
     </section>
   );
 }
