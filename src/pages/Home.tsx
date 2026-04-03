@@ -29,7 +29,8 @@ export default function Home() {
       alt: "Print",
       catchphrase: "Print Design",
       className: conceptSectionsClassName,
-      additionnalClassName: "bg-",
+      additionnalClassName:
+        "bg-linear-to-b from-gradient-red-light to-gradient-red-dark",
       link: "",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -38,7 +39,8 @@ export default function Home() {
       alt: "Video",
       catchphrase: "Video / Photography",
       className: conceptSectionsClassName,
-      additionnalClassName: "bg-",
+      additionnalClassName:
+        "bg-linear-to-b from-gradient-orange-light from-42% to-gradient-orange-dark",
       link: "",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -56,7 +58,8 @@ export default function Home() {
       alt: "Digital",
       catchphrase: "Digital Product and Experience Design",
       className: conceptSectionsClassName,
-      additionnalClassName: "bg-",
+      additionnalClassName:
+        "bg-linear-to-b from-gradient-blue-light to-gradient-blue-dark",
       link: "",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -65,7 +68,8 @@ export default function Home() {
       alt: "StoryTelling",
       catchphrase: "Brand Storytelling and Content",
       className: conceptSectionsClassName,
-      additionnalClassName: "bg-",
+      additionnalClassName:
+        "bg-linear-to-b from-gradient-red-light to-gradient-red-dark",
       link: "",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -74,7 +78,7 @@ export default function Home() {
       alt: "Growth",
       catchphrase: "Growth Techniology and Optimisation",
       className: conceptSectionsClassName,
-      additionnalClassName: "bg-",
+      additionnalClassName: "bg-brown-light",
       link: "",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -83,7 +87,8 @@ export default function Home() {
       alt: "Creativity",
       catchphrase: "Creative Technology",
       className: conceptSectionsClassName,
-      additionnalClassName: "bg-",
+      additionnalClassName:
+        "bg-linear-to-r from-gradient-green-light from-57% to-gradient-green-dark from-75%",
       link: "",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
