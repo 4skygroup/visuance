@@ -6,29 +6,57 @@ export default function Contact() {
     <div>
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full scroll-smooth">
         <Header />
-        <div className="w-full h-fit flex flex-col items-center backdrop-blur-2xl bg-light-gray/20 px-16 py-12 rounded-[50px] text-2xl">
-          <span>Let's get in touch</span>
-          <div className="w-140 flex flex-col gap-y-18.75">
-            <div className="flex wrap w-full">
-              <div>
+        <div className="w-full h-fit flex flex-col items-center backdrop-blur-2xl bg-light-gray/20 px-16 py-12 rounded-[50px] text-2xl gap-y-12.5">
+          <div className="w-140 flex flex-col gap-y-18.75 items-center">
+            <span className="text-4xl">Let's get in touch !</span>
+            <div className="flex flex-wrap w-full gap-x-25 gap-y-10">
+              <div className="flex flex-col gap-y2.5 text-base">
                 <label htmlFor="firstName">Firstname</label>
-                <input type="text" id="firstName" />
+                <input
+                  type="text"
+                  id="firstName"
+                  className="border-white border border-solid rounded-sm outline-none w-57.5 h-7.5 px-2"
+                />
               </div>
-              <label htmlFor="lastName">Lastname</label>
-              <input type="text" id="lastName" />
-              <label htmlFor="email">Email</label>
-              <input type="text" id="Email" />
-              <label htmlFor="email">Company</label>
-              <input type="text" id="Email" />
+              <div className="flex flex-col gap-y2.5 text-base">
+                <label htmlFor="lastName">Lastname</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  className="border-white border border-solid rounded-sm outline-none w-57.5 h-7.5 px-2"
+                />
+              </div>
+              <div className="flex flex-col gap-y2.5 text-base">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="text"
+                  id="Email"
+                  className="border-white border border-solid rounded-sm outline-none w-57.5 h-7.5 px-2"
+                />
+              </div>
+              <div className="flex flex-col gap-y2.5 text-base">
+                <label htmlFor="email">Company</label>
+                <input
+                  type="text"
+                  id="Email"
+                  className="border-white border border-solid rounded-sm outline-none w-57.5 h-7.5 px-2"
+                />
+              </div>
+              <div className="flex flex-col gap-y2.5 grow text-base">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  name=""
+                  id="message"
+                  className="border-white border border-solid rounded-sm resize-none outline-none h-27.5 px-2.5 py-1.25"
+                ></textarea>
+              </div>
             </div>
-            <div>
-              <label htmlFor="message">Message</label>
-              <textarea name="" id="message"></textarea>
-            </div>
-            <button>Send</button>
+            <button className="bg-white rounded-sm text-black w-fit text-base py-2.5 px-5">
+              Send
+            </button>
           </div>
           <span>We stay reachable !</span>
-          <div className="flex fex-col gap-y-2.5">
+          <div className="flex flex-col gap-y-2.5 items-center">
             <span>Mail: contact@visuance-playtosky.com</span>
             <span>Phone: 01 25 47 54 12</span>
             <span>Adresse: 56 avenue Monceau 75008 Paris</span>

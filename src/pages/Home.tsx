@@ -46,6 +46,7 @@ export default function Home() {
       additionnalClassName:
         "bg-linear-to-b from-gradient-orange-light from-42% to-gradient-orange-dark",
       link: "",
+      index: "video",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
