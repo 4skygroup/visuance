@@ -100,8 +100,8 @@ export default function Home() {
     <div className="home">
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full">
         <Header />
-        <div className="w-full flex px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-12 rounded-[50px] gap-x-12.5">
-          <div className="flex flex-col gap-y-31.25">
+        <div className="relative w-7xl h-195 flex px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-12 rounded-[50px] gap-x-12.5 self-center">
+          <div className="flex flex-col gap-y-33">
             <img
               src="/images/Visuance Logo.png"
               alt="Visuance Logo"
@@ -123,12 +123,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-y-28 w-full">
+          <div className="fixed bottom-0 right-0 flex flex-col gap-y-28 w-fit">
             <p className="text-3xl max-w-170">
               The universe doesn’t move because of technology. It moves because
               someone imagined something new.
             </p>
-            <div className="flex flex-col gap-y-5 pb-9 w-full h-full justify-between">
+            <div className="flex flex-col gap-y-5 pb-9 w-215 h-132.5 justify-between bg-[url(/images/News.png)] bg-cover px-7.5 py-6.25 rounded-[50px] rounded-tr-none">
               <div className="w-fit flex flex-col items-center">
                 <img
                   src="/images/Visuance Logo.png"
