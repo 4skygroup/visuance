@@ -5,7 +5,7 @@ import type { ConceptSectionType } from "../types/content";
 
 export default function Home() {
   const conceptSectionsClassName =
-    "flex w-full h-131.25 px-25 items-center justify-between gap-10";
+    "flex w-full h-131.25 px-25 items-center justify-between gap-10 overflow-hidden";
   const conceptSections: ConceptSectionType[] = [
     {
       src: "/images/Identity.png",
@@ -35,6 +35,7 @@ export default function Home() {
       additionnalClassName:
         "bg-linear-to-b from-gradient-red-light to-gradient-red-dark",
       link: "",
+      index: "print",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
@@ -54,6 +55,7 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName: "bg-black",
       link: "",
+      index: "ai",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
@@ -64,6 +66,7 @@ export default function Home() {
       additionnalClassName:
         "bg-linear-to-b from-gradient-blue-light to-gradient-blue-dark",
       link: "",
+      index: "digital",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
@@ -98,7 +101,7 @@ export default function Home() {
   ];
   return (
     <div className="home">
-      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full">
+      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full scroll-smooth">
         <Header />
         <div className="relative w-7xl h-195 flex px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-12 rounded-[50px] gap-x-12.5 self-center">
           <div className="flex flex-col gap-y-33">
