@@ -51,7 +51,7 @@ export default function Contact() {
                 ></textarea>
               </div>
             </div>
-            <button className="bg-white rounded-sm text-black w-fit text-base py-2.5 px-5">
+            <button className="bg-white rounded-sm text-black w-fit text-base py-2.5 px-5 cursor-pointer">
               Send
             </button>
           </div>
