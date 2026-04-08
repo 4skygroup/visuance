@@ -33,7 +33,7 @@ export default function ConceptSection({
         alt={alt}
         className={`max-h-full object-cover object-bottom-left scale-105 transition-transform
              ${index === "ai" || index === "digital" ? "self-end" : ""} 
-             ${index === "print" || index === "video" || index === "identity" ? "w-75 relative right-15" : "w-100"}
+             ${index === "print" || index === "video" || index === "identity" ? "w-75 relative right-15 max-md:right-0" : "w-100"}
              ${index === "identity"}
             `}
       />

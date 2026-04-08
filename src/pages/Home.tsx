@@ -5,7 +5,7 @@ import type { ConceptSectionType } from "../types/content";
 
 export default function Home() {
   const conceptSectionsClassName =
-    "flex w-full h-131.25 px-25 items-center justify-between gap-10 overflow-hidden";
+    "flex w-full h-131.25 px-25 items-center justify-between gap-10 overflow-hidden sm:max-md:flex-col sm:max-md:items-center sm:max-md:py-10";
   const conceptSections: ConceptSectionType[] = [
     {
       src: "/images/Identity.png",
@@ -104,12 +104,14 @@ export default function Home() {
     <div className="home">
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full scroll-smooth">
         <Header />
-        <div className="relative w-7xl h-195 flex px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-12 rounded-[50px] gap-x-12.5 self-center">
-          <div className="flex flex-col gap-y-33">
+
+        {/* Second section top */}
+        <div className="overflow-x-hidden max-sm:pt-12.5 max-sm:rounded-none max-sm:px-0 max-sm:-mx-20 max-md:flex-col max-md:items-center max-md:h-fit relative xs:max-sm:w-lg sm:max-md:w-xl md:max-lg:w-3xl lg:max-xl:w-5xl xl:w-7xl h-195 flex px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-12 rounded-[50px] gap-x-12.5 self-center">
+          <div className="max-md:items-center max-md:gap-y-10 flex flex-col gap-y-33">
             <img
               src="/images/Visuance Logo.png"
               alt="Visuance Logo"
-              className="w-52.5 h-17.5"
+              className="max-sm:hidden  w-52.5 h-17.5"
             />
             <div className="flex flex-col gap-y-5 pb-9">
               <img
@@ -127,13 +129,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="fixed bottom-0 right-0 flex flex-col gap-y-28 w-fit">
-            <p className="text-3xl max-w-170">
+          <div className="max-md:items-center max-md:static max-md:self-center fixed bottom-0 right-0 flex flex-col gap-y-28 w-fit">
+            <p className="max-sm:text-center max-sm:px-5 text-3xl max-w-170">
               The universe doesn’t move because of technology. It moves because
               someone imagined something new.
             </p>
-            <div className="flex flex-col gap-y-5 pb-9 w-215 h-132.5 justify-between bg-[url(/images/News.png)] bg-cover px-7.5 py-6.25 rounded-[50px] rounded-tr-none">
-              <div className="w-fit flex flex-col items-center">
+            <div className="max-sm:rounded-none max-md:-mx-12.5 max-md:w-full flex flex-col gap-y-5 pb-9 xs:max-sm:w-120 sm:max-md:w-150 md:max-lg:w-180 lg:w-215 aspect-430/265 justify-between bg-[url(/images/News.png)] bg-cover px-7.5 py-6.25 rounded-[50px] rounded-tr-none">
+              <div className="w-fit invisible flex flex-col items-center">
                 <img
                   src="/images/Visuance Logo.png"
                   alt="Visuance Logo"
@@ -170,17 +172,21 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Link Section */}
         <a
           href=""
-          className="backdrop-blur-2xl bg-light-gray/20 w-full flex items-center justify-between px-17.5 py-13.75 rounded-full"
+          className="max-sm:rounded-none max-sm:-mx-20 max-sm:flex-col max-sm:gap-y-15 backdrop-blur-2xl bg-light-gray/20 sm:w-full flex items-center justify-between px-17.5 py-13.75 rounded-full"
         >
           <div className="flex flex-col gap-y-4">
-            <p className="text-4xl">Let’s analyze your marketing strategy !</p>
-            <p className="text-2xl">
+            <p className="max-sm:text-center text-4xl sm:max-md:text-xl">
+              Let’s analyze your marketing strategy !
+            </p>
+            <p className="max-sm:text-center text-2xl sm:max-md:text-lg">
               Discover the weaknesses in your digital strategy in seconds
             </p>
           </div>
-          <img src="/images/Link.png" alt="Link" />
+          <img src="/images/Link.png" alt="Link" className="sm:max-md:w-20" />
         </a>
       </div>
       {conceptSections.map((section, index) => (

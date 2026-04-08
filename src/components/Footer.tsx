@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-linear-to-r from-visuance-gradient-blue to-black h-100 w-full flex px-25 py-12.5 justify-between border-t-3 border-t-solid border-t-white">
+    <footer className="max-md:flex-col max-md:h-fit max-md:items-center max-md:gap-y-10 bg-linear-to-r from-visuance-gradient-blue to-black h-100 w-full flex md:max-lg:px-10 px-25 py-12.5 justify-between border-t-3 border-t-solid border-t-white">
       <img
         src="/images/Visuance Logo.png"
         alt="Visuance Logo"
@@ -119,7 +119,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex gap-x-18 underline text-lg">
+          <div className="max-md:flex-col max-md:gap-y-5 max-md:items-center md:max-lg:gap-x-5 flex gap-x-18 underline text-lg">
             <a href="">Mentions légales</a>
             <a href="">Contact</a>
             <a href="">Services</a>
