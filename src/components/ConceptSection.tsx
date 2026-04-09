@@ -32,8 +32,8 @@ export default function ConceptSection({
         src={src}
         alt={alt}
         className={`max-h-full object-cover object-bottom-left scale-105 transition-transform
-             ${index === "ai" || index === "digital" ? "self-end" : ""} 
-             ${index === "print" || index === "video" || index === "identity" ? "w-75 relative right-15 max-md:right-0" : "w-100"}
+             ${index === "ai" || index === "digital" ? "sm:self-end" : ""} 
+             ${index === "print" || index === "video" || index === "identity" ? "w-75 relative right-15 max-md:right-0 min-w-62.5" : "w-100 min-w-62.5"}
              ${index === "identity"}
             `}
       />

@@ -9,7 +9,9 @@ export default function Header() {
   };
 
   return (
-    <header className="max-sm:-mx-20 max-sm:px-0 max-sm:rounded-none backdrop-blur-2xl bg-light-gray/20 sm:w-full flex items-center justify-between sm:max-md:px-5  px-12.5 py-5 rounded-full">
+    <header
+      className={`max-sm:-mx-20 max-sm:px-0 max-sm:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 sm:w-full flex items-center justify-between sm:max-md:px-5  px-12.5 py-5 rounded-full`}
+    >
       <Link to="/">
         <img
           src="/images/Visuance Logo.png"
@@ -56,7 +58,7 @@ export default function Header() {
         </svg>
 
         <nav
-          className={`${burgerClicked ? "flex" : "hidden"} w-screen h-screen bg-white fixed inset-0 z-30 bg-linear-to-r from-visuance-gradient-blue to-black`}
+          className={`${burgerClicked ? "flex" : "hidden"} w-screen h-screen fixed inset-0 z-10 bg-linear-to-r from-visuance-gradient-blue to-black`}
         >
           <svg
             width="40"

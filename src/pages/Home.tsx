@@ -5,7 +5,7 @@ import type { ConceptSectionType } from "../types/content";
 
 export default function Home() {
   const conceptSectionsClassName =
-    "flex w-full h-131.25 px-25 items-center justify-between gap-10 overflow-hidden sm:max-md:flex-col sm:max-md:items-center sm:max-md:py-10";
+    "flex w-full h-131.25 px-25 items-center justify-between gap-10 overflow-hidden max-sm:flex-col max-sm:items-center max-sm:py-10 max-sm:text-center";
   const conceptSections: ConceptSectionType[] = [
     {
       src: "/images/Identity.png",
@@ -101,7 +101,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="home">
+    <div className="relative">
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full scroll-smooth">
         <Header />
 

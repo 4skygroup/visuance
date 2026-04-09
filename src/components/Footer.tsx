@@ -4,7 +4,7 @@ export default function Footer() {
       <img
         src="/images/Visuance Logo.png"
         alt="Visuance Logo"
-        className="w-52.5 h-17.5"
+        className="min-w-52.5 w-52.5 h-17.5"
       />
       <div className="flex flex-col gap-y-25 items-center">
         <div className="flex flex-col gap-y-17.5">
@@ -129,7 +129,11 @@ export default function Footer() {
         <span>&copy; 2026. All rights reserved.</span>
       </div>
       <div className="flex flex-col items-center">
-        <img src="/images/Play To Sky-no-bg.png" alt="Play To Sky Logo" />
+        <img
+          src="/images/Play To Sky-no-bg.png"
+          alt="Play To Sky Logo"
+          className="min-w-52.5"
+        />
         <a href="https://play-to-sky-v1.vercel.app" className="text-dark-gray">
           The group &gt;
         </a>
