@@ -176,7 +176,7 @@ export default function Home() {
         {/* Link Section */}
         <a
           href=""
-          className="max-sm:rounded-none max-sm:-mx-20 max-sm:flex-col max-sm:gap-y-15 backdrop-blur-2xl bg-light-gray/20 sm:w-full flex items-center justify-between px-17.5 py-13.75 rounded-full"
+          className="max-sm:rounded-none max-sm:-mx-20 max-sm:flex-col max-sm:gap-y-15 backdrop-blur-2xl bg-light-gray/20 sm:w-full flex items-center justify-between px-17.5 py-13.75 rounded-full xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl"
         >
           <div className="flex flex-col gap-y-4">
             <p className="max-sm:text-center text-4xl sm:max-md:text-xl">
