@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header
-      className={`max-sm:-mx-20 max-sm:px-0 max-sm:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 sm:w-full flex items-center justify-between sm:max-md:px-5  px-12.5 py-5 rounded-full`}
+      className={`max-sm:-mx-20 max-sm:px-0 max-sm:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 sm:max-md:w-full flex items-center justify-between sm:max-md:px-5 xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl px-12.5 py-5 rounded-full`}
     >
       <Link to="/">
         <img
