@@ -46,7 +46,7 @@ export default function Projects() {
       </section>
       <section className="text-black flex flex-col gap-y-12.5 w-full p-12.5">
         <p className="uppercase text-4xl font-bold">OVERVIEW</p>
-        <div className="grid grid-cols-[repeat(4, auto)] grid-rows-[repeat(3, auto)] gap-7.5 max-w-7xl self-center">
+        <div className="grid grid-cols-[repeat(4, auto)] grid-rows-[repeat(3, auto)] max-md:gap-2.5 gap-7.5 max-w-7xl self-center">
           <img
             src="/images/Identity/Gucci.png"
             alt=""
