@@ -15,10 +15,12 @@ export default function Projects() {
   ];
   return (
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
-      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Identity/Background.png')] high:bg-[url('/images/Identity/Background.jpg')] md:bg-cover bg-no-repeat bg-center">
+      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Identity/Background.png')] high:bg-[url('/images/Identity/Background.jpg')] bg-cover bg-no-repeat bg-center">
         <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-12.5 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
-          <p className="m-auto text-4xl">BRAND STRATEGY AND IDENTITY</p>
+          <p className="m-auto text-4xl text-center">
+            BRAND STRATEGY AND IDENTITY
+          </p>
         </section>
       </section>
       <section className="text-black flex flex-col gap-y-12.5 w-full p-12.5">
@@ -37,14 +39,14 @@ export default function Projects() {
           </ol>
           <img
             src="/images/Identity/Black Burgary White.png"
-            className="aspect-initial"
+            className="min-w-70"
             alt="Colors"
           />
         </div>
       </section>
       <section className="text-black flex flex-col gap-y-12.5 w-full p-12.5">
         <p className="uppercase text-4xl font-bold">OVERVIEW</p>
-        <div className="grid grid-cols-4 grid-rows-[repeat(3, auto)] gap-7.5 max-w-7xl self-center">
+        <div className="grid grid-cols-[repeat(4, auto)] grid-rows-[repeat(3, auto)] gap-7.5 max-w-7xl self-center">
           <img
             src="/images/Identity/Gucci.png"
             alt=""
