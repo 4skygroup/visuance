@@ -14,7 +14,7 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-red-strong-light from-70% to-gradient-red-strong-dark",
-      link: "",
+      link: "/projects",
       index: "identity",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -24,7 +24,7 @@ export default function Home() {
       catchphrase: "Web design and development",
       className: conceptSectionsClassName,
       additionnalClassName: "bg-black",
-      link: "",
+      link: "/projects",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
@@ -34,7 +34,7 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-red-light to-gradient-red-dark",
-      link: "",
+      link: "/projects",
       index: "print",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -45,7 +45,7 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-orange-light from-42% to-gradient-orange-dark",
-      link: "",
+      link: "/projects",
       index: "video",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -55,7 +55,7 @@ export default function Home() {
       catchphrase: "AI Innovation",
       className: conceptSectionsClassName,
       additionnalClassName: "bg-black",
-      link: "",
+      link: "/projects",
       index: "ai",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -66,7 +66,7 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-blue-light to-gradient-blue-dark",
-      link: "",
+      link: "/projects",
       index: "digital",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -77,7 +77,7 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-red-light to-gradient-red-dark",
-      link: "",
+      link: "/projects",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
@@ -86,7 +86,7 @@ export default function Home() {
       catchphrase: "Growth Techniology and Optimisation",
       className: conceptSectionsClassName,
       additionnalClassName: "bg-brown-light",
-      link: "",
+      link: "/projects",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
@@ -96,7 +96,7 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-r from-gradient-green-light from-57% to-gradient-green-dark from-75%",
-      link: "",
+      link: "/projects",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
   ];
