@@ -30,6 +30,7 @@ module.exports = {
       },
       screens: {
         xs: "30rem",
+        high: { raw: "(max-aspect-ratio: 1/1)" },
       },
     },
   },

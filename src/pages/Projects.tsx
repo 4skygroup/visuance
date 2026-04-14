@@ -15,8 +15,8 @@ export default function Projects() {
   ];
   return (
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
-      <section className="flex w-fit h-fit bg-[url('/images/Identity/Background.png')] md:bg-cover bg-no-repeat bg-center">
-        <section className="flex flex-col gap-y-12.5 px-20 py-12.5 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
+      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Identity/Background.png')] md:bg-cover bg-no-repeat bg-center">
+        <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-12.5 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
           <p className="m-auto text-4xl">BRAND STRATEGY AND IDENTITY</p>
         </section>
