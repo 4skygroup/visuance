@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Group from "./pages/Group";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
 
 const router = createBrowserRouter([
   {
@@ -19,19 +20,13 @@ const router = createBrowserRouter([
     path: "/about",
     element: <About />,
   },
-  // {
-  //   path: "/offices-by-cities",
-  //   element: ,
-  //   children: [
-  //     {
-  //       path: "/offices-by-cities/:region",
-  //       element: ,
-  //     },
-  //   ],
-  // },
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/projects",
+    element: <Projects />,
   },
 ]);
 
