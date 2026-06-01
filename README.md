@@ -33,7 +33,7 @@ Le projet répond au besoin de :
 
 Le projet repose sur un stack moderne :
 
-- **React 19** : bibliothèque principale pour l’UI
+- **React 19** : bibliothèque principale pour l’UI.
 - **Vite** : outil de build rapide et performant
 - **TypeScript** : typage statique pour plus de robustesse
 - **Tailwind CSS** : framework CSS utilitaire
