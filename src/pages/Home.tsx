@@ -102,7 +102,7 @@ export default function Home() {
   ];
   return (
     <div className="relative">
-      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full scroll-smooth">
+      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-5 px-20 py-5 w-full scroll-smooth">
         <Header />
 
         {/* Second section top */}
