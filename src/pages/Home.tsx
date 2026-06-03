@@ -193,15 +193,7 @@ export default function Home() {
               Discover the weaknesses in your digital strategy in seconds
             </p>
           </div>
-<<<<<<< HEAD
           <img src="/images/Link.png" alt="Link" loading="lazy" className="sm:max-md:w-20" />
-=======
-          <img
-            src="/images/Link.png"
-            alt="Link"
-            className="sm:max-md:w-20 md:w-25"
-          />
->>>>>>> 02d21381074cb6ff396d83dc67f6455a54298930
         </a>
       </div>
       {conceptSections.map((section, index) => (
