@@ -117,6 +117,6 @@ npm run dev
 
 ## 🚀 Déploiement
 
-Le projet peut être déployé via `Vercel`
+Le projet peut être déployé via `OVH`
 
 ---
