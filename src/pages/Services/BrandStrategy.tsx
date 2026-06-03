@@ -1,7 +1,7 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 
-export default function Projects() {
+export default function BrandStrategy() {
   const services = [
     "PURPOSE, VISION, MISSION",
     "Brand positioning and narrative",
