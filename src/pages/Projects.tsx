@@ -1,7 +1,15 @@
-import Footer from "../components/Footer";
+﻿import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { useSEO } from "../hooks/useSEO";
 
 export default function Projects() {
+  useSEO({
+    title: "Projects | Brand Strategy & Identity – Visuance",
+    description:
+      "Explore Visuance's brand strategy and identity projects: logo design, visual systems, brand guidelines and copywriting for luxury, lifestyle and tech brands.",
+    canonical: "https://visuanceagency.com/projects",
+    ogImage: "https://visuanceagency.com/images/Identity/Gucci.png",
+  });
   const services = [
     "PURPOSE, VISION, MISSION",
     "Brand positioning and narrative",
@@ -41,6 +49,7 @@ export default function Projects() {
             src="/images/Identity/Black Burgary White.png"
             className="min-w-70"
             alt="Colors"
+            loading="lazy"
           />
         </div>
       </section>
@@ -49,37 +58,44 @@ export default function Projects() {
         <div className="grid grid-cols-[repeat(4, auto)] grid-rows-[repeat(3, auto)] max-md:gap-2.5 gap-7.5 max-w-7xl self-center">
           <img
             src="/images/Identity/Gucci.png"
-            alt=""
+            alt="Gucci brand identity project"
+            loading="lazy"
             className="col-[1/3] grow row-start-1 aspect-630/660 object-cover"
           />
           <img
             src="/images/Identity/Dior.png"
-            alt=""
+            alt="Dior brand identity project"
+            loading="lazy"
             className="col-start-3 grow row-start-1 aspect-300/660 object-cover"
           />
           <img
             src="/images/Identity/Laselender.png"
-            alt=""
+            alt="Laselender brand identity project"
+            loading="lazy"
             className="col-start-4 grow row-start-1 aspect-300/660 object-cover"
           />
           <img
             src="/images/Identity/Coffee.png"
-            alt=""
+            alt="Coffee brand identity project"
+            loading="lazy"
             className="col-[1/3] row-start-2 aspect-630/760 object-cover"
           />
           <img
             src="/images/Identity/Oeufs d'inspiration Tiffany dans une boîte.png"
-            alt=""
+            alt="Tiffany inspired eggs brand project"
+            loading="lazy"
             className="col-[3/5] row-start-2 aspect-630/760 object-cover"
           />
           <img
             src="/images/Identity/Diviny.png"
-            alt=""
+            alt="Diviny brand identity project"
+            loading="lazy"
             className="col-[1/3]  row-start-3 aspect-630/360 object-cover"
           />
           <img
             src="/images/Identity/Collection de bougies Guerlain élégantes.png"
-            alt=""
+            alt="Guerlain candle collection brand project"
+            loading="lazy"
             className="col-[3/5] row-start-3 aspect-630/360 object-cover"
           />
         </div>

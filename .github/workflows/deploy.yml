@@ -83,7 +83,34 @@ jobs:
           target: "/var/www/visuanceagency.com/"
           strip_components: 1
 
-      - name: 6. Sécuriser les droits et recharger Nginx
+      - name: 6. Activer la compression Gzip
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            sudo tee /etc/nginx/conf.d/gzip.conf > /dev/null <<'GZIPEOF'
+            gzip on;
+            gzip_vary on;
+            gzip_proxied any;
+            gzip_comp_level 6;
+            gzip_min_length 1024;
+            gzip_types
+              text/plain
+              text/css
+              text/xml
+              text/javascript
+              application/json
+              application/javascript
+              application/xml
+              application/xml+rss
+              image/svg+xml
+              font/woff
+              font/woff2;
+            GZIPEOF
+
+      - name: 7. Sécuriser les droits et recharger Nginx
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}

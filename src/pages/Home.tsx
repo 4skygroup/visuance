@@ -1,9 +1,16 @@
 import ConceptSection from "../components/ConceptSection";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { useSEO } from "../hooks/useSEO";
 import type { ConceptSectionType } from "../types/content";
 
 export default function Home() {
+  useSEO({
+    title: "Visuance – Creative Studio | Brand Strategy, Web & Digital Design",
+    description:
+      "Visuance is a full-service creative studio. We design brand identities, web experiences, print, video, AI solutions and digital products that make your vision stand out.",
+    canonical: "https://visuanceagency.com/",
+  });
   const conceptSectionsClassName =
     "flex w-full h-131.25 px-25 items-center justify-between gap-10 overflow-hidden max-sm:flex-col max-sm:items-center max-sm:py-10 max-sm:text-center";
   const conceptSections: ConceptSectionType[] = [
@@ -186,7 +193,7 @@ export default function Home() {
               Discover the weaknesses in your digital strategy in seconds
             </p>
           </div>
-          <img src="/images/Link.png" alt="Link" className="sm:max-md:w-20" />
+          <img src="/images/Link.png" alt="Link" loading="lazy" className="sm:max-md:w-20" />
         </a>
       </div>
       {conceptSections.map((section, index) => (

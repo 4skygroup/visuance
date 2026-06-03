@@ -1,7 +1,14 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { useSEO } from "../hooks/useSEO";
 
 export default function About() {
+  useSEO({
+    title: "About Us | Visuance Creative Studio",
+    description:
+      "Behind every strong brand identity lies a passionate team. Visuance brings together designers, strategists and developers to craft cohesive, memorable visual experiences.",
+    canonical: "https://visuanceagency.com/about",
+  });
   return (
     <div>
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full scroll-smooth">

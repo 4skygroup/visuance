@@ -1,0 +1,24 @@
+{
+  "name": "Visuance – Creative Studio",
+  "short_name": "Visuance",
+  "description": "Creative studio specializing in brand strategy, web design, print, video production, AI innovation and digital experiences.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/images/Visuance.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/Visuance.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://visuanceagency.com/sitemap.xml
+Sitemap: https://visuanceagency.com/sitemap-images.xml
