@@ -86,6 +86,8 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+            # Comment out any existing gzip directive in nginx.conf to avoid duplicates
+            sudo sed -i 's/^\(\s*\)gzip \(on\|off\);/\1# gzip \2;/' /etc/nginx/nginx.conf
             sudo tee /etc/nginx/conf.d/gzip.conf > /dev/null <<'GZIPEOF'
             gzip on;
             gzip_vary on;
