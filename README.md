@@ -17,7 +17,7 @@
 
 ## 💡 Contexte et problématique
 
-Dans un contexte où la communication digitale est essentielle, Visuance vise à proposer une plateforme permettant de centraliser et présenter efficacement des contenus visuels (branding, marketing, storytelling).
+Dans un contexte où la communication digitale est essentielle, Visuance vise à proposer une plateforme permettant de centraliser et présenter efficacement des contenus visuels (branding, marketing, storytelling)...
 
 Le projet répond au besoin de :
 

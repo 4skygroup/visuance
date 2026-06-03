@@ -34,8 +34,7 @@ jobs:
             DOMAIN="visuanceagency.com"
             sudo mkdir -p /var/www/$DOMAIN
 
-            if [ ! -d /etc/letsencrypt/live/$DOMAIN ]; then
-              sudo tee /etc/nginx/sites-available/$DOMAIN > /dev/null <<'NGINXEOF'
+            sudo tee /etc/nginx/sites-available/$DOMAIN > /dev/null <<'NGINXEOF'
             server {
                 server_name visuanceagency.com www.visuanceagency.com;
                 limit_req zone=mylimit burst=20 nodelay;
@@ -52,14 +51,11 @@ jobs:
                 listen [::]:80;
             }
             NGINXEOF
-              sudo ln -sf /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/$DOMAIN
-              sudo certbot --nginx -d $DOMAIN -d www.$DOMAIN \
-                --non-interactive --agree-tos -m ${{ secrets.CERTBOT_EMAIL }}
-            else
-              if [ ! -L /etc/nginx/sites-enabled/$DOMAIN ]; then
-                sudo ln -s /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/$DOMAIN
-              fi
-            fi
+            sudo ln -sf /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/$DOMAIN
+            sudo nginx -t && sudo systemctl reload nginx
+            sudo certbot --nginx -d $DOMAIN -d www.$DOMAIN \
+              --non-interactive --agree-tos -m ${{ secrets.CERTBOT_EMAIL }} \
+              --keep-until-expiring --expand
 
             sudo nginx -t && sudo systemctl reload nginx
 
