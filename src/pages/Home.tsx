@@ -102,22 +102,22 @@ export default function Home() {
   ];
   return (
     <div className="relative">
-      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full scroll-smooth">
+      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-5 px-20 py-5 w-full scroll-smooth lg:h-screen">
         <Header />
 
         {/* Second section top */}
-        <div className="overflow-x-hidden max-sm:pt-12.5 max-sm:rounded-none max-sm:px-0 max-sm:-mx-20 max-md:flex-col max-md:items-center max-md:h-fit relative xs:max-sm:w-lg sm:max-md:w-xl md:max-lg:w-3xl lg:max-xl:w-5xl xl:w-7xl h-195 flex px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-12 rounded-[50px] gap-x-12.5 self-center">
-          <div className="max-md:items-center max-md:gap-y-10 flex flex-col gap-y-33">
+        <div className="overflow-x-hidden max-sm:pt-12.5 max-sm:rounded-none max-sm:px-0 max-sm:-mx-20 max-lg:flex-col max-lg:items-center max-lg:h-fit relative xs:max-sm:w-lg sm:max-md:w-xl md:max-lg:w-3xl lg:max-xl:w-5xl xl:w-7xl h-145 flex grow px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-5 rounded-[50px] gap-x-12.5 self-center sm:max-lg:px-0">
+          <div className="max-md:items-center max-md:gap-y-10 flex flex-col gap-y-3 h-full">
             <img
               src="/images/Visuance Logo.png"
               alt="Visuance Logo"
               className="max-sm:hidden  w-52.5 h-17.5"
             />
-            <div className="flex flex-col gap-y-5 pb-9">
+            <div className="flex flex-col gap-y-5 max-sm:pb-9 pb-3">
               <img
                 src="/images/Branding Outdated.png"
                 alt="Branding Image"
-                className="w-75"
+                className="w-55"
               />
               <div className="w-full justify-between flex bg-white/70 px-8.75 py-2.5 rounded-full">
                 <span className="uppercase text-white font-bold text-lg">
@@ -129,12 +129,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="max-md:items-center max-md:static max-md:self-center fixed bottom-0 right-0 flex flex-col gap-y-28 w-fit">
+          <div className="max-md:items-center max-lg:static max-md:self-center fixed bottom-0 right-0 flex flex-col gap-y-5 pt-5 w-fit h-full">
             <p className="max-sm:text-center max-sm:px-5 text-3xl max-w-170">
               The universe doesn’t move because of technology. It moves because
               someone imagined something new.
             </p>
-            <div className="max-sm:rounded-none max-md:-mx-12.5 max-md:w-full flex flex-col gap-y-5 pb-9 xs:max-sm:w-120 sm:max-md:w-150 md:max-lg:w-180 lg:w-215 aspect-430/265 justify-between bg-[url(/images/News.png)] bg-cover px-7.5 py-6.25 rounded-[50px] rounded-tr-none">
+            <div className="max-sm:rounded-none max-md:-mx-12.5 max-md:w-full flex flex-col gap-y-5 pb-9 xs:max-sm:w-120 sm:max-md:w-150 md:max-lg:w-180 lg:w-full justify-between bg-[url(/images/News.png)] bg-cover px-7.5 py-6.25 rounded-[50px] rounded-tr-none h-[calc(90%)] sm:max-lg:aspect-430/265 2xl:aspect-430/265 sm:max-lg:rounded-tr-[50px] max-w-200">
               <div className="w-fit invisible flex flex-col items-center">
                 <img
                   src="/images/Visuance Logo.png"
@@ -176,17 +176,21 @@ export default function Home() {
         {/* Link Section */}
         <a
           href=""
-          className="max-sm:rounded-none max-sm:-mx-20 max-sm:flex-col max-sm:gap-y-15 backdrop-blur-2xl bg-light-gray/20 sm:w-full flex items-center justify-between px-17.5 py-13.75 rounded-full xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl"
+          className="max-sm:rounded-none max-sm:-mx-20 max-sm:flex-col max-sm:gap-y-15 backdrop-blur-2xl bg-light-gray/20 sm:w-full flex items-center justify-between pl-15 pr-5 py-5 rounded-full xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl"
         >
           <div className="flex flex-col gap-y-4">
-            <p className="max-sm:text-center text-4xl sm:max-md:text-xl">
+            <p className="max-sm:text-center text-3xl sm:max-md:text-xl">
               Let’s analyze your marketing strategy !
             </p>
-            <p className="max-sm:text-center text-2xl sm:max-md:text-lg">
+            <p className="max-sm:text-center text-xl sm:max-md:text-lg">
               Discover the weaknesses in your digital strategy in seconds
             </p>
           </div>
-          <img src="/images/Link.png" alt="Link" className="sm:max-md:w-20" />
+          <img
+            src="/images/Link.png"
+            alt="Link"
+            className="sm:max-md:w-20 md:w-25"
+          />
         </a>
       </div>
       {conceptSections.map((section, index) => (

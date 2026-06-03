@@ -32,6 +32,9 @@ module.exports = {
         xs: "30rem",
         high: { raw: "(max-aspect-ratio: 1/1)" },
       },
+      width: {
+        "8/10": "80%",
+      },
     },
   },
   plugins: [],
