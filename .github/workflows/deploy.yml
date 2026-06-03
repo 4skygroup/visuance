@@ -34,6 +34,9 @@ jobs:
             DOMAIN="visuanceagency.com"
             sudo mkdir -p /var/www/$DOMAIN
 
+            # Remove leftover gzip.conf from previous deployments to avoid duplicate directive errors
+            sudo rm -f /etc/nginx/conf.d/gzip.conf
+
             sudo tee /etc/nginx/sites-available/$DOMAIN > /dev/null <<'NGINXEOF'
             server {
                 server_name visuanceagency.com www.visuanceagency.com;
