@@ -102,7 +102,7 @@ export default function Home() {
   ];
   return (
     <div className="relative">
-      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-5 px-20 py-5 w-full scroll-smooth lg:h-screen">
+      <section className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-5 px-20 py-5 w-full scroll-smooth lg:h-screen">
         <Header />
 
         {/* Second section top */}
@@ -192,7 +192,7 @@ export default function Home() {
             className="sm:max-md:w-20 md:w-25"
           />
         </a>
-      </div>
+      </section>
       {conceptSections.map((section, index) => (
         <ConceptSection
           key={index}
