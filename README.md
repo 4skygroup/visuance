@@ -21,7 +21,7 @@ Dans un contexte où la communication digitale est essentielle, Visuance vise à
 
 Le projet répond au besoin de :
 
-- Structurer des contenus graphiques
+- Structurer des contenus graphiques.
 - Offrir une navigation fluide
 - Valoriser une identité visuelle forte.
 
