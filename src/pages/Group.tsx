@@ -1,7 +1,15 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { useSEO } from "../hooks/useSEO";
 
 export default function Group() {
+  useSEO({
+    title: "The Group | Visuance – Play To Sky Creative Ecosystem",
+    description:
+      "Discover the Play To Sky group: Visuance, Pulse X Agency, Snackly, Seofy, CYBERSKY, Drox 360, Sky To Be Media – one ecosystem uniting brand, media, IT and creative technologies.",
+    canonical: "https://visuanceagency.com/the-group",
+    ogImage: "https://visuanceagency.com/images/Play%20To%20Sky-no-bg.png",
+  });
   return (
     <div>
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full scroll-smooth">
@@ -10,26 +18,29 @@ export default function Group() {
           <img
             src="/images/Play To Sky-no-bg.png"
             alt="Play To Sky Logo"
+            loading="lazy"
             className="w-75 h-21.25"
           />
           <div className="flex flex-col gap-y-10">
             <div className="flex flex-wrap items-center justify-center content-center gap-3.75">
-              <img src="/images/Visuance.png" alt="Image" className="w-31.25" />
-              <img src="/images/Pulse X.png" alt="Image" className="w-31.25" />
+              <img src="/images/Visuance.png" alt="Visuance" loading="lazy" className="w-31.25" />
+              <img src="/images/Pulse X.png" alt="Pulse X" loading="lazy" className="w-31.25" />
               <img
                 src="/images/Pulse X Agency Pink.png"
-                alt="Image"
+                alt="Pulse X Agency"
+                loading="lazy"
                 className="w-31.25"
               />
-              <img src="/images/Snackly.png" alt="Image" className="w-31.25" />
+              <img src="/images/Snackly.png" alt="Snackly" loading="lazy" className="w-31.25" />
             </div>
             <div className="flex flex-wrap items-center justify-center content-center gap-3.75">
-              <img src="/images/Seofy.png" alt="Image" className="w-31.25" />
-              <img src="/images/CYBERSKY.png" alt="Image" className="w-31.25" />
-              <img src="/images/Drox 360.png" alt="Image" className="w-31.25" />
+              <img src="/images/Seofy.png" alt="Seofy" loading="lazy" className="w-31.25" />
+              <img src="/images/CYBERSKY.png" alt="CYBERSKY" loading="lazy" className="w-31.25" />
+              <img src="/images/Drox 360.png" alt="Drox 360" loading="lazy" className="w-31.25" />
               <img
                 src="/images/Sky To Be Media.png"
-                alt="Image"
+                alt="Sky To Be Media"
+                loading="lazy"
                 className="w-31.25"
               />
             </div>

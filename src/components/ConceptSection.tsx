@@ -31,6 +31,7 @@ export default function ConceptSection({
       <img
         src={src}
         alt={alt}
+        loading="lazy"
         className={`max-h-full object-cover object-bottom-left scale-105 transition-transform
              ${index === "ai" || index === "digital" ? "sm:self-end" : ""} 
              ${index === "print" || index === "video" || index === "identity" ? "w-75 relative right-15 max-md:right-0 min-w-62.5" : "w-100 min-w-62.5"}

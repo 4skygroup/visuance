@@ -34,8 +34,10 @@ jobs:
             DOMAIN="visuanceagency.com"
             sudo mkdir -p /var/www/$DOMAIN
 
-            if [ ! -d /etc/letsencrypt/live/$DOMAIN ]; then
-              sudo tee /etc/nginx/sites-available/$DOMAIN > /dev/null <<'NGINXEOF'
+            # Remove leftover gzip.conf from previous deployments to avoid duplicate directive errors
+            sudo rm -f /etc/nginx/conf.d/gzip.conf
+
+            sudo tee /etc/nginx/sites-available/$DOMAIN > /dev/null <<'NGINXEOF'
             server {
                 server_name visuanceagency.com www.visuanceagency.com;
                 limit_req zone=mylimit burst=20 nodelay;
@@ -52,14 +54,11 @@ jobs:
                 listen [::]:80;
             }
             NGINXEOF
-              sudo ln -sf /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/$DOMAIN
-              sudo certbot --nginx -d $DOMAIN -d www.$DOMAIN \
-                --non-interactive --agree-tos -m ${{ secrets.CERTBOT_EMAIL }}
-            else
-              if [ ! -L /etc/nginx/sites-enabled/$DOMAIN ]; then
-                sudo ln -s /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/$DOMAIN
-              fi
-            fi
+            sudo ln -sf /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/$DOMAIN
+            sudo nginx -t && sudo systemctl reload nginx
+            sudo certbot --nginx -d $DOMAIN -d www.$DOMAIN \
+              --non-interactive --agree-tos -m ${{ secrets.CERTBOT_EMAIL }} \
+              --keep-until-expiring --expand
 
             sudo nginx -t && sudo systemctl reload nginx
 
@@ -83,7 +82,36 @@ jobs:
           target: "/var/www/visuanceagency.com/"
           strip_components: 1
 
-      - name: 6. Sécuriser les droits et recharger Nginx
+      - name: 6. Activer la compression Gzip
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            # Comment out any existing gzip directive in nginx.conf to avoid duplicates
+            sudo sed -i 's/^\(\s*\)gzip \(on\|off\);/\1# gzip \2;/' /etc/nginx/nginx.conf
+            sudo tee /etc/nginx/conf.d/gzip.conf > /dev/null <<'GZIPEOF'
+            gzip on;
+            gzip_vary on;
+            gzip_proxied any;
+            gzip_comp_level 6;
+            gzip_min_length 1024;
+            gzip_types
+              text/plain
+              text/css
+              text/xml
+              text/javascript
+              application/json
+              application/javascript
+              application/xml
+              application/xml+rss
+              image/svg+xml
+              font/woff
+              font/woff2;
+            GZIPEOF
+
+      - name: 7. Sécuriser les droits et recharger Nginx
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}

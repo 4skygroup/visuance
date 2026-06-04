@@ -1,7 +1,14 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { useSEO } from "../hooks/useSEO";
 
 export default function Contact() {
+  useSEO({
+    title: "Contact | Visuance Creative Studio – Paris",
+    description:
+      "Get in touch with Visuance. Reach us at contact@visuance-playtosky.com, by phone at 01 25 47 54 12, or visit us at 56 avenue Monceau, 75008 Paris.",
+    canonical: "https://visuanceagency.com/contact",
+  });
   return (
     <div>
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full scroll-smooth">
