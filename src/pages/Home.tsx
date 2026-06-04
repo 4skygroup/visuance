@@ -102,16 +102,16 @@ export default function Home() {
   ];
   return (
     <div className="relative">
-      <section className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-5 px-20 py-5 w-full scroll-smooth lg:h-screen">
+      <section className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-5 px-20 py-5 w-full scroll-smooth lg:h-screen items-center">
         <Header />
 
         {/* Second section top */}
-        <div className="overflow-x-hidden max-sm:pt-12.5 max-sm:rounded-none max-sm:px-0 max-sm:-mx-20 max-lg:flex-col max-lg:items-center max-lg:h-fit relative xs:max-sm:w-lg sm:max-md:w-xl md:max-lg:w-3xl lg:max-xl:w-5xl xl:w-7xl h-145 flex grow px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-5 rounded-[50px] gap-x-12.5 self-center sm:max-lg:px-0">
+        {/* <div className="overflow-x-hidden max-sm:pt-12.5 max-sm:rounded-none max-sm:px-0 max-sm:-mx-20 max-lg:flex-col max-lg:items-center max-lg:h-fit relative xs:max-sm:w-lg sm:max-md:w-xl md:max-lg:w-3xl lg:max-xl:w-5xl xl:w-7xl h-145 flex grow px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-5 rounded-[50px] gap-x-12.5 self-center sm:max-lg:px-0">
           <div className="max-md:items-center max-md:gap-y-10 flex flex-col gap-y-3 h-full">
             <img
               src="/images/Visuance Logo.png"
               alt="Visuance Logo"
-              className="max-sm:hidden  w-52.5 h-17.5"
+              className="max-sm:hidden w-52.5 h-17.5"
             />
             <div className="flex flex-col gap-y-5 max-sm:pb-9 pb-3">
               <img
@@ -171,7 +171,73 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+        <section className="backdrop-blur-2xl bg-light-gray/20 w-full max-w-7xl h-full py-5 px-10 flex max-md:flex-col justify-between items-center">
+          {/* Left */}
+          <div className="w-fit h-fit flex flex-col items-center gap-[calc(10%)]">
+            <img
+              src="/images/Visuance Logo.png"
+              alt="Visuance Logo"
+              className="max-sm:hidden w-52.5 h-17.5 mb-5"
+            />
+            <div className="flex flex-col gap-5 items-center">
+              <img
+                src="/images/Branding Outdated.png"
+                alt="Branding Image"
+                className="w-55"
+              />
+              <div className="w-fit justify-between items-center flex bg-white/70 px-5 py-1.5 rounded-full gap-x-5">
+                <span className="uppercase text-white font-bold text-lg">
+                  In The News
+                </span>
+                <span className="capitalize text-dark-gray text-base">
+                  Today
+                </span>
+              </div>
+              {/* <div className="w-fit flex gap-y-2.5">
+                <span>In the news</span>
+                <span>Today</span>
+              </div> */}
+            </div>
+          </div>
+
+          {/* Right */}
+          <div className="w-6/10 flex flex-col gap-[calc(10%)]">
+            <p className="w-fit max-sm:text-center max-sm:px-5 text-2xl mb-2">
+              The universe doesn’t move because of technology. It moves because
+              someone imagined something new.
+            </p>
+            <div className="w-full bg-[url('/images/News.png')] aspect-430/265 bg-cover relative">
+              <div className="h-full items-end absolute botton-0 right-0 flex p-3.75">
+                <a
+                  href="#identity"
+                  className="w-fit h-12.5 p-5 bg-black rounded-full flex items-center justify-center"
+                >
+                  OUR FIELDS
+                </a>
+                <a
+                  href="#identity"
+                  className="w-12.5 h-12.5 aspect-square bg-black rounded-full flex"
+                >
+                  <svg
+                    width="11"
+                    height="14"
+                    className="m-auto"
+                    viewBox="0 0 11 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.0310984 13.2533C0.121673 13.5354 0.419812 13.7929 0.800979 13.9216C0.993449 13.9846 1.07648 13.9983 1.3482 13.9956C1.95203 13.9956 1.54444 14.2585 6.4128 10.7306C9.34892 8.60235 10.7717 7.55329 10.8358 7.46838C10.983 7.26843 11.0359 7.03561 10.9755 6.82744C10.9491 6.73431 10.8849 6.6001 10.8358 6.53162C10.7717 6.44671 9.34892 5.39765 6.4128 3.26939C1.54444 -0.258525 1.95203 0.00442505 1.3482 0.00442505C1.07648 0.00442505 0.993448 0.0153818 0.79343 0.0811195C0.0990286 0.311201 -0.195337 0.924752 0.14809 1.426C0.197151 1.49722 1.53689 2.48876 3.9824 4.26641L7.745 7L3.9824 9.73359C1.52557 11.5195 0.197151 12.5028 0.14809 12.574C0.00845432 12.7822 -0.0368319 13.0396 0.0310984 13.2533Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Link Section */}
         <a

@@ -6,7 +6,7 @@ import Group from "./pages/Group";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import VideoPhotography from "./pages/Services/VideoPhotography";
-import BrandStrategy from "./pages/Services/PrintDesign";
+import BrandStrategy from "./pages/Services/BrandStrategy";
 import PrintDesign from "./pages/Services/PrintDesign";
 import AiInnovation from "./pages/Services/AiInnovation";
 import DigitalProduct from "./pages/Services/DigitalProduct";
