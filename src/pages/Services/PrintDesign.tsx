@@ -38,7 +38,7 @@ export default function PrintDesign() {
           </ol>
           <img
             src="/images/Services/PrintDesign/PrintFond2.jpg"
-            className="min-w-70 aspect-407/343 object-cover"
+            className="min-w-70 aspect-407/343 object-cover max-w-101.75"
             alt="Colors"
           />
         </div>

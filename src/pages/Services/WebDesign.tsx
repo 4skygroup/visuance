@@ -37,7 +37,7 @@ export default function WebDesign() {
           </ol>
           <img
             src="/images/Services/WebDesign/Black Burgary White.png"
-            className="min-w-70 aspect-407/343 object-cover"
+            className="min-w-70 aspect-407/343 object-cover max-w-101.75"
             alt="Colors"
           />
         </div>
