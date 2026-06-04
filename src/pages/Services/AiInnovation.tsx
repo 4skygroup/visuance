@@ -34,7 +34,7 @@ export default function AiInnovation() {
           </ol>
           <img
             src="/images/Services/AiInnovation/AiFond2.jpg"
-            className="min-w-70"
+            className="min-w-70 aspect-407/343 object-cover"
             alt="Colors"
           />
         </div>
@@ -45,37 +45,37 @@ export default function AiInnovation() {
           <img
             src="/images/Services/AiInnovation/Ai1.jpg"
             alt=""
-            className="col-[1/3] grow row-start-1 aspect-630/660 object-cover"
+            className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1"
           />
           <img
             src="/images/Services/AiInnovation/Ai2.jpg"
             alt=""
-            className="col-start-3 grow row-start-1 aspect-300/660 object-cover"
+            className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1"
           />
           <img
             src="/images/Services/AiInnovation/Ai3.jpg"
             alt=""
-            className="col-start-4 grow row-start-1 aspect-300/660 object-cover"
+            className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1"
           />
           <img
             src="/images/Services/AiInnovation/Ai4.jpg"
             alt=""
-            className="col-[1/3] row-start-2 aspect-630/760 object-cover"
+            className="col-[1/3] row-start-2 aspect-630/760  w-full object-cover rounded-r1"
           />
           <img
             src="/images/Services/AiInnovation/Ai5.jpg"
             alt=""
-            className="col-[3/5] row-start-2 aspect-630/760 object-cover"
+            className="col-[3/5] row-start-2 aspect-630/760 object-cover rounded-r1"
           />
           <img
             src="/images/Services/AiInnovation/Ai6.jpg"
             alt=""
-            className="col-[1/3]  row-start-3 aspect-630/360 object-cover"
+            className="col-[1/3]  row-start-3 aspect-630/360 object-cover rounded-r1"
           />
           <img
             src="/images/Services/AiInnovation/Ai7.jpg"
             alt=""
-            className="col-[3/5] row-start-3 aspect-630/360 object-cover"
+            className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1"
           />
         </div>
       </section>

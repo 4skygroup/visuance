@@ -48,37 +48,37 @@ export default function GrowthTechnology() {
           <img
             src="/images/Services/GrowthTechnology/Growth1.jpg"
             alt=""
-            className="col-[1/3] grow row-start-1 aspect-630/660 object-cover"
+            className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1"
           />
           <img
             src="/images/Services/GrowthTechnology/Growth2.jpg"
             alt=""
-            className="col-start-3 grow row-start-1 aspect-300/660 object-cover"
+            className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1"
           />
           <img
             src="/images/Services/GrowthTechnology/Growth3.jpg"
             alt=""
-            className="col-start-4 grow row-start-1 aspect-300/660 object-cover"
+            className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1"
           />
           <img
             src="/images/Services/GrowthTechnology/Growth4.jpg"
             alt=""
-            className="col-[1/3] row-start-2 aspect-630/760 object-cover"
+            className="col-[1/3] row-start-2 aspect-630/760 object-cover rounded-r1"
           />
           <img
             src="/images/Services/GrowthTechnology/Growth5.jpg"
             alt=""
-            className="col-[3/5] row-start-2 aspect-630/760 object-cover"
+            className="col-[3/5] row-start-2 aspect-630/760 object-cover rounded-r1"
           />
           <img
             src="/images/Services/GrowthTechnology/Growth6.jpg"
             alt=""
-            className="col-[1/3]  row-start-3 aspect-630/360 object-cover"
+            className="col-[1/3]  row-start-3 aspect-630/360 object-cover rounded-r1"
           />
           <img
             src="/images/Services/GrowthTechnology/Growth7.jpg"
             alt=""
-            className="col-[3/5] row-start-3 aspect-630/360 object-cover"
+            className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1"
           />
         </div>
       </section>

@@ -15,7 +15,7 @@ export default function BrandStrategy() {
   ];
   return (
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
-      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Identity/Background.png')] high:bg-[url('/images/Identity/Background.jpg')] bg-cover bg-no-repeat bg-center">
+      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/BrandStrategy/Background.png')] high:bg-[url('/images/Services/BrandStrategy/Background.jpg')] bg-cover bg-no-repeat bg-center">
         <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-12.5 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
           <p className="m-auto text-4xl text-center">
@@ -38,8 +38,8 @@ export default function BrandStrategy() {
             ))}
           </ol>
           <img
-            src="/images/Identity/Black Burgary White.png"
-            className="min-w-70"
+            src="/images/Services/BrandStrategy/Black Burgary White.png"
+            className="min-w-70 aspect-407/343 object-cover"
             alt="Colors"
           />
         </div>
@@ -48,39 +48,39 @@ export default function BrandStrategy() {
         <p className="uppercase text-4xl font-bold">OVERVIEW</p>
         <div className="grid grid-cols-[repeat(4, auto)] grid-rows-[repeat(3, auto)] max-md:gap-2.5 gap-7.5 max-w-7xl self-center">
           <img
-            src="/images/Identity/Gucci.png"
+            src="/images/Services/BrandStrategy/Gucci.png"
             alt=""
-            className="col-[1/3] grow row-start-1 aspect-630/660 object-cover"
+            className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1"
           />
           <img
-            src="/images/Identity/Dior.png"
+            src="/images/Services/BrandStrategy/Dior.png"
             alt=""
-            className="col-start-3 grow row-start-1 aspect-300/660 object-cover"
+            className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1"
           />
           <img
-            src="/images/Identity/Laselender.png"
+            src="/images/Services/BrandStrategy/Laselender.png"
             alt=""
-            className="col-start-4 grow row-start-1 aspect-300/660 object-cover"
+            className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1"
           />
           <img
-            src="/images/Identity/Coffee.png"
+            src="/images/Services/BrandStrategy/Coffee.png"
             alt=""
-            className="col-[1/3] row-start-2 aspect-630/760 object-cover"
+            className="col-[1/3] row-start-2 aspect-630/760 object-cover rounded-r1"
           />
           <img
-            src="/images/Identity/Oeufs d'inspiration Tiffany dans une boîte.png"
+            src="/images/Services/BrandStrategy/Oeufs d'inspiration Tiffany dans une boîte.png"
             alt=""
-            className="col-[3/5] row-start-2 aspect-630/760 object-cover"
+            className="col-[3/5] row-start-2 aspect-630/760 object-cover rounded-r1"
           />
           <img
-            src="/images/Identity/Diviny.png"
+            src="/images/Services/BrandStrategy/Diviny.png"
             alt=""
-            className="col-[1/3]  row-start-3 aspect-630/360 object-cover"
+            className="col-[1/3]  row-start-3 aspect-630/360 object-cover rounded-r1"
           />
           <img
-            src="/images/Identity/Collection de bougies Guerlain élégantes.png"
+            src="/images/Services/BrandStrategy/Collection de bougies Guerlain élégantes.png"
             alt=""
-            className="col-[3/5] row-start-3 aspect-630/360 object-cover"
+            className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1"
           />
         </div>
       </section>

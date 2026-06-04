@@ -48,37 +48,37 @@ export default function CreativeTechnology() {
           <img
             src="/images/Services/CreativeTechnology/Creative1.jpg"
             alt=""
-            className="col-[1/3] grow row-start-1 aspect-630/660 object-cover"
+            className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1"
           />
           <img
             src="/images/Services/CreativeTechnology/Creative2.png"
             alt=""
-            className="col-start-3 grow row-start-1 aspect-300/660 object-cover"
+            className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1"
           />
           <img
             src="/images/Services/CreativeTechnology/Creative3.jpg"
             alt=""
-            className="col-start-4 grow row-start-1 aspect-300/660 object-cover"
+            className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1"
           />
           <img
             src="/images/Services/CreativeTechnology/Creative4.jpg"
             alt=""
-            className="col-[1/3] row-start-2 aspect-630/760 object-cover"
+            className="col-[1/3] row-start-2 aspect-630/760 object-cover rounded-r1"
           />
           <img
             src="/images/Services/CreativeTechnology/Creative5.png"
             alt=""
-            className="col-[3/5] row-start-2 aspect-630/760 object-cover"
+            className="col-[3/5] row-start-2 aspect-630/760 object-cover w-full rounded-r1"
           />
           <img
             src="/images/Services/CreativeTechnology/Creative6.jpg"
             alt=""
-            className="col-[1/3]  row-start-3 aspect-630/360 object-cover"
+            className="col-[1/3]  row-start-3 aspect-630/360 object-cover rounded-r1"
           />
           <img
             src="/images/Services/CreativeTechnology/Creative7.png"
             alt=""
-            className="col-[3/5] row-start-3 aspect-630/360 object-cover"
+            className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1"
           />
         </div>
       </section>

@@ -21,7 +21,7 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-red-strong-light from-70% to-gradient-red-strong-dark",
-      link: "/projects",
+      link: "/brand-strategy",
       index: "identity",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -31,7 +31,7 @@ export default function Home() {
       catchphrase: "Web design and development",
       className: conceptSectionsClassName,
       additionnalClassName: "bg-black",
-      link: "/projects",
+      link: "/web-design",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
@@ -41,7 +41,7 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-red-light to-gradient-red-dark",
-      link: "/projects",
+      link: "/print-design",
       index: "print",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -52,7 +52,7 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-orange-light from-42% to-gradient-orange-dark",
-      link: "/projects",
+      link: "/video-photography",
       index: "video",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -62,7 +62,7 @@ export default function Home() {
       catchphrase: "AI Innovation",
       className: conceptSectionsClassName,
       additionnalClassName: "bg-black",
-      link: "/projects",
+      link: "/ai-innovation",
       index: "ai",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -73,7 +73,7 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-blue-light to-gradient-blue-dark",
-      link: "/projects",
+      link: "/digital-product",
       index: "digital",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
@@ -84,16 +84,16 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-red-light to-gradient-red-dark",
-      link: "/projects",
+      link: "/brand-storytelling",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
       src: "/images/Growth.png",
       alt: "Growth",
-      catchphrase: "Growth Techniology and Optimisation",
+      catchphrase: "Growth Technology and Optimisation",
       className: conceptSectionsClassName,
       additionnalClassName: "bg-brown-light",
-      link: "/projects",
+      link: "/growth-technology",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
@@ -103,7 +103,7 @@ export default function Home() {
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-r from-gradient-green-light from-57% to-gradient-green-dark from-75%",
-      link: "/projects",
+      link: "/creative-technology",
       // additionnalClassName: "bg-[#F5F5F5]",
     },
   ];
@@ -193,7 +193,12 @@ export default function Home() {
               Discover the weaknesses in your digital strategy in seconds
             </p>
           </div>
-          <img src="/images/Link.png" alt="Link" loading="lazy" className="sm:max-md:w-20" />
+          <img
+            src="/images/Link.png"
+            alt="Link"
+            loading="lazy"
+            className="sm:max-md:w-20"
+          />
         </a>
       </div>
       {conceptSections.map((section, index) => (

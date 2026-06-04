@@ -33,7 +33,7 @@ export default function VideoPhotography() {
           </ol>
           <img
             src="/images/Services/VideoPhotography/PhotoFond2.jpg"
-            className="min-w-70"
+            className="min-w-70 aspect-407/343 object-cover"
             alt="Colors"
           />
         </div>
@@ -44,37 +44,37 @@ export default function VideoPhotography() {
           <img
             src="/images/Services/VideoPhotography/Photo1.jpg"
             alt=""
-            className="col-[1/3] grow row-start-1 aspect-630/660 object-cover"
+            className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1"
           />
           <img
             src="/images/Services/VideoPhotography/Photo2.jpg"
             alt=""
-            className="col-start-3 grow row-start-1 aspect-300/660 object-cover"
+            className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1"
           />
           <img
             src="/images/Services/VideoPhotography/Photo3.jpg"
             alt=""
-            className="col-start-4 grow row-start-1 aspect-300/660 object-cover"
+            className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1"
           />
           <img
             src="/images/Services/VideoPhotography/Photo4.jpg"
             alt=""
-            className="col-[1/3] row-start-2 aspect-630/760 object-cover"
+            className="col-[1/3] row-start-2 aspect-630/760 object-cover rounded-r1"
           />
           <img
             src="/images/Services/VideoPhotography/Photo5.jpg"
             alt=""
-            className="col-[3/5] row-start-2 aspect-630/760 object-cover"
+            className="col-[3/5] row-start-2 aspect-630/760 object-cover rounded-r1"
           />
           <img
             src="/images/Services/VideoPhotography/Photo6.jpg"
             alt=""
-            className="col-[1/3]  row-start-3 aspect-630/360 object-cover"
+            className="col-[1/3]  row-start-3 aspect-630/360 object-cover rounded-r1"
           />
           <img
             src="/images/Services/VideoPhotography/Photo7.jpg"
             alt=""
-            className="col-[3/5] row-start-3 aspect-630/360 object-cover"
+            className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1"
           />
         </div>
       </section>
