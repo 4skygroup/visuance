@@ -15,8 +15,8 @@ export default function WebDesign() {
   ];
   return (
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
-      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-black">
-        <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-12.5 w-screen h-screen scroll-smooth bg-[url('/images/Services/WebDesign/WebFond.png')] high:bg-[url('/images/Services/WebDesign/WebFond.png')] bg-no-repeat bg-bottom-left">
+      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/WebDesign/WebFond.jpg')] high:bg-[url('/images/Services/WebDesign/WebFond.jpg')] bg-no-repeat bg-cover bg-center">
+        <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-12.5 w-screen h-screen scroll-smooth bg-black/40">
           <Header />
           <p className="m-auto text-4xl text-center">WEB DESIGN</p>
         </section>
@@ -36,7 +36,7 @@ export default function WebDesign() {
             ))}
           </ol>
           <img
-            src="/images/Services/WebDesign/Black Burgary White.png"
+            src="/images/Services/WebDesign/WebFond2.jpg"
             className="min-w-70 aspect-407/343 object-cover max-w-101.75"
             alt="Colors"
           />
@@ -46,37 +46,37 @@ export default function WebDesign() {
         <p className="uppercase text-4xl font-bold">OVERVIEW</p>
         <div className="grid grid-cols-[repeat(4, auto)] grid-rows-[repeat(3, auto)] max-md:gap-2.5 gap-7.5 max-w-7xl self-center">
           <img
-            src="/images/Services/WebDesign/Gucci.png"
+            src="/images/Services/WebDesign/Web1.jpg"
             alt=""
             className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1"
           />
           <img
-            src="/images/Services/WebDesign/Dior.png"
+            src="/images/Services/WebDesign/Web2.jpg"
             alt=""
             className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1"
           />
           <img
-            src="/images/Services/WebDesign/Laselender.png"
+            src="/images/Services/WebDesign/Web3.jpg"
             alt=""
             className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1"
           />
           <img
-            src="/images/Services/WebDesign/Coffee.png"
+            src="/images/Services/WebDesign/Web4.jpg"
             alt=""
             className="col-[1/3] row-start-2 aspect-630/760 object-cover rounded-r1"
           />
           <img
-            src="/images/Services/WebDesign/Oeufs d'inspiration Tiffany dans une boîte.png"
+            src="/images/Services/WebDesign/Web5.jpg"
             alt=""
             className="col-[3/5] row-start-2 aspect-630/760 object-cover rounded-r1"
           />
           <img
-            src="/images/Services/WebDesign/Diviny.png"
+            src="/images/Services/WebDesign/Web6.jpg"
             alt=""
             className="col-[1/3]  row-start-3 aspect-630/360 object-cover rounded-r1"
           />
           <img
-            src="/images/Services/WebDesign/Collection de bougies Guerlain élégantes.png"
+            src="/images/Services/WebDesign/Web7.jpg"
             alt=""
             className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1"
           />
