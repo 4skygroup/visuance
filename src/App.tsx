@@ -5,7 +5,15 @@ import Home from "./pages/Home";
 import Group from "./pages/Group";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
+import VideoPhotography from "./pages/Services/VideoPhotography";
+import BrandStrategy from "./pages/Services/BrandStrategy";
+import PrintDesign from "./pages/Services/PrintDesign";
+import AiInnovation from "./pages/Services/AiInnovation";
+import DigitalProduct from "./pages/Services/DigitalProduct";
+import BrandStorytelling from "./pages/Services/BrandStorytelling";
+import GrowthTechnology from "./pages/Services/GrowthTechnology";
+import CreativeTechnology from "./pages/Services/CreativeTechnology";
+import WebDesign from "./pages/Services/WebDesign";
 
 const router = createBrowserRouter([
   {
@@ -25,8 +33,40 @@ const router = createBrowserRouter([
     element: <Contact />,
   },
   {
-    path: "/projects",
-    element: <Projects />,
+    path: "/brand-strategy",
+    element: <BrandStrategy />,
+  },
+  {
+    path: "/web-design",
+    element: <WebDesign />,
+  },
+  {
+    path: "/video-photography",
+    element: <VideoPhotography />,
+  },
+  {
+    path: "/print-design",
+    element: <PrintDesign />,
+  },
+  {
+    path: "/ai-innovation",
+    element: <AiInnovation />,
+  },
+  {
+    path: "/digital-product",
+    element: <DigitalProduct />,
+  },
+  {
+    path: "/brand-storytelling",
+    element: <BrandStorytelling />,
+  },
+  {
+    path: "/growth-technology",
+    element: <GrowthTechnology />,
+  },
+  {
+    path: "/creative-technology",
+    element: <CreativeTechnology />,
   },
 ]);
 
