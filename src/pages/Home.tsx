@@ -106,7 +106,7 @@ export default function Home() {
         <Header />
 
         {/* Second section top */}
-        <div className="overflow-x-hidden max-sm:pt-12.5 max-sm:rounded-none max-sm:px-0 max-sm:-mx-20 max-lg:flex-col max-lg:items-center max-lg:h-fit relative xs:max-sm:w-lg sm:max-md:w-xl md:max-lg:w-3xl lg:max-xl:w-5xl xl:w-7xl h-145 flex grow px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-5 rounded-[50px] gap-x-12.5 self-center sm:max-lg:px-0">
+        <div className="overflow-hidden max-sm:pt-12.5 max-sm:rounded-none max-sm:px-0 max-sm:-mx-20 max-lg:flex-col max-lg:items-center max-lg:h-fit relative xs:max-sm:w-lg sm:max-md:w-xl md:max-lg:w-3xl lg:max-xl:w-5xl xl:w-7xl h-145 flex grow px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-5 rounded-[50px] gap-x-12.5 self-center sm:max-lg:px-0">
           <div className="max-md:items-center max-md:gap-y-10 flex flex-col gap-y-3 h-full">
             <img
               src="/images/Visuance Logo.png"
@@ -130,11 +130,11 @@ export default function Home() {
             </div>
           </div>
           <div className="max-md:items-center max-lg:static max-md:self-center fixed bottom-0 right-0 flex flex-col gap-y-5 pt-5 w-fit h-full">
-            <p className="max-sm:text-center max-sm:px-5 text-3xl max-w-170">
+            <p className="max-sm:text-center max-sm:px-5 text-2xl max-w-170">
               The universe doesn’t move because of technology. It moves because
               someone imagined something new.
             </p>
-            <div className="max-sm:rounded-none max-md:-mx-12.5 max-md:w-full flex flex-col gap-y-5 pb-9 xs:max-sm:w-120 sm:max-md:w-150 md:max-lg:w-180 lg:w-full justify-between bg-[url(/images/News.png)] bg-cover px-7.5 py-6.25 rounded-[50px] rounded-tr-none h-[calc(90%)] sm:max-lg:aspect-430/265 2xl:aspect-430/265 sm:max-lg:rounded-tr-[50px] max-w-200">
+            <div className="max-sm:rounded-none max-md:-mx-12.5 max-md:w-full flex flex-col gap-y-5 pb-9 xs:max-sm:w-120 sm:max-md:w-150 md:max-lg:w-180 lg:w-full justify-between bg-[url(/images/News.png)] bg-cover bg-no-repeat bg-center px-7.5 py-6.25 rounded-[50px] rounded-tr-none h-[calc(90%)] sm:max-lg:aspect-430/265 2xl:aspect-430/265 sm:max-lg:rounded-tr-[50px] max-w-200">
               <div className="w-fit invisible flex flex-col items-center">
                 <img
                   src="/images/Visuance Logo.png"
