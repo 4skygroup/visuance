@@ -16,13 +16,13 @@ export default function Header() {
         <img
           src="/images/Visuance Logo.png"
           alt="Visuance Logo"
-          className="aspect-3/1 w-37 object-center object-cover max-sm:relative max-sm:top-1"
+          className="aspect-3/1 w-37 object-center object-cover relative top-1"
         />
       </Link>
       <nav className="block max-sm:hidden">
         <ul className="flex gap-x-12.5 text-base">
           <li>
-            <Link to="/the-group">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/the-group">The Group</Link>

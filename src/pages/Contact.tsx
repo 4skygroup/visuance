@@ -1,5 +1,7 @@
+import ContactForm from "../components/ContactForm.tsx/ContactForm";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Logo from "../components/Logo/Logo";
 import { useSEO } from "../hooks/useSEO";
 
 export default function Contact() {
@@ -11,66 +13,34 @@ export default function Contact() {
   });
   return (
     <div>
-      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full scroll-smooth">
+      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-0 px-20 py-5 w-full scroll-smooth">
         <Header />
-        <div className="max-sm:-mx-20 max-sm:rounded-none sm:w-full h-fit flex flex-col items-center backdrop-blur-2xl bg-light-gray/20 px-16 py-12 rounded-[50px] text-2xl gap-y-12.5">
-          <div className="max-md:w-100 md:w-140 flex flex-col gap-y-18.75 items-center">
-            <span className="text-4xl">Let's get in touch !</span>
-            <div className="sm:max-md:justify-center max-sm:flex-col flex flex-wrap w-fit max-md:gap-x-15 gap-x-25 gap-y-10">
-              <div className="flex flex-col gap-y2.5 text-base">
-                <label htmlFor="firstName">Firstname</label>
-                <input
-                  type="text"
-                  id="firstName"
-                  className="border-white border border-solid rounded-sm outline-none w-57.5 h-7.5 px-2"
+        <div className="w-full min-h-[calc(90vh-100px)] py-3 px-4 md:px-8 flex items-center justify-center">
+          {/* Cadre principal arrondi de la maquette */}
+          <div className="max-w-6xl w-full mx-auto bg-white/10 backdrop-blur-md p-4 md:p-6 shadow-sm border border-white relative">
+            {/* Titre de la page */}
+            {/* <h1 className="text-3xl md:text-4xl text-center uppercase tracking-wide mb-2 text-white drop-shadow-sm">
+                    Contact us
+                </h1> */}
+
+            <p className="text-2xl md:text-3xl text-right mb-2 tracking-wide text-white drop-shadow-sm">
+              Let&apos;s start your strategy !
+            </p>
+
+            {/* Grille : Logo à gauche / Formulaire à droite */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+              {/* CÔTÉ GAUCHE : Énorme Logo textuel centré verticalement */}
+              <div className="md:col-span-5 flex justify-center items-center p-4">
+                <Logo
+                  src="/images/Visuance Logo.png"
+                  alt="Logo Visuance Logo"
+                  className="w-full max-w-70 md:max-w-full h-auto object-contain drop-shadow-sm"
                 />
               </div>
-              <div className="flex flex-col gap-y2.5 text-base">
-                <label htmlFor="lastName">Lastname</label>
-                <input
-                  type="text"
-                  id="lastName"
-                  className="border-white border border-solid rounded-sm outline-none w-57.5 h-7.5 px-2"
-                />
-              </div>
-              <div className="flex flex-col gap-y2.5 text-base">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="text"
-                  id="Email"
-                  className="border-white border border-solid rounded-sm outline-none w-57.5 h-7.5 px-2"
-                />
-              </div>
-              <div className="flex flex-col gap-y2.5 text-base">
-                <label htmlFor="email">Company</label>
-                <input
-                  type="text"
-                  id="Email"
-                  className="border-white border border-solid rounded-sm outline-none w-57.5 h-7.5 px-2"
-                />
-              </div>
-              <div className="sm:max-md:grow-0 w-57.5 sm:max-md:w- flex flex-col gap-y2.5 grow text-base">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  name=""
-                  id="message"
-                  className="border-white border border-solid rounded-sm resize-none outline-none h-27.5 px-2.5 py-1.25"
-                ></textarea>
-              </div>
+
+              {/* CÔTÉ DROIT : Le Formulaire complet */}
+              <ContactForm />
             </div>
-            <button className="bg-white rounded-sm text-black w-fit text-base py-2.5 px-5 cursor-pointer">
-              Send
-            </button>
-          </div>
-          <span className="text-center">We stay reachable !</span>
-          <div className="flex flex-col gap-y-5 items-center">
-            <span className="text-center">
-              Mail: contact@visuance-playtosky.com
-            </span>
-            <span className="text-center">Phone: 01 25 47 54 12</span>
-            <span className="text-center">
-              Adresse: 56 avenue Monceau 75008 Paris
-            </span>
           </div>
         </div>
       </div>

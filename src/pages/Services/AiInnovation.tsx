@@ -13,7 +13,7 @@ export default function AiInnovation() {
   return (
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
       <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/AiInnovation/AiFond.jpg')] high:bg-[url('/images/Services/AiInnovation/AiFond.jpg')] bg-cover bg-no-repeat bg-center">
-        <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-12.5 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
+        <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-5 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
           <p className="m-auto text-4xl text-center">AI INNOVATION</p>
         </section>

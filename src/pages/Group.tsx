@@ -12,7 +12,7 @@ export default function Group() {
   });
   return (
     <div>
-      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-12.5 w-full scroll-smooth">
+      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-5 w-full scroll-smooth">
         <Header />
         <div className="max-sm:-mx-20 max-sm:px-0 max-sm:rounded-none sm:w-full h-fit flex flex-col items-center backdrop-blur-2xl bg-light-gray/20 px-16 py-15 rounded-[50px] text-2xl gap-y-15">
           <img
@@ -23,20 +23,50 @@ export default function Group() {
           />
           <div className="flex flex-col gap-y-10">
             <div className="flex flex-wrap items-center justify-center content-center gap-3.75">
-              <img src="/images/Visuance.png" alt="Visuance" loading="lazy" className="w-31.25" />
-              <img src="/images/Pulse X.png" alt="Pulse X" loading="lazy" className="w-31.25" />
+              <img
+                src="/images/Visuance.png"
+                alt="Visuance"
+                loading="lazy"
+                className="w-31.25"
+              />
+              <img
+                src="/images/Pulse X.png"
+                alt="Pulse X"
+                loading="lazy"
+                className="w-31.25"
+              />
               <img
                 src="/images/Pulse X Agency Pink.png"
                 alt="Pulse X Agency"
                 loading="lazy"
                 className="w-31.25"
               />
-              <img src="/images/Snackly.png" alt="Snackly" loading="lazy" className="w-31.25" />
+              <img
+                src="/images/Snackly.png"
+                alt="Snackly"
+                loading="lazy"
+                className="w-31.25"
+              />
             </div>
             <div className="flex flex-wrap items-center justify-center content-center gap-3.75">
-              <img src="/images/Seofy.png" alt="Seofy" loading="lazy" className="w-31.25" />
-              <img src="/images/CYBERSKY.png" alt="CYBERSKY" loading="lazy" className="w-31.25" />
-              <img src="/images/Drox 360.png" alt="Drox 360" loading="lazy" className="w-31.25" />
+              <img
+                src="/images/Seofy.png"
+                alt="Seofy"
+                loading="lazy"
+                className="w-31.25"
+              />
+              <img
+                src="/images/CYBERSKY.png"
+                alt="CYBERSKY"
+                loading="lazy"
+                className="w-31.25"
+              />
+              <img
+                src="/images/Drox 360.png"
+                alt="Drox 360"
+                loading="lazy"
+                className="w-31.25"
+              />
               <img
                 src="/images/Sky To Be Media.png"
                 alt="Sky To Be Media"
