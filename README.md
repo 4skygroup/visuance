@@ -11,7 +11,7 @@
 - Concevoir une interface moderne et responsive
 - Mettre en valeur du contenu visuel (images, branding, médias)
 - Utiliser des technologies frontend récentes
-- Assurer performance et maintenabilité
+- Assurer performance et maintenabilité.
 
 ---
 
@@ -21,9 +21,9 @@ Dans un contexte où la communication digitale est essentielle, Visuance vise à
 
 Le projet répond au besoin de :
 
-- Structurer des contenus graphiques
+- Structurer des contenus graphiques.
 - Offrir une navigation fluide
-- Valoriser une identité visuelle forte
+- Valoriser une identité visuelle forte.
 
 ---
 
