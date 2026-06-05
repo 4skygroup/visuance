@@ -16,7 +16,7 @@ export default function GrowthTechnology() {
   return (
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
       <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/GrowthTechnology/GrowthFond.jpg')] high:bg-[url('/images/Services/GrowthTechnology/GrowthFond.jpg')] bg-cover bg-no-repeat bg-center">
-        <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-5 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
+        <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
           <p className="m-auto text-4xl text-center">GROWTH TECHNOLOGY</p>
         </section>
@@ -48,37 +48,37 @@ export default function GrowthTechnology() {
           <img
             src="/images/Services/GrowthTechnology/Growth1.jpg"
             alt=""
-            className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1"
+            className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
             src="/images/Services/GrowthTechnology/Growth2.jpg"
             alt=""
-            className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1"
+            className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
             src="/images/Services/GrowthTechnology/Growth3.jpg"
             alt=""
-            className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1"
+            className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
             src="/images/Services/GrowthTechnology/Growth4.jpg"
             alt=""
-            className="col-[1/3] row-start-2 aspect-630/760 object-cover rounded-r1"
+            className="col-[1/3] row-start-2 aspect-630/760 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
             src="/images/Services/GrowthTechnology/Growth5.jpg"
             alt=""
-            className="col-[3/5] row-start-2 aspect-630/760 object-cover rounded-r1"
+            className="col-[3/5] row-start-2 aspect-630/760 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
             src="/images/Services/GrowthTechnology/Growth6.jpg"
             alt=""
-            className="col-[1/3]  row-start-3 aspect-630/360 object-cover rounded-r1"
+            className="col-[1/3]  row-start-3 aspect-630/360 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
             src="/images/Services/GrowthTechnology/Growth7.jpg"
             alt=""
-            className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1"
+            className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1 max-sm:rounded-r3"
           />
         </div>
       </section>

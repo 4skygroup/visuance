@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import ConceptSection from "../components/ConceptSection";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -181,8 +182,8 @@ export default function Home() {
         </div>
 
         {/* Link Section */}
-        <a
-          href=""
+        <Link
+          to="/contact"
           className="max-sm:rounded-none max-sm:-mx-20 max-sm:flex-col max-sm:gap-y-15 backdrop-blur-2xl bg-light-gray/20 sm:w-full flex items-center justify-between sm:pl-15 sm:pr-5 py-5 rounded-full xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl"
         >
           <div className="flex flex-col gap-y-4">
@@ -199,7 +200,7 @@ export default function Home() {
             loading="lazy"
             className="sm:max-md:w-20"
           />
-        </a>
+        </Link>
       </div>
       {conceptSections.map((section, index) => (
         <ConceptSection

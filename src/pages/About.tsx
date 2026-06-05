@@ -11,7 +11,7 @@ export default function About() {
   });
   return (
     <div>
-      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-5 w-full scroll-smooth">
+      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-full scroll-smooth">
         <Header />
         <div className="max-sm:-mx-20 max-sm:rounded-none sm:w-full h-fit flex flex-col gap-12.5 backdrop-blur-2xl bg-light-gray/20 px-16 py-12 rounded-[50px] text-2xl">
           <p className="text-center text-5xl">Who are we ?</p>
