@@ -8,7 +8,7 @@ export default function ContactForm() {
       {/* Ligne 1 : Nom & Prénom */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="lastname">Nom</label>
+          <label htmlFor="lastname">Firstname</label>
           <input
             type="text"
             id="lastname"
@@ -17,7 +17,7 @@ export default function ContactForm() {
           />
         </div>
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="firstname">Prénom</label>
+          <label htmlFor="firstname">Lastname</label>
           <input
             type="text"
             id="firstname"
@@ -30,7 +30,7 @@ export default function ContactForm() {
       {/* Ligne 2 : Email & Nom de l'entreprise */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="email">Adresse Email</label>
+          <label htmlFor="email">Email address</label>
           <input
             type="email"
             id="email"
@@ -39,7 +39,7 @@ export default function ContactForm() {
           />
         </div>
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="company">Nom De L&apos;entreprise</label>
+          <label htmlFor="company">Company name</label>
           <input
             type="text"
             id="company"
@@ -52,7 +52,7 @@ export default function ContactForm() {
       {/* Ligne 3 : Téléphone & Sujet */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="phone">Numéro De Téléphone</label>
+          <label htmlFor="phone">Phone Number</label>
           <input
             type="tel"
             id="phone"
@@ -61,7 +61,7 @@ export default function ContactForm() {
           />
         </div>
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="subject">Sujet</label>
+          <label htmlFor="subject">Subject</label>
           <div className="relative">
             <select
               id="subject"
@@ -69,50 +69,37 @@ export default function ContactForm() {
               onChange={(e) => setSubject(e.target.value)}
               className="w-full border border-white/40 rounded-lg px-4 py-2.5 text-white/90 appearance-none focus:outline-none focus:border-white text-sm"
             >
-              <option
-                value=""
-                disabled
-                className="text-white/50 bg-snackly-purple/70"
-              >
-                Sélectionnez un sujet
+              <option value="" disabled className="text-white/50 bg-black/75">
+                Select a subject
               </option>
-              <option
-                value="representation"
-                className="text-white bg-snackly-purple/70"
-              >
-                5 vidéos et plus (Action)
+              <option value="representation" className="text-white bg-black/75">
+                Brand Strategy and Identity
               </option>
-              <option
-                value="partnership"
-                className="text-white bg-snackly-purple/70"
-              >
-                10 vidéos et plus (Action)
+              <option value="partnership" className="text-white bg-black/75">
+                Web design and development
               </option>
-              <option
-                value="partnership"
-                className="text-white bg-snackly-purple/70"
-              >
-                20 vidéos et plus (Action)
+              <option value="partnership" className="text-white bg-black/75">
+                Print Design
               </option>
-              <option
-                value="partnership"
-                className="text-white bg-snackly-purple/70"
-              >
-                5 vidéos et plus (Motion)
+              <option value="partnership" className="text-white bg-black/75">
+                Video / Photography
               </option>
-              <option
-                value="partnership"
-                className="text-white bg-snackly-purple/70"
-              >
-                10 vidéos et plus (Motion)
+              <option value="partnership" className="text-white bg-black/75">
+                AI Innovation
               </option>
-              <option
-                value="partnership"
-                className="text-white bg-snackly-purple/70"
-              >
-                20 vidéos et plus (Motion)
+              <option value="partnership" className="text-white bg-black/75">
+                Digital Product and Experience Design
               </option>
-              <option value="other" className="text-white bg-snackly-purple/70">
+              <option value="partnership" className="text-white bg-black/75">
+                Brand Storytelling and Content
+              </option>
+              <option value="partnership" className="text-white bg-black/75">
+                Growth Technology and Optimisation
+              </option>
+              <option value="partnership" className="text-white bg-black/75">
+                Creative Technology
+              </option>
+              <option value="other" className="text-white bg-black/75">
                 Other Inquiry
               </option>
             </select>
@@ -125,7 +112,7 @@ export default function ContactForm() {
 
       {/* Ligne 4 : Message */}
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="message">Votre Message</label>
+        <label htmlFor="message">Your Message</label>
         <textarea
           id="message"
           rows={4}
