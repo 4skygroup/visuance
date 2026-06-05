@@ -13,7 +13,7 @@ export default function Contact() {
   });
   return (
     <div>
-      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-0 px-20 py-5 max-sm:pt-0 w-full scroll-smooth">
+      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col max-md:gap-y-5 px-20 py-5 max-sm:pt-0 w-full scroll-smooth">
         <Header />
         <div className="w-full min-h-[calc(90vh-100px)] py-3 px-4 md:px-8 flex items-center justify-center">
           {/* Cadre principal arrondi de la maquette */}
@@ -23,7 +23,7 @@ export default function Contact() {
                     Contact us
                 </h1> */}
 
-            <p className="text-2xl md:text-3xl text-right mb-2 tracking-wide text-white drop-shadow-sm">
+            <p className="text-2xl md:text-3xl text-right mb-2 tracking-wide text-white drop-shadow-sm max-md:text-center">
               Let&apos;s start your strategy !
             </p>
 
