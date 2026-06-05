@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { useSEO } from "../hooks/useSEO";
 import type { ConceptSectionType } from "../types/content";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function Home() {
   useSEO({
@@ -110,6 +111,7 @@ export default function Home() {
   ];
   return (
     <div className="relative">
+      <ScrollToTop />
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-5 px-20 py-5 max-sm:pt-0 w-full scroll-smooth lg:h-screen">
         <Header />
 

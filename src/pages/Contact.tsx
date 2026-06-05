@@ -2,6 +2,7 @@ import ContactForm from "../components/ContactForm.tsx/ContactForm";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Logo from "../components/Logo/Logo";
+import ScrollToTop from "../components/ScrollToTop";
 import { useSEO } from "../hooks/useSEO";
 
 export default function Contact() {
@@ -13,6 +14,7 @@ export default function Contact() {
   });
   return (
     <div>
+      <ScrollToTop />
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col max-md:gap-y-5 px-20 py-5 max-sm:pt-0 w-full scroll-smooth">
         <Header />
         <div className="w-full min-h-[calc(90vh-100px)] py-3 px-4 md:px-8 flex items-center justify-center">

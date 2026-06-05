@@ -1,5 +1,6 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import ScrollToTop from "../../components/ScrollToTop";
 
 export default function CreativeTechnology() {
   // const services = [
@@ -15,6 +16,7 @@ export default function CreativeTechnology() {
   // ];
   return (
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
+      <ScrollToTop />
       <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/CreativeTechnology/CreativeFond.jpg')] high:bg-[url('/images/Services/CreativeTechnology/CreativeFond.jpg')] bg-cover bg-no-repeat bg-center">
         <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
