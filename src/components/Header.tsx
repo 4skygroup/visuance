@@ -79,7 +79,7 @@ export default function Header() {
             />
           </svg>
 
-          <ul className="flex flex-col gap-y-10 text-base m-auto">
+          <ul className="flex flex-col items-center gap-y-10 text-base m-auto">
             <li>
               <Link
                 to="/"
