@@ -109,7 +109,7 @@ export default function Home() {
   ];
   return (
     <div className="relative">
-      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-5 px-20 py-5 w-full scroll-smooth lg:h-screen">
+      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-5 px-20 py-5 max-sm:pt-0 w-full scroll-smooth lg:h-screen">
         <Header />
 
         {/* Second section top */}
@@ -118,7 +118,7 @@ export default function Home() {
             <img
               src="/images/Visuance Logo.png"
               alt="Visuance Logo"
-              className="max-sm:hidden  w-52.5 h-17.5"
+              className="max-sm:hidden w-52.5 h-17.5"
             />
             <div className="flex flex-col gap-y-5 max-sm:pb-9 pb-3">
               <img
@@ -183,7 +183,7 @@ export default function Home() {
         {/* Link Section */}
         <a
           href=""
-          className="max-sm:rounded-none max-sm:-mx-20 max-sm:flex-col max-sm:gap-y-15 backdrop-blur-2xl bg-light-gray/20 sm:w-full flex items-center justify-between pl-15 pr-5 py-5 rounded-full xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl"
+          className="max-sm:rounded-none max-sm:-mx-20 max-sm:flex-col max-sm:gap-y-15 backdrop-blur-2xl bg-light-gray/20 sm:w-full flex items-center justify-between sm:pl-15 sm:pr-5 py-5 rounded-full xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl"
         >
           <div className="flex flex-col gap-y-4">
             <p className="max-sm:text-center text-3xl sm:max-md:text-xl">

@@ -16,11 +16,14 @@ export default function Header() {
         <img
           src="/images/Visuance Logo.png"
           alt="Visuance Logo"
-          className="aspect-3/1 w-52.5 h-17.5"
+          className="aspect-3/1 w-37 object-center object-cover max-sm:relative max-sm:top-1"
         />
       </Link>
       <nav className="block max-sm:hidden">
         <ul className="flex gap-x-12.5 text-base">
+          <li>
+            <Link to="/the-group">Home</Link>
+          </li>
           <li>
             <Link to="/the-group">The Group</Link>
           </li>
@@ -33,13 +36,14 @@ export default function Header() {
         </ul>
       </nav>
       <div
-        className="max-sm:flex hidden pr-7"
+        className="max-sm:flex max-sm:items-center hidden pr-7"
         onClick={() => handleBurgerClicked()}
       >
         <svg
           width="50"
           height="39"
           viewBox="0 0 50 39"
+          className="w-7"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -58,7 +62,7 @@ export default function Header() {
         </svg>
 
         <nav
-          className={`${burgerClicked ? "flex" : "hidden"} w-screen h-screen fixed inset-0 z-10 bg-linear-to-r from-visuance-gradient-blue to-black`}
+          className={`${burgerClicked ? "flex" : "hidden"} w-screen h-screen max-sm:h-dvh fixed inset-0 z-10 bg-linear-to-r from-visuance-gradient-blue to-black`}
         >
           <svg
             width="40"
@@ -76,6 +80,14 @@ export default function Header() {
           </svg>
 
           <ul className="flex flex-col gap-y-10 text-base m-auto">
+            <li>
+              <Link
+                to="/"
+                className="text-white uppercase text-2xl hover:text-dark-gray"
+              >
+                Home
+              </Link>
+            </li>
             <li>
               <Link
                 to="/the-group"
