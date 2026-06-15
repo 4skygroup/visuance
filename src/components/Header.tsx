@@ -28,6 +28,11 @@ export default function Header() {
             <Link to="/the-group">The Group</Link>
           </li>
           <li>
+            <a href="https://www.playtosky.com/offices-by-region">
+              Our locations
+            </a>
+          </li>
+          <li>
             <Link to="/about">About</Link>
           </li>
           <li>
@@ -65,9 +70,7 @@ export default function Header() {
           className={`${burgerClicked ? "flex" : "hidden"} w-screen h-screen max-sm:h-dvh fixed inset-0 z-10 bg-linear-to-r from-visuance-gradient-blue to-black`}
         >
           <svg
-            width="40"
-            height="40"
-            className="absolute top-10 right-10"
+            className="absolute top-6 right-10 w-6.25"
             onClick={() => handleBurgerClicked()}
             viewBox="0 0 40 40"
             fill="none"
@@ -95,6 +98,14 @@ export default function Header() {
               >
                 The Group
               </Link>
+            </li>
+            <li>
+              <a
+                href="https://www.playtosky.com/offices-by-region"
+                className="text-white uppercase text-2xl hover:text-dark-gray"
+              >
+                Our locations
+              </a>
             </li>
             <li>
               <Link

@@ -13,13 +13,13 @@ export default function Contact() {
     canonical: "https://visuanceagency.com/contact",
   });
   return (
-    <div>
+    <>
       <ScrollToTop />
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col max-md:gap-y-5 px-20 py-5 max-sm:pt-0 w-full scroll-smooth">
         <Header />
-        <div className="w-full min-h-[calc(90vh-100px)] py-3 px-4 md:px-8 flex items-center justify-center">
+        <div className="w-full min-h-[calc(90vh-100px)] py-3 max-sm-px-0 sm:px-4 md:px-8 flex items-center justify-center">
           {/* Cadre principal arrondi de la maquette */}
-          <div className="max-w-6xl w-full mx-auto bg-white/10 backdrop-blur-md p-4 md:p-6 shadow-sm border border-white relative">
+          <div className="max-w-6xl w-full bg-white/10 backdrop-blur-md p-4 md:p-6 shadow-sm border border-white relative">
             {/* Titre de la page */}
             {/* <h1 className="text-3xl md:text-4xl text-center uppercase tracking-wide mb-2 text-white drop-shadow-sm">
                     Contact us
@@ -36,7 +36,7 @@ export default function Contact() {
                 <Logo
                   src="/images/Visuance Logo.png"
                   alt="Logo Visuance Logo"
-                  className="w-full max-w-70 md:max-w-full h-auto object-contain drop-shadow-sm"
+                  className="w-full max-w-70 max-w-full aspect-3/1 h-auto object-contain drop-shadow-sm"
                 />
               </div>
 
@@ -47,6 +47,6 @@ export default function Contact() {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }

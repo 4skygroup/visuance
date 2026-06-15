@@ -11,7 +11,7 @@ export default function About() {
     canonical: "https://visuanceagency.com/about",
   });
   return (
-    <div>
+    <>
       <ScrollToTop />
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-full scroll-smooth">
         <Header />
@@ -62,6 +62,6 @@ export default function About() {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }

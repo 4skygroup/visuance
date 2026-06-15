@@ -120,7 +120,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="max-md:flex-col max-md:gap-y-5 max-md:items-center md:max-lg:gap-x-5 flex gap-x-18 underline text-lg">
-            <a href="">Mentions légales</a>
+            <a href="">Legal notices</a>
             <a href="">Contact</a>
             <a href="">Services</a>
             <a href="">Group</a>
