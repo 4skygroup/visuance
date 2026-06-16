@@ -25,7 +25,7 @@ export default function Header() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/the-group">The Group</Link>
+            <a href="https://www.playtosky.com/">The Group</a>
           </li>
           <li>
             <a href="https://www.playtosky.com/offices-by-region">
