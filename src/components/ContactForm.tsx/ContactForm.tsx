@@ -76,6 +76,7 @@ function CallbackForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
   );
+  const [date, setDate] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -130,6 +131,13 @@ function CallbackForm() {
         options={subjects}
         value={sujet}
         onChange={setSujet}
+      />
+      <Field
+        label="Day of the call"
+        placeholder=""
+        type="date"
+        value={date}
+        onChange={setDate}
       />
       <SelectField
         label="Call Schedule"
