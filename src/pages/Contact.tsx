@@ -2,7 +2,6 @@ import ContactForm from "../components/ContactForm.tsx/ContactForm";
 import ContactInfoCards from "../components/ContactForm.tsx/ContactInfoCards";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Logo from "../components/Logo/Logo";
 import ScrollToTop from "../components/ScrollToTop";
 import { useSEO } from "../hooks/useSEO";
 
