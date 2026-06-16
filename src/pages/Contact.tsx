@@ -45,9 +45,6 @@ export default function Contact() {
 
               {/* ── Right column ── */}
               <div>
-                <p className="text-t4 md:text-h7 font-bold md:text-3xl md:text-right mb-2 tracking-wide text-white drop-shadow-sm max-md:text-center">
-                  Let&apos;s start your strategy !
-                </p>
                 <ContactForm />
               </div>
             </div>
