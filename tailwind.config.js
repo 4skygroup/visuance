@@ -28,6 +28,27 @@ module.exports = {
         sans: ["Glacial Indifference", "sans-serif"],
         glacial: ["Glacial Indifference", "sans-serif"],
       },
+      fontSize: {
+        // Titles
+        h1: "8rem",
+        h2: "6rem",
+        h3: "5rem",
+        h4: "4rem",
+        h5: "3rem",
+        h6: "2.25rem",
+        h7: "1.5rem",
+
+        // Texts
+        t1: "2rem",
+        t2: "1.75rem",
+        t3: "1.5rem",
+        t4: "1.25rem",
+        t5: "1rem",
+        t6: "0.75rem",
+        t7: "0.625rem",
+
+        // Pour rendre la police Bold, il faut utiliser: font-bold
+      },
       screens: {
         xs: "30rem",
         high: { raw: "(max-aspect-ratio: 1/1)" },

@@ -1,4 +1,5 @@
 import ContactForm from "../components/ContactForm.tsx/ContactForm";
+import ContactInfoCards from "../components/ContactForm.tsx/ContactInfoCards";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Logo from "../components/Logo/Logo";
@@ -25,23 +26,31 @@ export default function Contact() {
                     Contact us
                 </h1> */}
 
-            <p className="text-2xl md:text-3xl text-right mb-2 tracking-wide text-white drop-shadow-sm max-md:text-center">
-              Let&apos;s start your strategy !
-            </p>
-
             {/* Grille : Logo à gauche / Formulaire à droite */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-              {/* CÔTÉ GAUCHE : Énorme Logo textuel centré verticalement */}
-              <div className="md:col-span-5 flex justify-center items-center p-4">
-                <Logo
-                  src="/images/Visuance Logo.png"
-                  alt="Logo Visuance Logo"
-                  className="w-full max-w-70 max-w-full aspect-3/1 h-auto object-contain drop-shadow-sm"
-                />
+            <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 lg:grid-cols-2 lg:items-start">
+              {/* ── Left column ── */}
+              <div className="flex flex-col gap-10">
+                <div>
+                  <h2 className="text-t4 font-bold leading-tight tracking-tight text-white md:text-h7">
+                    Build your growth together
+                  </h2>
+                  <p className="mt-4 max-w-md text-base leading-relaxed text-white/50">
+                    Our experts help you define a digital strategy tailored to
+                    your goals. Get in touch using the communication channel
+                    that suits you best.
+                  </p>
+                </div>
+
+                <ContactInfoCards />
               </div>
 
-              {/* CÔTÉ DROIT : Le Formulaire complet */}
-              <ContactForm />
+              {/* ── Right column ── */}
+              <div>
+                <p className="text-t4 md:text-h7 font-bold md:text-3xl md:text-right mb-2 tracking-wide text-white drop-shadow-sm max-md:text-center">
+                  Let&apos;s start your strategy !
+                </p>
+                <ContactForm />
+              </div>
             </div>
           </div>
         </div>
