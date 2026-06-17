@@ -5,6 +5,7 @@ export default function Footer() {
         src="/images/Visuance Logo.webp"
         alt="Visuance Logo"
         className="min-w-52.5 w-52.5 h-17.5"
+        loading="lazy"
       />
       <div className="flex flex-col gap-y-25 items-center">
         <div className="flex flex-col gap-y-17.5">
@@ -133,6 +134,7 @@ export default function Footer() {
           src="/images/Play To Sky-no-bg.webp"
           alt="Play To Sky Logo"
           className="min-w-52.5"
+          loading="lazy"
         />
         <a href="https://play-to-sky-v1.vercel.app" className="text-dark-gray">
           The group &gt;

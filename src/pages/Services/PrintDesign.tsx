@@ -42,6 +42,7 @@ export default function PrintDesign() {
             src="/images/Services/PrintDesign/PrintFond2.webp"
             className="min-w-70 aspect-407/343 object-cover max-w-101.75"
             alt="Colors"
+            loading="lazy"
           />
         </div>
       </section>
@@ -52,36 +53,43 @@ export default function PrintDesign() {
             src="/images/Services/PrintDesign/Print1.webp"
             alt=""
             className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
           <img
             src="/images/Services/PrintDesign/Print2.webp"
             alt=""
             className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
           <img
             src="/images/Services/PrintDesign/Print3.webp"
             alt=""
             className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
           <img
             src="/images/Services/PrintDesign/Print4.webp"
             alt=""
             className="col-[1/3] row-start-2 aspect-630/760 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
           <img
             src="/images/Services/PrintDesign/Print5.webp"
             alt=""
             className="col-[3/5] row-start-2 aspect-630/760 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
           <img
             src="/images/Services/PrintDesign/Print6.webp"
             alt=""
             className="col-[1/3] w-full row-start-3 aspect-630/360 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
           <img
             src="/images/Services/PrintDesign/Print7.webp"
             alt=""
             className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
         </div>
       </section>

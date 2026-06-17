@@ -122,12 +122,14 @@ export default function Home() {
               src="/images/Visuance Logo.webp"
               alt="Visuance Logo"
               className="max-sm:hidden w-52.5 h-17.5"
+              loading="lazy"
             />
             <div className="flex flex-col gap-y-5 max-sm:pb-9 pb-3">
               <img
                 src="/images/Branding Outdated.webp"
                 alt="Branding Image"
                 className="w-55"
+                loading="lazy"
               />
               <div className="w-full justify-between flex bg-white/70 px-8.75 py-2.5 rounded-full">
                 <span className="uppercase text-white font-bold text-lg">
@@ -150,6 +152,7 @@ export default function Home() {
                   src="/images/Visuance Logo.webp"
                   alt="Visuance Logo"
                   className="w-52.5 h-17.5"
+                  loading="lazy"
                 />
                 <span>PRODUCTION</span>
               </div>

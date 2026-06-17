@@ -51,36 +51,43 @@ export default function CreativeTechnology() {
             src="/images/Services/CreativeTechnology/Creative1.webp"
             alt=""
             className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
           <img
             src="/images/Services/CreativeTechnology/Creative2.webp"
             alt=""
             className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
           <img
             src="/images/Services/CreativeTechnology/Creative3.webp"
             alt=""
             className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
           <img
             src="/images/Services/CreativeTechnology/Creative4.webp"
             alt=""
             className="col-[1/3] row-start-2 aspect-630/760 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
           <img
             src="/images/Services/CreativeTechnology/Creative5.webp"
             alt=""
             className="col-[3/5] row-start-2 aspect-630/760 object-cover w-full rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
           <img
             src="/images/Services/CreativeTechnology/Creative6.webp"
             alt=""
             className="col-[1/3]  row-start-3 aspect-630/360 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
           <img
             src="/images/Services/CreativeTechnology/Creative7.webp"
             alt=""
             className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1 max-sm:rounded-r3"
+            loading="lazy"
           />
         </div>
       </section>

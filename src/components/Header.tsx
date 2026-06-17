@@ -17,6 +17,7 @@ export default function Header() {
           src="/images/Visuance Logo.webp"
           alt="Visuance Logo"
           className="aspect-3/1 w-37 object-center object-cover relative top-1"
+          loading="lazy"
         />
       </Link>
       <nav className="block max-sm:hidden">
