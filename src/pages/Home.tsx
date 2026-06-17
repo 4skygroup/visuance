@@ -17,7 +17,7 @@ export default function Home() {
     "flex w-full h-131.25 px-25 items-center justify-between gap-10 overflow-hidden max-sm:flex-col max-sm:items-center max-sm:py-10 max-sm:text-center";
   const conceptSections: ConceptSectionType[] = [
     {
-      src: "/images/Identity.png",
+      src: "/images/Identity.webp",
       alt: "Identity",
       catchphrase: "Brand Strategy & identity",
       className: conceptSectionsClassName,
@@ -28,7 +28,7 @@ export default function Home() {
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
-      src: "/images/Web.png",
+      src: "/images/Web.webp",
       alt: "Web",
       catchphrase: "Web design and development",
       className: conceptSectionsClassName,
@@ -37,7 +37,7 @@ export default function Home() {
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
-      src: "/images/Print.png",
+      src: "/images/Print.webp",
       alt: "Print",
       catchphrase: "Print Design",
       className: conceptSectionsClassName,
@@ -48,7 +48,7 @@ export default function Home() {
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
-      src: "/images/Video.png",
+      src: "/images/Video.webp",
       alt: "Video",
       catchphrase: "Video / Photography",
       className: conceptSectionsClassName,
@@ -59,7 +59,7 @@ export default function Home() {
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
-      src: "/images/AI.png",
+      src: "/images/AI.webp",
       alt: "AI",
       catchphrase: "AI Innovation",
       className: conceptSectionsClassName,
@@ -69,7 +69,7 @@ export default function Home() {
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
-      src: "/images/Digital.png",
+      src: "/images/Digital.webp",
       alt: "Digital",
       catchphrase: "Digital Product and Experience Design",
       className: conceptSectionsClassName,
@@ -80,7 +80,7 @@ export default function Home() {
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
-      src: "/images/Story Telling.png",
+      src: "/images/Story Telling.webp",
       alt: "StoryTelling",
       catchphrase: "Brand Storytelling and Content",
       className: conceptSectionsClassName,
@@ -90,7 +90,7 @@ export default function Home() {
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
-      src: "/images/Growth.png",
+      src: "/images/Growth.webp",
       alt: "Growth",
       catchphrase: "Growth Technology and Optimisation",
       className: conceptSectionsClassName,
@@ -99,7 +99,7 @@ export default function Home() {
       // additionnalClassName: "bg-[#F5F5F5]",
     },
     {
-      src: "/images/Creativity.png",
+      src: "/images/Creativity.webp",
       alt: "Creativity",
       catchphrase: "Creative Technology",
       className: conceptSectionsClassName,
@@ -119,13 +119,13 @@ export default function Home() {
         <div className="overflow-hidden max-sm:pt-12.5 max-sm:rounded-none max-sm:px-0 max-sm:-mx-20 max-lg:flex-col max-lg:items-center max-lg:h-fit relative xs:max-sm:w-lg sm:max-md:w-xl md:max-lg:w-3xl lg:max-xl:w-5xl xl:w-7xl h-145 flex grow px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-5 rounded-[50px] gap-x-12.5 self-center sm:max-lg:px-0">
           <div className="max-md:items-center max-md:gap-y-10 flex flex-col gap-y-3 h-full">
             <img
-              src="/images/Visuance Logo.png"
+              src="/images/Visuance Logo.webp"
               alt="Visuance Logo"
               className="max-sm:hidden w-52.5 h-17.5"
             />
             <div className="flex flex-col gap-y-5 max-sm:pb-9 pb-3">
               <img
-                src="/images/Branding Outdated.png"
+                src="/images/Branding Outdated.webp"
                 alt="Branding Image"
                 className="w-55"
               />
@@ -144,10 +144,10 @@ export default function Home() {
               The universe doesn’t move because of technology. It moves because
               someone imagined something new.
             </p>
-            <div className="max-sm:rounded-none max-md:-mx-12.5 max-md:w-full flex flex-col gap-y-5 pb-9 xs:max-sm:w-120 sm:max-md:w-150 md:max-lg:w-180 lg:w-full justify-between bg-[url(/images/News.png)] bg-cover bg-no-repeat bg-center px-7.5 py-6.25 rounded-[50px] rounded-tr-none h-[calc(90%)] sm:max-lg:aspect-430/265 2xl:aspect-430/265 sm:max-lg:rounded-tr-[50px] max-w-200">
+            <div className="max-sm:rounded-none max-md:-mx-12.5 max-md:w-full flex flex-col gap-y-5 pb-9 xs:max-sm:w-120 sm:max-md:w-150 md:max-lg:w-180 lg:w-full justify-between bg-[url(/images/News.webp)] bg-cover bg-no-repeat bg-center px-7.5 py-6.25 rounded-[50px] rounded-tr-none h-[calc(90%)] sm:max-lg:aspect-430/265 2xl:aspect-430/265 sm:max-lg:rounded-tr-[50px] max-w-200">
               <div className="w-fit invisible flex flex-col items-center">
                 <img
-                  src="/images/Visuance Logo.png"
+                  src="/images/Visuance Logo.webp"
                   alt="Visuance Logo"
                   className="w-52.5 h-17.5"
                 />
@@ -197,7 +197,7 @@ export default function Home() {
             </p>
           </div>
           <img
-            src="/images/Link.png"
+            src="/images/Link.webp"
             alt="Link"
             loading="lazy"
             className="sm:max-md:w-20"

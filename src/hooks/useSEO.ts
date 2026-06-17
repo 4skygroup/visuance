@@ -7,7 +7,7 @@ interface SEOProps {
   ogImage?: string;
 }
 
-const DEFAULT_IMAGE = "https://visuanceagency.com/images/Visuance%20Logo.png";
+const DEFAULT_IMAGE = "https://visuanceagency.com/images/Visuance%20Logo.webp";
 
 export function useSEO({ title, description, canonical, ogImage }: SEOProps) {
   useEffect(() => {

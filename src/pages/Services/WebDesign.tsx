@@ -17,7 +17,7 @@ export default function WebDesign() {
   return (
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
       <ScrollToTop />
-      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/WebDesign/WebFond.jpg')] high:bg-[url('/images/Services/WebDesign/WebFond.jpg')] bg-no-repeat bg-cover bg-center">
+      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/WebDesign/WebFond.webp')] high:bg-[url('/images/Services/WebDesign/WebFond.webp')] bg-no-repeat bg-cover bg-center">
         <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-screen h-screen scroll-smooth bg-black/40">
           <Header />
           <p className="m-auto text-4xl text-center">WEB DESIGN</p>
@@ -38,7 +38,7 @@ export default function WebDesign() {
             ))}
           </ol>
           <img
-            src="/images/Services/WebDesign/WebFond2.jpg"
+            src="/images/Services/WebDesign/WebFond2.webp"
             className="min-w-70 aspect-407/343 object-cover max-w-101.75"
             alt="Colors"
           />
@@ -48,37 +48,37 @@ export default function WebDesign() {
         <p className="uppercase text-4xl font-bold">OVERVIEW</p>
         <div className="grid grid-cols-[repeat(4, auto)] grid-rows-[repeat(3, auto)] max-md:gap-2.5 gap-7.5 max-w-7xl self-center">
           <img
-            src="/images/Services/WebDesign/Web1.jpg"
+            src="/images/Services/WebDesign/Web1.webp"
             alt=""
             className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/WebDesign/Web2.jpg"
+            src="/images/Services/WebDesign/Web2.webp"
             alt=""
             className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/WebDesign/Web3.jpg"
+            src="/images/Services/WebDesign/Web3.webp"
             alt=""
             className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/WebDesign/Web4.jpg"
+            src="/images/Services/WebDesign/Web4.webp"
             alt=""
             className="col-[1/3] row-start-2 aspect-630/760 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/WebDesign/Web5.jpg"
+            src="/images/Services/WebDesign/Web5.webp"
             alt=""
             className="col-[3/5] row-start-2 aspect-630/760 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/WebDesign/Web6.jpg"
+            src="/images/Services/WebDesign/Web6.webp"
             alt=""
             className="col-[1/3]  row-start-3 aspect-630/360 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/WebDesign/Web7.jpg"
+            src="/images/Services/WebDesign/Web7.webp"
             alt=""
             className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1 max-sm:rounded-r3"
           />

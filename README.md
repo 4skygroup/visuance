@@ -60,7 +60,7 @@ visuance-main/
     App.css
     index.css
     /assets
-      hero.png
+      hero.webp
     /components
       Header.tsx
       Footer.tsx

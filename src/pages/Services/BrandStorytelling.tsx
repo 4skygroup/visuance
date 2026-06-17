@@ -19,7 +19,7 @@ export default function BrandStorytelling() {
   return (
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
       <ScrollToTop />
-      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/BrandStorytelling/StorytellingFond.jpg')] high:bg-[url('/images/Services/BrandStorytelling/StorytellingFond.jpg')] bg-cover bg-no-repeat bg-center">
+      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/BrandStorytelling/StorytellingFond.webp')] high:bg-[url('/images/Services/BrandStorytelling/StorytellingFond.webp')] bg-cover bg-no-repeat bg-center">
         <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
           <p className="m-auto text-4xl text-center">
@@ -42,7 +42,7 @@ export default function BrandStorytelling() {
             ))}
           </ol>
           <img
-            src="/images/Services/BrandStorytelling/StorytellingFond2.jpg"
+            src="/images/Services/BrandStorytelling/StorytellingFond2.webp"
             className="min-w-70 aspect-407/343 object-cover max-w-101.75"
             alt="Colors"
           />
@@ -52,37 +52,37 @@ export default function BrandStorytelling() {
         <p className="uppercase text-4xl font-bold">OVERVIEW</p>
         <div className="grid grid-cols-[repeat(4, auto)] grid-rows-[repeat(3, auto)] max-md:gap-2.5 gap-7.5 max-w-7xl self-center">
           <img
-            src="/images/Services/BrandStorytelling/Storytelling1.jpg"
+            src="/images/Services/BrandStorytelling/Storytelling1.webp"
             alt=""
             className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/BrandStorytelling/Storytelling2.jpg"
+            src="/images/Services/BrandStorytelling/Storytelling2.webp"
             alt=""
             className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/BrandStorytelling/Storytelling3.jpg"
+            src="/images/Services/BrandStorytelling/Storytelling3.webp"
             alt=""
             className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/BrandStorytelling/Storytelling4.jpg"
+            src="/images/Services/BrandStorytelling/Storytelling4.webp"
             alt=""
             className="col-[1/3] row-start-2 aspect-630/760 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/BrandStorytelling/Storytelling5.jpg"
+            src="/images/Services/BrandStorytelling/Storytelling5.webp"
             alt=""
             className="col-[3/5] row-start-2 aspect-630/760 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/BrandStorytelling/Storytelling6.jpg"
+            src="/images/Services/BrandStorytelling/Storytelling6.webp"
             alt=""
             className="col-[1/3]  row-start-3 aspect-630/360 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/BrandStorytelling/Storytelling7.jpg"
+            src="/images/Services/BrandStorytelling/Storytelling7.webp"
             alt=""
             className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1 max-sm:rounded-r3"
           />

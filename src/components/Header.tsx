@@ -14,7 +14,7 @@ export default function Header() {
     >
       <Link to="/">
         <img
-          src="/images/Visuance Logo.png"
+          src="/images/Visuance Logo.webp"
           alt="Visuance Logo"
           className="aspect-3/1 w-37 object-center object-cover relative top-1"
         />

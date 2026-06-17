@@ -17,7 +17,7 @@ export default function GrowthTechnology() {
   return (
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
       <ScrollToTop />
-      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/GrowthTechnology/GrowthFond.jpg')] high:bg-[url('/images/Services/GrowthTechnology/GrowthFond.jpg')] bg-cover bg-no-repeat bg-center">
+      <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/GrowthTechnology/GrowthFond.webp')] high:bg-[url('/images/Services/GrowthTechnology/GrowthFond.webp')] bg-cover bg-no-repeat bg-center">
         <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
           <p className="m-auto text-4xl text-center">GROWTH TECHNOLOGY</p>
@@ -38,7 +38,7 @@ export default function GrowthTechnology() {
             ))}
           </ol>
           <img
-            src="/images/Services/GrowthTechnology/GrowthFond.jpg White.png"
+            src="/images/Services/GrowthTechnology/GrowthFond.webp White.webp"
             className="min-w-70"
             alt="Colors"
           />
@@ -48,37 +48,37 @@ export default function GrowthTechnology() {
         <p className="uppercase text-4xl font-bold">OVERVIEW</p>
         <div className="grid grid-cols-[repeat(4, auto)] grid-rows-[repeat(3, auto)] max-md:gap-2.5 gap-7.5 max-w-7xl self-center">
           <img
-            src="/images/Services/GrowthTechnology/Growth1.jpg"
+            src="/images/Services/GrowthTechnology/Growth1.webp"
             alt=""
             className="col-[1/3] grow row-start-1 aspect-630/660 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/GrowthTechnology/Growth2.jpg"
+            src="/images/Services/GrowthTechnology/Growth2.webp"
             alt=""
             className="col-start-3 grow row-start-1 aspect-300/660 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/GrowthTechnology/Growth3.jpg"
+            src="/images/Services/GrowthTechnology/Growth3.webp"
             alt=""
             className="col-start-4 grow row-start-1 aspect-300/660 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/GrowthTechnology/Growth4.jpg"
+            src="/images/Services/GrowthTechnology/Growth4.webp"
             alt=""
             className="col-[1/3] row-start-2 aspect-630/760 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/GrowthTechnology/Growth5.jpg"
+            src="/images/Services/GrowthTechnology/Growth5.webp"
             alt=""
             className="col-[3/5] row-start-2 aspect-630/760 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/GrowthTechnology/Growth6.jpg"
+            src="/images/Services/GrowthTechnology/Growth6.webp"
             alt=""
             className="col-[1/3]  row-start-3 aspect-630/360 object-cover rounded-r1 max-sm:rounded-r3"
           />
           <img
-            src="/images/Services/GrowthTechnology/Growth7.jpg"
+            src="/images/Services/GrowthTechnology/Growth7.webp"
             alt=""
             className="col-[3/5] row-start-3 aspect-630/360 object-cover rounded-r1 max-sm:rounded-r3"
           />

@@ -9,7 +9,7 @@ export default function Group() {
     description:
       "Discover the Play To Sky group: Visuance, Pulse X Agency, Snackly, Seofy, CYBERSKY, Drox 360, Sky To Be Media – one ecosystem uniting brand, media, IT and creative technologies.",
     canonical: "https://visuanceagency.com/the-group",
-    ogImage: "https://visuanceagency.com/images/Play%20To%20Sky-no-bg.png",
+    ogImage: "https://visuanceagency.com/images/Play%20To%20Sky-no-bg.webp",
   });
   return (
     <>
@@ -18,7 +18,7 @@ export default function Group() {
         <Header />
         <div className="max-sm:-mx-20 max-sm:px-0 max-sm:rounded-none sm:w-full h-fit flex flex-col items-center backdrop-blur-2xl bg-light-gray/20 px-16 py-15 rounded-[50px] text-2xl gap-y-15">
           <img
-            src="/images/Play To Sky-no-bg.png"
+            src="/images/Play To Sky-no-bg.webp"
             alt="Play To Sky Logo"
             loading="lazy"
             className="w-75 h-21.25"
@@ -26,25 +26,25 @@ export default function Group() {
           <div className="flex flex-col gap-y-10">
             <div className="flex flex-wrap items-center justify-center content-center gap-3.75">
               <img
-                src="/images/Visuance.png"
+                src="/images/Visuance.webp"
                 alt="Visuance"
                 loading="lazy"
                 className="w-31.25"
               />
               <img
-                src="/images/Pulse X.png"
+                src="/images/Pulse X.webp"
                 alt="Pulse X"
                 loading="lazy"
                 className="w-31.25"
               />
               <img
-                src="/images/Pulse X Agency Pink.png"
+                src="/images/Pulse X Agency Pink.webp"
                 alt="Pulse X Agency"
                 loading="lazy"
                 className="w-31.25"
               />
               <img
-                src="/images/Snackly.png"
+                src="/images/Snackly.webp"
                 alt="Snackly"
                 loading="lazy"
                 className="w-31.25"
@@ -52,25 +52,25 @@ export default function Group() {
             </div>
             <div className="flex flex-wrap items-center justify-center content-center gap-3.75">
               <img
-                src="/images/Seofy.png"
+                src="/images/Seofy.webp"
                 alt="Seofy"
                 loading="lazy"
                 className="w-31.25"
               />
               <img
-                src="/images/CYBERSKY.png"
+                src="/images/CYBERSKY.webp"
                 alt="CYBERSKY"
                 loading="lazy"
                 className="w-31.25"
               />
               <img
-                src="/images/Drox 360.png"
+                src="/images/Drox 360.webp"
                 alt="Drox 360"
                 loading="lazy"
                 className="w-31.25"
               />
               <img
-                src="/images/Sky To Be Media.png"
+                src="/images/Sky To Be Media.webp"
                 alt="Sky To Be Media"
                 loading="lazy"
                 className="w-31.25"

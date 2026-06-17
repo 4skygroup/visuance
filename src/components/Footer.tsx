@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="max-md:flex-col max-md:h-fit max-md:items-center max-md:gap-y-10 bg-linear-to-r from-visuance-gradient-blue to-black h-100 w-full flex md:max-lg:px-10 px-25 py-12.5 justify-between border-t-3 border-t-solid border-t-white">
       <img
-        src="/images/Visuance Logo.png"
+        src="/images/Visuance Logo.webp"
         alt="Visuance Logo"
         className="min-w-52.5 w-52.5 h-17.5"
       />
@@ -130,7 +130,7 @@ export default function Footer() {
       </div>
       <div className="flex flex-col items-center">
         <img
-          src="/images/Play To Sky-no-bg.png"
+          src="/images/Play To Sky-no-bg.webp"
           alt="Play To Sky Logo"
           className="min-w-52.5"
         />
