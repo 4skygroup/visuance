@@ -23,7 +23,7 @@ export default function GrowthTechnology() {
       <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/GrowthTechnology/GrowthFond.webp')] high:bg-[url('/images/Services/GrowthTechnology/GrowthFond.webp')] bg-cover bg-no-repeat bg-center">
         <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
-          <p className="m-auto text-4xl text-center">
+          <p className="m-auto text-4xl text-center uppercase">
             {" "}
             {t("services.growth.label")}
           </p>

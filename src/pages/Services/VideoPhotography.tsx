@@ -18,7 +18,7 @@ export default function VideoPhotography() {
       <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/VideoPhotography/PhotoFond.webp')] high:bg-[url('/images/Services/PrintDesign/PrintFond.webp')] bg-cover bg-no-repeat bg-center">
         <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
-          <p className="m-auto text-4xl text-center">
+          <p className="m-auto text-4xl text-center uppercase">
             {" "}
             {t("services.video.label")}
           </p>

@@ -47,6 +47,109 @@
       }
     }
   },
+  "services": {
+    "strategy": {
+      "label": "Stratégie et identité de marque",
+      "subservices": {
+        "purpose": "RAISON D’ÊTRE, VISION, MISSION",
+        "positionning": "Positionnement et narration de marque",
+        "voice": "Ton de voix",
+        "messaging": "Messages de marque",
+        "name": "Nom de marque",
+        "logo": "Création de logo",
+        "visual": "Systèmes de design visuel",
+        "guidelines": "Charte de marque",
+        "copywriting": "Rédaction de contenu"
+      }
+    },
+    "web": {
+      "label": "Conception et développement web",
+      "subservices": {
+        "mapping": "Arborescence du site et parcours utilisateurs",
+        "flexible": "Conceptions de sites web flexibles",
+        "framer": "Sites web Framer",
+        "wordpress": "WordPress sur mesure",
+        "umbraco": "Umbraco sur mesure",
+        "shopify": "Shopify",
+        "accessibility": "Accessibilité",
+        "maintenance": "Maintenance",
+        "seo": "Référencement naturel (SEO)"
+      }
+    },
+    "print": {
+      "label": "Design print",
+      "subservices": {
+        "brochures": "Brochures",
+        "reports": "Rapports annuels",
+        "stationery": "Papeterie",
+        "materials": "Supports promotionnels",
+        "menu": "Conception de menus",
+        "signage": "Signalétique et orientation",
+        "packaging": "Packaging",
+        "design": "Design",
+        "exhibition": "Exposition",
+        "infographics": "Infographies"
+      }
+    },
+    "video": {
+      "label": "Vidéo / Photographie",
+      "subservices": {
+        "video": "Contenus vidéo courts et longs formats",
+        "image": "Création de bibliothèques d’images de marque",
+        "onsite": "Photographie sur site",
+        "product": "Photographie produit",
+        "drones": "Prises de vue par drone"
+      }
+    },
+    "ai": {
+      "label": "Innovation IA",
+      "subservices": {
+        "model": "Modèles IA personnalisés pour la marque",
+        "virtual": "Photographie produit virtuelle",
+        "ambassadors": "Ambassadeurs de marque IA",
+        "generative": "Création de motifs génératifs",
+        "direction": "Direction créative pilotée par l’IA",
+        "automation": "Mise à l’échelle visuelle automatisée"
+      }
+    },
+    "digital": {
+      "label": "Conception de produits et d’expériences digitales",
+      "subservices": {
+        "strategy": "STRATÉGIE ET VISION PRODUIT",
+        "research": "RECHERCHE UX ET CARTOGRAPHIE UTILISATEUR",
+        "ui": "SYSTÈMES DE DESIGN UI",
+        "prototyping": "Prototypage interactif",
+        "experience": "EXPÉRIENCE DE MARQUE DIGITALE",
+        "performance": "Design orienté performance"
+      }
+    },
+    "storytelling": {
+      "label": "Storytelling de marque et contenu",
+      "subservices": {
+        "financial": "Présentations financières",
+        "training": "Supports de formation et webinaires",
+        "defense": "Présentations de soutenance",
+        "sales": "Présentations commerciales",
+        "event": "Présentations événementielles",
+        "powerpoint": "Modèles PowerPoint et Google Slides",
+        "internal": "Présentations internes",
+        "corporate": "Présentations corporate et institutionnelles",
+        "tender": "Présentations d’appels d’offres et RFP",
+        "interactive": "Présentations interactives",
+        "pitch": "Pitch decks et levées de fonds"
+      }
+    },
+    "growth": {
+      "label": "Technologie de croissance et optimisation",
+      "subservices": {}
+    },
+    "creative": {
+      "label": "Technologie créative",
+      "subservices": {}
+    },
+    "title": "Nos services",
+    "overview": "Vue d’ensemble"
+  },
   "contact": {
     "catchPhrase": "Construisons votre croissance ensemble",
     "detailedPhrase": "Nos experts vous accompagnent dans la définition d’une stratégie digitale alignée sur vos objectifs. Contactez-nous selon le mode d’échange qui vous convient le mieux.",
