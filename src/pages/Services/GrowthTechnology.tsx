@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ScrollToTop from "../../components/ScrollToTop";
@@ -14,17 +15,22 @@ export default function GrowthTechnology() {
   //   "Brand Guidelines",
   //   "Copywriting",
   // ];
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
       <ScrollToTop />
       <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/GrowthTechnology/GrowthFond.webp')] high:bg-[url('/images/Services/GrowthTechnology/GrowthFond.webp')] bg-cover bg-no-repeat bg-center">
         <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
-          <p className="m-auto text-4xl text-center">GROWTH TECHNOLOGY</p>
+          <p className="m-auto text-4xl text-center">
+            {" "}
+            {t("services.growth.label")}
+          </p>
         </section>
       </section>
       {/* <section className="text-black flex flex-col gap-y-12.5 w-full p-12.5">
-        <p className="uppercase text-4xl font-bold">OUR SERVICES</p>
+        <p className="uppercase text-4xl font-bold">{t("services.title")}</p>
         <div className="max-lg:flex-col-reverse max-lg:gap-y-15 lg:max-xl:gap-50 flex w-full px-25 justify-center items-center gap-x-75">
           <ol className="flex flex-col gap-y-5">
             {services.map((service, index) => (
@@ -45,7 +51,7 @@ export default function GrowthTechnology() {
         </div>
       </section> */}
       <section className="text-black flex flex-col gap-y-12.5 w-full p-12.5">
-        <p className="uppercase text-4xl font-bold">OVERVIEW</p>
+        <p className="uppercase text-4xl font-bold">{t("services.overview")}</p>
         <div className="grid grid-cols-[repeat(4, auto)] grid-rows-[repeat(3, auto)] max-md:gap-2.5 gap-7.5 max-w-7xl self-center">
           <img
             src="/images/Services/GrowthTechnology/Growth1.webp"

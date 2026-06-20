@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import type { ConceptSectionType } from "../types/content";
+import { useTranslation } from "react-i18next";
 
 export default function ConceptSection({
   className,
@@ -10,6 +11,7 @@ export default function ConceptSection({
   alt,
   index,
 }: ConceptSectionType) {
+  const { t } = useTranslation();
   return (
     <section
       className={
@@ -25,7 +27,7 @@ export default function ConceptSection({
           to={link}
           className="text-base text-light-gray hover:text-dark-gray"
         >
-          View Projects &gt;
+          {t("home.services.cta")} &gt;
         </Link>
       </div>
       <img

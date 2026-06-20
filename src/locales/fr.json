@@ -1,0 +1,133 @@
+{
+  "header": {
+    "home": "Accueil",
+    "group": "Le Groupe",
+    "locations": "Nos localisations",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "home": {
+    "catchPhrase": "L’univers n’avance pas grâce à la technologie. Il avance parce que quelqu’un a imaginé quelque chose de nouveau.",
+    "news": "Nouveau",
+    "today": "Aujourd'hui",
+    "fields": "Nos domaines",
+    "ctaTop": "Analysons votre stratégie marketing !",
+    "ctaBottom": "Découvrez les faiblesses de votre stratégie digitale en quelques secondes",
+    "services": {
+      "strategy": "Stratégie et identité de marque",
+      "web": "Conception et développement web",
+      "print": "Design d'impression",
+      "video": "Vidéo / Photographie",
+      "ai": "Innovation IA",
+      "digital": "Conception de produits et d’expériences digitales",
+      "storytelling": "Storytelling de marque et création de contenu",
+      "growth": "Technologie de croissance et optimisation",
+      "creative": "Technologie créative",
+      "cta": "Voir les projets"
+    },
+    "titles": {
+      "snackContent": "Le Snack Content à votre portée",
+      "partners": "Nos partenaires",
+      "faq": "Questions fréquentes"
+    },
+    "faq": {
+      "questions": {
+        "1": "Pourquoi choisir Snackly pour mes vidéos ?",
+        "2": "Dois-je choisir l’Acting ou le Motion ?",
+        "3": "Combien de temps faut-il en moyenne pour recevoir mes vidéos ?",
+        "4": "Pourquoi ai-je besoin de vidéos dans mes campagnes ?",
+        "5": "Combien coûte une vidéo Snackly ?"
+      },
+      "answers": {
+        "1": "Chez Snackly, nous imaginons et réalisons des vidéos optimisées pour vos campagnes médias. Nos vidéos sont adaptées à chaque réseau social et à chaque emplacement de diffusion (Feed, Story, TrueView, Display), en tenant compte de leurs contraintes et opportunités spécifiques. Tout simplement parce qu’on ne communique pas de la même manière sur un feed Instagram que dans une publicité TikTok. C’est ce qui fait notre différence et ce qui nous anime au quotidien : chez Snackly, c’est le média qui dicte la création.",
+        "2": "Nos deux solutions sont pertinentes. Acting : c’est une option très performante car elle met souvent en scène de vraies personnes. Les vidéos en acting s’intègrent naturellement dans l’écosystème vidéo des réseaux sociaux. Cependant, puisqu’un tournage est nécessaire, la production est plus complexe à organiser et donc plus coûteuse. Motion : cette option est beaucoup plus scalable et facile à lancer. Vous disposez déjà d’assets graphiques tels que des photos, illustrations ou vidéos ? Nous les adaptons pour créer des vidéos parfaitement optimisées pour vos campagnes médias en un temps record. Toutefois, le résultat final dépend de la qualité de vos assets. Plus ils sont riches et attractifs visuellement, plus la vidéo sera impactante.",
+        "3": "Tout dépend du pack que vous choisissez. Si vous sélectionnez le pack Acting, le projet prendra généralement entre 5 et 6 semaines et vous recevrez toutes vos vidéos prêtes à être diffusées dans vos campagnes médias. Si vous choisissez notre pack Motion, nous pouvons aller plus vite et vous livrer vos vidéos en 3 à 4 semaines en moyenne. Le conseil Snackly : plus nous collaborons sur la durée, plus nos équipes maîtrisent le ton de votre marque, ce qui permet de réduire les délais de production. C’est pourquoi Snackly propose également des packs annuels.",
+        "4": "Aujourd’hui, la vidéo représente 80 % de la consommation mondiale de bande passante sur Internet. C’est le format de contenu le plus consommé par votre audience. De plus, selon TikTok, 80 % du ROAS (retour sur investissement publicitaire) d’une campagne dépend de la création elle-même. Alors, pouvez-vous vraiment vous permettre de ne pas utiliser la vidéo si vous souhaitez améliorer les performances de vos campagnes en ligne ?",
+        "5": "Une vidéo produite par Snackly coûte entre 1 500 € et 2 500 €. Le prix final dépend du pack choisi (Acting ou Motion) ainsi que du nombre de vidéos commandées. Notre objectif est de révolutionner le marché de la création de contenu vidéo. La production vidéo ne doit pas être excessivement coûteuse, car la plus grande partie de votre budget devrait être consacrée à la diffusion média afin de maximiser votre trafic et vos conversions."
+      }
+    }
+  },
+  "contact": {
+    "catchPhrase": "Construisons votre croissance ensemble",
+    "detailedPhrase": "Nos experts vous accompagnent dans la définition d’une stratégie digitale alignée sur vos objectifs. Contactez-nous selon le mode d’échange qui vous convient le mieux.",
+    "mail": {
+      "label": "Email",
+      "value": "contact@snacklyagency.com"
+    },
+    "phone": {
+      "label": "Téléphone",
+      "value": "+33 1 23 45 67 89"
+    },
+    "schedules": {
+      "label": "Horaires",
+      "value": "Lun–Ven · 9h30–19h00"
+    },
+    "presentation": "9 expertises complémentaires, un seul objectif : faire grandir votre entreprise.",
+    "getCalledBack": {
+      "label": "Se faire rappeler",
+      "pending": "Envoi",
+      "cta": "Programmer l'appel"
+    },
+    "sendMessage": {
+      "label": "Envoyer un message",
+      "pending": "Envoi",
+      "cta": "Envoyer le message"
+    },
+    "inputs": {
+      "firstname": {
+        "label": "Prénom",
+        "placeholder": "Jean"
+      },
+      "lastname": {
+        "label": "Nom",
+        "placeholder": "Dupont"
+      },
+      "phoneNumber": {
+        "label": "Numéro de téléphone",
+        "placeholder": "+33 6 12 34 56 78"
+      },
+      "mail": {
+        "label": "Email",
+        "placeholder": "jeandupont@gmail.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Expliquez-nous comment nous pouvons vous aider"
+      },
+      "subject": "Sujet",
+      "dayOfCall": "Date de l’appel",
+      "hourOfCall": "Horaire de l’appel",
+      "selectPlaceholder": "Sélectionner",
+      "services": {
+        "strategy": "Stratégie et identité de marque",
+        "web": "Conception et développement web",
+        "print": "Design d'impression",
+        "video": "Vidéo / Photographie",
+        "ai": "Innovation IA",
+        "digital": "Conception de produits et d’expériences digitales",
+        "storytelling": "Storytelling de marque et création de contenu",
+        "growth": "Technologie de croissance et optimisation",
+        "creative": "Technologie créative",
+        "other": "Autre demande"
+      }
+    }
+  },
+  "about": {
+    "title": "Qui sommes-nous ?",
+    "sentence1": "Derrière chaque identité de marque forte se cache une équipe passionnée.",
+    "sentence2": "Notre studio réunit des professionnels créatifs et techniques qui partagent une même vision : concevoir des expériences visuelles cohérentes, utiles et mémorables. Designers, stratèges et développeurs travaillent main dans la main pour transformer les idées en marques vivantes et en produits digitaux performants.",
+    "sentence3": "Les directeurs artistiques donnent le ton et veillent à la cohérence esthétique de chaque projet. Les designers façonnent des univers visuels, imaginent des identités de marque et créent des interfaces à la fois élégantes et intuitives. Les stratèges de marque analysent les enjeux, clarifient les messages et construisent des fondations solides afin que chaque identité soit porteuse de sens et d’impact.",
+    "sentence4": "À leurs côtés, les développeurs donnent vie aux concepts. Ils transforment les maquettes en expériences interactives fluides, performantes et durables. Leur expertise technique garantit que chaque création soit non seulement belle, mais aussi fonctionnelle et évolutive.",
+    "sentence5": "Ce qui nous distingue, c’est notre manière de travailler : une collaboration permanente. Les idées circulent librement, les compétences se complètent et chaque projet bénéficie d’une vision collective. Cette synergie nous permet d’allier créativité, rigueur et innovation.",
+    "sentence6": "Notre équipe n’est pas seulement composée de spécialistes : ce sont des explorateurs, des artisans du détail et des partenaires engagés dans la réussite de nos clients.",
+    "sentence7": "Ensemble, nous créons des identités qui racontent une histoire, des designs qui captivent et des expériences digitales qui durent."
+  },
+  "footer": {
+    "presence": "Présence sur les réseaux sociaux",
+    "legacy": "Mentions légales",
+    "contact": "Contact",
+    "services": "Services",
+    "group": "Le Groupe",
+    "rights": "Tous droits réservés."
+  }
+}

@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ScrollToTop from "../components/ScrollToTop";
 import { useSEO } from "../hooks/useSEO";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
   useSEO({
@@ -12,6 +13,7 @@ export default function Contact() {
       "Get in touch with Visuance. Reach us at contact@visuance-playtosky.com, by phone at 01 25 47 54 12, or visit us at 56 avenue Monceau, 75008 Paris.",
     canonical: "https://visuanceagency.com/contact",
   });
+  const { t } = useTranslation();
   return (
     <>
       <ScrollToTop />
@@ -31,12 +33,10 @@ export default function Contact() {
               <div className="flex flex-col gap-10">
                 <div>
                   <h2 className="text-t4 font-bold leading-tight tracking-tight text-white md:text-h7">
-                    Build your growth together
+                    {t("contact.catchPhrase")}
                   </h2>
                   <p className="mt-4 max-w-md text-base leading-relaxed text-white/50">
-                    Our experts help you define a digital strategy tailored to
-                    your goals. Get in touch using the communication channel
-                    that suits you best.
+                    {t("contact.detailedPhrase")}
                   </p>
                 </div>
 

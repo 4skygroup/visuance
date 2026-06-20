@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ScrollToTop from "../components/ScrollToTop";
@@ -10,54 +11,22 @@ export default function About() {
       "Behind every strong brand identity lies a passionate team. Visuance brings together designers, strategists and developers to craft cohesive, memorable visual experiences.",
     canonical: "https://visuanceagency.com/about",
   });
+  const { t } = useTranslation();
   return (
     <>
       <ScrollToTop />
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-full scroll-smooth">
         <Header />
         <div className="max-sm:-mx-20 max-sm:rounded-none sm:w-full h-fit flex flex-col gap-12.5 backdrop-blur-2xl bg-light-gray/20 px-16 py-12 rounded-[50px] text-2xl">
-          <p className="text-center text-5xl">Who are we ?</p>
+          <p className="text-center text-5xl">{t("about.title")}</p>
           <p className="flex flex-col gap-y-7 text-center max-w-5xl m-auto">
-            <span>
-              Behind every strong brand identity lies a passionate team.
-            </span>
-            <span>
-              Our studio brings together creative and technical professionals
-              who share the same vision: to design cohesive, useful, and
-              memorable visual experiences. Designers, strategists, and
-              developers work hand in hand to transform ideas into vibrant
-              brands and high-performing digital products.
-            </span>
-            <span>
-              Art directors set the tone and ensure the aesthetic consistency of
-              each project. Designers shape visual worlds, imagine brand
-              identities, and create interfaces that are both elegant and
-              intuitive. Brand strategists analyze the challenges, clarify the
-              messaging, and build solid foundations so that each identity is
-              meaningful and impactful.
-            </span>
-            <span>
-              Alongside them, developers bring concepts to life. They transform
-              mockups into seamless, high-performing, and sustainable
-              interactive experiences. Their technical expertise ensures that
-              every creation is not only beautiful but also functional and
-              scalable.
-            </span>
-            <span>
-              What sets us apart is our way of working: through constant
-              collaboration. Ideas flow freely, skills complement each other,
-              and every project benefits from a collective perspective. This
-              synergy allows us to combine creativity, rigor, and innovation.
-            </span>
-            <span>
-              Our team is not just made up of specialists: they are explorers,
-              artisans of detail, and partners committed to our clients'
-              success.
-            </span>
-            <span>
-              Together, we create identities that tell a story, designs that
-              captivate, and digital experiences that last.
-            </span>
+            <span>{t("about.sentence1")}</span>
+            <span>{t("about.sentence2")}</span>
+            <span>{t("about.sentence3")}</span>
+            <span>{t("about.sentence4")}</span>
+            <span>{t("about.sentence5")}</span>
+            <span>{t("about.sentence6")}</span>
+            <span>{t("about.sentence7")}</span>
           </p>
         </div>
       </div>

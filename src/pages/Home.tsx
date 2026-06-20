@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import { useSEO } from "../hooks/useSEO";
 import type { ConceptSectionType } from "../types/content";
 import ScrollToTop from "../components/ScrollToTop";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
   useSEO({
@@ -19,7 +20,7 @@ export default function Home() {
     {
       src: "/images/Identity.webp",
       alt: "Identity",
-      catchphrase: "Brand Strategy & identity",
+      catchphrase: "home.services.strategy",
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-red-strong-light from-70% to-gradient-red-strong-dark",
@@ -30,7 +31,7 @@ export default function Home() {
     {
       src: "/images/Web.webp",
       alt: "Web",
-      catchphrase: "Web design and development",
+      catchphrase: "home.services.web",
       className: conceptSectionsClassName,
       additionnalClassName: "bg-black",
       link: "/web-design",
@@ -39,7 +40,7 @@ export default function Home() {
     {
       src: "/images/Print.webp",
       alt: "Print",
-      catchphrase: "Print Design",
+      catchphrase: "home.services.print",
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-red-light to-gradient-red-dark",
@@ -50,7 +51,7 @@ export default function Home() {
     {
       src: "/images/Video.webp",
       alt: "Video",
-      catchphrase: "Video / Photography",
+      catchphrase: "home.services.video",
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-orange-light from-42% to-gradient-orange-dark",
@@ -61,7 +62,7 @@ export default function Home() {
     {
       src: "/images/AI.webp",
       alt: "AI",
-      catchphrase: "AI Innovation",
+      catchphrase: "home.services.ai",
       className: conceptSectionsClassName,
       additionnalClassName: "bg-black",
       link: "/ai-innovation",
@@ -71,7 +72,7 @@ export default function Home() {
     {
       src: "/images/Digital.webp",
       alt: "Digital",
-      catchphrase: "Digital Product and Experience Design",
+      catchphrase: "home.services.digital",
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-blue-light to-gradient-blue-dark",
@@ -82,7 +83,7 @@ export default function Home() {
     {
       src: "/images/Story Telling.webp",
       alt: "StoryTelling",
-      catchphrase: "Brand Storytelling and Content",
+      catchphrase: "home.services.storytelling",
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-b from-gradient-red-light to-gradient-red-dark",
@@ -92,7 +93,7 @@ export default function Home() {
     {
       src: "/images/Growth.webp",
       alt: "Growth",
-      catchphrase: "Growth Technology and Optimisation",
+      catchphrase: "home.services.growth",
       className: conceptSectionsClassName,
       additionnalClassName: "bg-brown-light",
       link: "/growth-technology",
@@ -101,7 +102,7 @@ export default function Home() {
     {
       src: "/images/Creativity.webp",
       alt: "Creativity",
-      catchphrase: "Creative Technology",
+      catchphrase: "home.services.creative",
       className: conceptSectionsClassName,
       additionnalClassName:
         "bg-linear-to-r from-gradient-green-light from-57% to-gradient-green-dark from-75%",
@@ -109,6 +110,7 @@ export default function Home() {
       // additionnalClassName: "bg-[#F5F5F5]",
     },
   ];
+  const { t } = useTranslation();
   return (
     <div className="relative">
       <ScrollToTop />
@@ -133,18 +135,17 @@ export default function Home() {
               />
               <div className="w-full justify-between flex bg-white/70 px-8.75 py-2.5 rounded-full">
                 <span className="uppercase text-white font-bold text-lg">
-                  In The News
+                  {t("home.news")}
                 </span>
                 <span className="capitalize text-dark-gray text-base">
-                  Today
+                  {t("home.today")}
                 </span>
               </div>
             </div>
           </div>
           <div className="max-md:items-center max-lg:static max-md:self-center fixed bottom-0 right-0 flex flex-col gap-y-5 pt-5 w-fit h-full">
             <p className="max-sm:text-center max-sm:px-5 text-2xl max-w-170">
-              The universe doesn’t move because of technology. It moves because
-              someone imagined something new.
+              {t("home.catchPhrase")}
             </p>
             <div className="max-sm:rounded-none max-md:-mx-12.5 max-md:w-full flex flex-col gap-y-5 pb-9 xs:max-sm:w-120 sm:max-md:w-150 md:max-lg:w-180 lg:w-full justify-between bg-[url(/images/News.webp)] bg-cover bg-no-repeat bg-center px-7.5 py-6.25 rounded-[50px] rounded-tr-none h-[calc(90%)] sm:max-lg:aspect-430/265 2xl:aspect-430/265 sm:max-lg:rounded-tr-[50px] max-w-200">
               <div className="w-fit invisible flex flex-col items-center">
@@ -159,9 +160,9 @@ export default function Home() {
               <div className="flex self-end gap-x-2.5">
                 <a
                   href="#identity"
-                  className="w-fit h-12.5 p-5 bg-black rounded-full flex items-center justify-center"
+                  className="w-fit h-12.5 p-5 bg-black rounded-full flex items-center justify-center uppercase"
                 >
-                  OUR FIELDS
+                  {t("home.fields")}
                 </a>
                 <a
                   href="#identity"
@@ -193,10 +194,10 @@ export default function Home() {
         >
           <div className="flex flex-col gap-y-4">
             <p className="max-sm:text-center text-3xl sm:max-md:text-xl">
-              Let’s analyze your marketing strategy !
+              {t("home.ctaTop")}
             </p>
             <p className="max-sm:text-center text-xl sm:max-md:text-lg">
-              Discover the weaknesses in your digital strategy in seconds
+              {t("home.ctaBottom")}
             </p>
           </div>
           <img
@@ -212,7 +213,7 @@ export default function Home() {
           key={index}
           src={section.src}
           alt={section.alt}
-          catchphrase={section.catchphrase}
+          catchphrase={t(section.catchphrase)}
           className={section.className}
           additionnalClassName={section.additionnalClassName}
           link={section.link}

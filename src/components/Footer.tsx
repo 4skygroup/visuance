@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="max-md:flex-col max-md:h-fit max-md:items-center max-md:gap-y-10 bg-linear-to-r from-visuance-gradient-blue to-black h-100 w-full flex md:max-lg:px-10 px-25 py-12.5 justify-between border-t-3 border-t-solid border-t-white">
       <img
@@ -10,7 +13,7 @@ export default function Footer() {
       <div className="flex flex-col gap-y-25 items-center">
         <div className="flex flex-col gap-y-17.5">
           <div className="flex flex-col gap-y-6.25 items-center">
-            <p className="text-base text-light-gray">Social Media Presence</p>
+            <p className="text-base text-light-gray">{t("footer.presence")}</p>
             <div className="medias flex gap-x-7.5">
               <a href="https://www.linkedin.com/company/play-to-sky/">
                 <svg
@@ -121,13 +124,13 @@ export default function Footer() {
             </div>
           </div>
           <div className="max-md:flex-col max-md:gap-y-5 max-md:items-center md:max-lg:gap-x-5 flex gap-x-18 underline text-lg">
-            <a href="">Legal notices</a>
-            <a href="">Contact</a>
-            <a href="">Services</a>
-            <a href="">Group</a>
+            <a href="">{t("footer.legacy")}</a>
+            <a href="">{t("footer.contact")}</a>
+            <a href="">{t("footer.services")}</a>
+            <a href="">{t("footer.group")}</a>
           </div>
         </div>
-        <span>&copy; 2026. All rights reserved.</span>
+        <span>&copy; 2026. {t("footer.rights")}</span>
       </div>
       <div className="flex flex-col items-center">
         <img
@@ -137,7 +140,7 @@ export default function Footer() {
           loading="lazy"
         />
         <a href="https://play-to-sky-v1.vercel.app" className="text-dark-gray">
-          The group &gt;
+          {t("footer.group")} &gt;
         </a>
       </div>
     </footer>

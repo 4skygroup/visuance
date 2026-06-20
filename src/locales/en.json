@@ -1,0 +1,236 @@
+{
+  "header": {
+    "home": "Home",
+    "group": "The Group",
+    "locations": "Our locations",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "catchPhrase": "The universe doesn’t move because of technology. It moves because someone imagined something new.",
+    "news": "In the news",
+    "today": "Today",
+    "fields": "Our fields",
+    "ctaTop": "Let’s analyze your marketing strategy !",
+    "ctaBottom": "Discover the weaknesses in your digital strategy in seconds",
+    "services": {
+      "strategy": "Brand Strategy and Identity",
+      "web": "Web design and development",
+      "print": "Print Design",
+      "video": "Video / Photography",
+      "ai": "AI Innovation",
+      "digital": "Digital Product and Experience Design",
+      "storytelling": "Brand Storytelling and Content",
+      "growth": "Growth Technology and Optimisation",
+      "creative": "Creative Technology",
+      "cta": "View Projects"
+    },
+    "titles": {
+      "snackContent": "Snack Content within your Reach",
+      "partners": "Our partners",
+      "faq": "Frequently asked questions"
+    },
+    "faq": {
+      "questions": {
+        "1": "Why sign with Snackly for my videos?",
+        "2": "Should I choose Acting or Motion?",
+        "3": "How long does it usually take to receive my videos?",
+        "4": "Why do I need videos in my campaigns?",
+        "5": "How much does a Snackly video cost?"
+      },
+      "answers": {
+        "1": "At Snackly, we design and produce videos optimized for your media campaigns. Our videos are tailored to each social network and each placement (Feed, Story, TrueView, Display), taking into account their specific constraints and opportunities. Simply put, you would never communicate the same way on an Instagram Feed as you would in a TikTok Ad. That’s what makes us different and what drives us every day: at Snackly, media drives creativity.",
+        "2": "Both of our solutions are relevant. Acting: This is a highly effective option because it often features real people. Acting videos naturally fit into the social media video ecosystem. However, because filming is involved, production is more complex to organize and therefore more expensive. Motion: This option is far more scalable and easier to launch. Do you already have graphic assets such as photos, illustrations, or videos? We adapt them to create videos perfectly optimized for your media campaigns in record time. However, the final result depends on the quality of your assets. The richer and more visually appealing they are, the greater the impact of the video.",
+        "3": "It all depends on the package you choose. If you select the Acting package, the project will typically take 5 to 6 weeks, and you will receive all your videos ready to launch in your media campaigns. If you choose our Motion package, we can move faster and deliver your videos within 3 to 4 weeks on average. Snackly’s tip: The longer we work together, the better our teams understand your brand voice, which helps reduce production timelines. That’s why Snackly also offers annual packages.",
+        "4": "Today, video accounts for 80% of global web bandwidth consumption. It is the content format most consumed by your audience. In addition, according to TikTok, 80% of a campaign’s ROAS (Return on Ad Spend) depends on the creative itself. So, can you really afford not to use video if you want your online campaigns to perform?",
+        "5": "A video produced by Snackly costs between €1,500 and €2,500. The final price depends on the package you choose (Acting or Motion) and the number of videos you order. Our goal is to disrupt the video content creation market. Video production should not be overly expensive, because the largest share of your budget should be invested in media distribution to maximize traffic and conversions."
+      }
+    }
+  },
+  "services": {
+    "strategy": {
+      "label": "Brand Strategy and Identity",
+      "subservices": {
+        "purpose": "PURPOSE, VISION, MISSION",
+        "positionning": "Brand positioning and narrative",
+        "voice": "Tone of voice",
+        "messaging": "Brand messaging",
+        "name": "Brand name",
+        "logo": "Logo Design",
+        "visual": "Visual Design Systems",
+        "guidelines": "Brand Guidelines",
+        "copywriting": "Copywriting"
+      }
+    },
+    "web": {
+      "label": "Web design and development",
+      "subservices": {
+        "mapping": "Site-mapping and user journeys",
+        "flexible": "Flexible website designs",
+        "framer": "Framer websites",
+        "wordpress": "Bespoke WordPress",
+        "umbraco": "Bespoke Umbraco",
+        "shopify": "Shopify",
+        "accessibility": "Accessibility",
+        "maintenance": "Maintenance",
+        "seo": "SEO"
+      }
+    },
+    "print": {
+      "label": "Print Design",
+      "subservices": {
+        "brochures": "Brochures",
+        "reports": "Annual Reports",
+        "stationery": "Stationery",
+        "materials": "Promotional materials",
+        "menu": "Menu design",
+        "signage": "Signage & wayfinding",
+        "packaging": "Packaging",
+        "design": "Design",
+        "exhibition": "Exhibition",
+        "infographics": "Infographics"
+      }
+    },
+    "video": {
+      "label": "Video / Photography",
+      "subservices": {
+        "video": "Long & short form video content",
+        "image": "Brand image library creation",
+        "onsite": "On-Site photography",
+        "product": "Product photography",
+        "drones": "Drones"
+      }
+    },
+    "ai": {
+      "label": "AI Innovation",
+      "subservices": {
+        "model": "Custom AI Brand Models",
+        "virtual": "Virtual Product Photography",
+        "ambassadors": "AI Brand Ambassadors",
+        "generative": "Generative Pattern Design",
+        "direction": "AI-Driven Creative Direction",
+        "automation": "Automated Visual Scaling"
+      }
+    },
+    "digital": {
+      "label": "Digital Product and Experience Design",
+      "subservices": {
+        "strategy": "PRODUCT STRATEGY & VISION",
+        "research": "UX RESEARCH & USER MAPPING",
+        "ui": "UI DESIGN SYSTEMS",
+        "prototyping": "interactive prototyping",
+        "experience": "DIGITAL BRAND EXPERIENCE",
+        "performance": "PERFORMANCE-driven design"
+      }
+    },
+    "storytelling": {
+      "label": "Brand Storytelling and Content",
+      "subservices": {
+        "financial": "Financial Presentations",
+        "training": "Training Materials & Webinars",
+        "defense": "Defense Presentations",
+        "sales": "Sales Presentations",
+        "event": "Event Presentations",
+        "powerpoint": "PowerPoint & Google Slides Templates",
+        "internal": "Internal Presentations",
+        "corporate": "Corporate & Institutional Presentations",
+        "tender": "Tender & RFP Presentations",
+        "interactive": "Interactive Presentations",
+        "pitch": "Pitch Decks & Fundraising"
+      }
+    },
+    "growth": {
+      "label": "Growth Technology and Optimisation",
+      "subservices": {}
+    },
+    "creative": {
+      "label": "Creative Technology",
+      "subservices": {}
+    },
+    "title": "Our services",
+    "overview": "Overview"
+  },
+  "contact": {
+    "catchPhrase": "Let’s build your growth together",
+    "detailedPhrase": "Our experts help you define a digital strategy aligned with your goals. Contact us using the communication method that suits you best.",
+    "mail": {
+      "label": "Email",
+      "value": "contact@snacklyagency.com"
+    },
+    "phone": {
+      "label": "Phone",
+      "value": "+33 1 23 45 67 89"
+    },
+    "schedules": {
+      "label": "Business Hours",
+      "value": "Mon–Fri · 9:30 AM–7:00 PM"
+    },
+    "presentation": "9 complementary areas of expertise, one single goal: helping your business grow.",
+    "getCalledBack": {
+      "label": "Get called back",
+      "pending": "Sending",
+      "cta": "Request a callback"
+    },
+    "sendMessage": {
+      "label": "Send a message",
+      "pending": "Sending",
+      "cta": "Send"
+    },
+    "inputs": {
+      "firstname": {
+        "label": "First Name",
+        "placeholder": "John"
+      },
+      "lastname": {
+        "label": "Last Name",
+        "placeholder": "Smith"
+      },
+      "phoneNumber": {
+        "label": "Phone Number",
+        "placeholder": "+33 6 12 34 56 78"
+      },
+      "mail": {
+        "label": "Email",
+        "placeholder": "johnsmith@gmail.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us how we can help you"
+      },
+      "subject": "Subject",
+      "dayOfCall": "Call date",
+      "hourOfCall": "Call time",
+      "selectPlaceholder": "Select",
+      "services": {
+        "strategy": "Brand Strategy and Identity",
+        "web": "Web design and development",
+        "print": "Print Design",
+        "video": "Video / Photography",
+        "ai": "AI Innovation",
+        "digital": "Digital Product and Experience Design",
+        "storytelling": "Brand Storytelling and Content",
+        "growth": "Growth Technology and Optimisation",
+        "creative": "Creative Technology",
+        "other": "Other Inquiry"
+      }
+    }
+  },
+  "about": {
+    "title": "Who are we ?",
+    "sentence1": "Behind every strong brand identity lies a passionate team.",
+    "sentence2": "Our studio brings together creative and technical professionals who share the same vision: to design cohesive, useful, and memorable visual experiences. Designers, strategists, and developers work hand in hand to transform ideas into vibrant brands and high-performing digital products.",
+    "sentence3": "Art directors set the tone and ensure the aesthetic consistency of each project. Designers shape visual worlds, imagine brand identities, and create interfaces that are both elegant and intuitive. Brand strategists analyze the challenges, clarify the messaging, and build solid foundations so that each identity is meaningful and impactful.",
+    "sentence4": "Alongside them, developers bring concepts to life. They transform mockups into seamless, high-performing, and sustainable interactive experiences. Their technical expertise ensures that every creation is not only beautiful but also functional and scalable.",
+    "sentence5": "What sets us apart is our way of working: through constant collaboration. Ideas flow freely, skills complement each other, and every project benefits from a collective perspective. This synergy allows us to combine creativity, rigor, and innovation.",
+    "sentence6": "Our team is not just made up of specialists: they are explorers, artisans of detail, and partners committed to our clients' success.",
+    "sentence7": "Together, we create identities that tell a story, designs that captivate, and digital experiences that last."
+  },
+  "footer": {
+    "presence": "Social Media Presence",
+    "legacy": "Legal Notices",
+    "contact": "Contact",
+    "services": "Services",
+    "group": "The Group",
+    "rights": "All rights reserved."
+  }
+}

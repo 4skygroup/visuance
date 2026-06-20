@@ -1,8 +1,35 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 
 export default function Header() {
   const [burgerClicked, setBurgerClicked] = useState(false);
+  const [languagesOpen, setLanguagesOpen] = useState<boolean>(false);
+
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const { t, i18n } = useTranslation();
+
+  const [languages, setLanguages] = useState([
+    {
+      language: "English",
+      label: "en",
+      active: false,
+    },
+    {
+      language: "Français",
+      label: "fr",
+      active: true,
+    },
+  ]);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setLanguagesOpen(true);
+  };
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => setLanguagesOpen(false), 150);
+  };
 
   const handleBurgerClicked = () => {
     setBurgerClicked(!burgerClicked);
@@ -23,21 +50,66 @@ export default function Header() {
       <nav className="block max-sm:hidden">
         <ul className="flex gap-x-12.5 text-base">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">{t("header.home")}</Link>
           </li>
           <li>
-            <a href="https://www.playtosky.com/">The Group</a>
+            <a href="https://www.playtosky.com/">{t("header.group")}</a>
           </li>
           <li>
             <a href="https://www.playtosky.com/offices-by-region">
-              Our locations
+              {t("header.locations")}
             </a>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">{t("header.about")}</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">{t("header.contact")}</Link>
+          </li>
+          <li
+            className="relative"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <span className="uppercase flex items-center justify-center gap-1">
+              {languages.filter((lang) => lang.active)[0].label}
+              <svg
+                className={`w-3 h-3 transition-transform duration-200 ${languagesOpen ? "rotate-180" : ""}`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </span>
+            {languagesOpen && (
+              <ul className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-snackly-purple border border-white/10 rounded-md py-2 w-44 shadow-lg">
+                {languages.map((lang) => (
+                  <li
+                    key={lang.language}
+                    className={`block px-4 py-2 font-glacial text-t6 transition-colors duration-200 text-white hover:text-gray-white hover:bg-white/5`}
+                    onClick={() => {
+                      i18n.changeLanguage(lang.label);
+                      setLanguages(
+                        languages.map((language) => {
+                          if (language.label === lang.label) {
+                            return { ...language, active: true };
+                          }
+                          return { ...language, active: false };
+                        }),
+                      );
+                    }}
+                  >
+                    {lang.language}
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
         </ul>
       </nav>

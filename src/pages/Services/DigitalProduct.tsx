@@ -1,16 +1,18 @@
+import { useTranslation } from "react-i18next";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ScrollToTop from "../../components/ScrollToTop";
 
 export default function DigitalProduct() {
   const services = [
-    "PRODUCT STRATEGY & VISION",
-    "UX RESEARCH & USER MAPPING",
-    "UI DESIGN SYSTEMS",
-    "interactive prototyping",
-    "DIGITAL BRAND EXPERIENCE",
-    "PERFORMANCE-driven design",
+    "services.digital.subservices.strategy",
+    "services.digital.subservices.research",
+    "services.digital.subservices.ui",
+    "services.digital.subservices.prototyping",
+    "services.digital.subservices.experience",
+    "services.digital.subservices.performance",
   ];
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
       <ScrollToTop />
@@ -18,12 +20,12 @@ export default function DigitalProduct() {
         <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
           <p className="m-auto text-4xl text-center">
-            DIGITAL PRODUCT AND EXPERIENCE DESIGN
+            {t("services.digital.label")}
           </p>
         </section>
       </section>
       <section className="text-black flex flex-col gap-y-12.5 w-full p-12.5">
-        <p className="uppercase text-4xl font-bold">OUR SERVICES</p>
+        <p className="uppercase text-4xl font-bold">{t("services.title")}</p>
         <div className="max-lg:flex-col-reverse max-lg:gap-y-15 lg:max-xl:gap-50 flex w-full px-25 justify-center items-center gap-x-75">
           <ol className="flex flex-col gap-y-5">
             {services.map((service, index) => (
@@ -31,7 +33,7 @@ export default function DigitalProduct() {
                 key={index}
                 className="max-xs:w-70 max-w-100 w-100 border-b border-b-solid border-b-black flex justify-between items-center p-2.5"
               >
-                <span className="text-base uppercase">{service}</span>
+                <span className="text-base uppercase">{t(`${service}`)}</span>
                 <span className="text-3xl">{index + 1}</span>
               </li>
             ))}
@@ -45,7 +47,7 @@ export default function DigitalProduct() {
         </div>
       </section>
       <section className="text-black flex flex-col gap-y-12.5 w-full p-12.5">
-        <p className="uppercase text-4xl font-bold">OVERVIEW</p>
+        <p className="uppercase text-4xl font-bold">{t("services.overview")}</p>
         <div className="grid grid-cols-[repeat(4, auto)] grid-rows-[repeat(3, auto)] max-md:gap-2.5 gap-7.5 max-w-7xl self-center">
           <img
             src="/images/Services/DigitalProduct/Product1.webp"

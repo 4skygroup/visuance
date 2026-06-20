@@ -14,6 +14,7 @@ import BrandStorytelling from "./pages/Services/BrandStorytelling";
 import GrowthTechnology from "./pages/Services/GrowthTechnology";
 import CreativeTechnology from "./pages/Services/CreativeTechnology";
 import WebDesign from "./pages/Services/WebDesign";
+import "./i18n";
 
 const router = createBrowserRouter([
   {
