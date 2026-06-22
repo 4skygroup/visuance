@@ -301,8 +301,8 @@ function MessageForm() {
       >
         <Mail className="w-4 h-4" />
         {status === "sending"
-          ? `${t("contact.getCalledBack.pending")}...`
-          : `${t("contact.getCalledBack.cta")}`}
+          ? `${t("contact.sendMessage.pending")}...`
+          : `${t("contact.sendMessage.cta")}`}
       </button>
     </form>
   );

@@ -38,7 +38,7 @@ export default function Header() {
 
   return (
     <header
-      className={`max-sm:-mx-20 max-sm:px-0 max-sm:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 sm:max-md:w-full flex items-center justify-between sm:max-md:px-5 xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl px-10 py-3 rounded-full`}
+      className={`max-md:-mx-20 max-md:px-0 max-md:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 max-md:w-screen flex items-center justify-between sm:max-md:px-5 xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl px-10 py-3 rounded-full`}
     >
       <Link to="/">
         <img
@@ -48,7 +48,7 @@ export default function Header() {
           loading="lazy"
         />
       </Link>
-      <nav className="block max-sm:hidden">
+      <nav className="block max-md:hidden">
         <ul className="flex gap-x-12.5 text-base">
           <li>
             <Link to="/">{t("header.home")}</Link>
@@ -115,7 +115,7 @@ export default function Header() {
         </ul>
       </nav>
       <div
-        className="max-sm:flex max-sm:items-center hidden pr-7"
+        className="max-md:flex max-sm:items-center hidden pr-7"
         onClick={() => handleBurgerClicked()}
       >
         <svg

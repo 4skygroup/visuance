@@ -174,7 +174,7 @@
     "sendMessage": {
       "label": "Envoyer un message",
       "pending": "Envoi",
-      "cta": "Envoyer le message"
+      "cta": "Envoyer"
     },
     "inputs": {
       "firstname": {

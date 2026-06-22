@@ -133,7 +133,7 @@ export default function Home() {
                 className="w-55"
                 loading="lazy"
               />
-              <div className="w-full justify-between flex bg-white/70 px-8.75 py-2.5 rounded-full">
+              <div className="w-full justify-between flex bg-white/70 px-8.75 py-2.5 rounded-full gap-x-2">
                 <span className="uppercase text-white font-bold text-lg">
                   {t("home.news")}
                 </span>
@@ -143,8 +143,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="max-md:items-center max-lg:static max-md:self-center fixed bottom-0 right-0 flex flex-col gap-y-5 pt-5 w-fit h-full -z-10">
-            <p className="max-sm:text-center max-sm:px-5 text-2xl max-w-170">
+          <div className="max-lg:items-center max-lg:static max-md:self-center fixed bottom-0 right-0 flex flex-col gap-y-5 pt-5 w-fit h-full -z-10">
+            <p className="max-lg:text-center max-md:px-5 text-2xl max-w-170">
               {t("home.catchPhrase")}
             </p>
             <div className="max-sm:rounded-none max-md:-mx-12.5 max-md:w-full flex flex-col gap-y-5 pb-9 xs:max-sm:w-120 sm:max-md:w-150 md:max-lg:w-180 lg:w-full justify-between bg-[url(/images/News.webp)] bg-cover bg-no-repeat bg-center px-7.5 py-6.25 rounded-[50px] rounded-tr-none h-[calc(90%)] sm:max-lg:aspect-430/265 2xl:aspect-430/265 sm:max-lg:rounded-tr-[50px] max-w-200">
