@@ -38,7 +38,7 @@ export default function Header() {
 
   return (
     <header
-      className={`max-md:-mx-20 max-md:px-0 max-md:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 max-md:w-screen flex items-center justify-between sm:max-md:px-5 xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl md:max-lg:px-5 px-10 py-3 rounded-full`}
+      className={`relative z-20 max-md:-mx-20 max-md:px-0 max-md:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 max-md:w-screen flex items-center justify-between sm:max-md:px-5 xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl md:max-lg:px-5 px-10 py-3 rounded-full`}
     >
       <Link to="/">
         <img
@@ -166,13 +166,8 @@ export default function Header() {
                 {t("header.home")}
               </Link>
             </li>
-            <li>
-              <Link
-                to="/the-group"
-                className="text-white uppercase text-2xl hover:text-dark-gray"
-              >
-                {t("header.group")}
-              </Link>
+            <li className="text-white uppercase text-2xl hover:text-dark-gray">
+              <a href="https://www.playtosky.com/">{t("header.group")}</a>
             </li>
             <li>
               <a
@@ -236,6 +231,7 @@ export default function Header() {
                           return { ...language, active: false };
                         }),
                       );
+                      handleBurgerClicked();
                     }}
                   >
                     {lang.language}
