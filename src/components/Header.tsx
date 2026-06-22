@@ -38,7 +38,7 @@ export default function Header() {
 
   return (
     <header
-      className={`max-md:-mx-20 max-md:px-0 max-md:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 max-md:w-screen flex items-center justify-between sm:max-md:px-5 xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl px-10 py-3 rounded-full`}
+      className={`max-md:-mx-20 max-md:px-0 max-md:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 max-md:w-screen flex items-center justify-between sm:max-md:px-5 xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl md:max-lg:px-5 px-10 py-3 rounded-full`}
     >
       <Link to="/">
         <img
@@ -49,22 +49,22 @@ export default function Header() {
         />
       </Link>
       <nav className="block max-md:hidden">
-        <ul className="flex gap-x-12.5 text-base">
-          <li>
+        <ul className="flex gap-x-12.5 md:max-lg:gap-x-7 text-base">
+          <li className="md:max-lg:text-t6">
             <Link to="/">{t("header.home")}</Link>
           </li>
-          <li>
+          <li className="md:max-lg:text-t6">
             <a href="https://www.playtosky.com/">{t("header.group")}</a>
           </li>
-          <li>
+          <li className="md:max-lg:text-t6">
             <a href="https://www.playtosky.com/offices-by-region">
               {t("header.locations")}
             </a>
           </li>
-          <li>
+          <li className="md:max-lg:text-t6">
             <Link to="/about">{t("header.about")}</Link>
           </li>
-          <li>
+          <li className="md:max-lg:text-t6">
             <Link to="/contact">{t("header.contact")}</Link>
           </li>
           <li
@@ -72,7 +72,7 @@ export default function Header() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <span className="uppercase flex items-center justify-center gap-1">
+            <span className="uppercase flex items-center justify-center gap-1 md:max-lg:text-t6">
               {languages.filter((lang) => lang.active)[0].label}
               <svg
                 className={`w-3 h-3 transition-transform duration-200 ${languagesOpen ? "rotate-180" : ""}`}
@@ -163,7 +163,7 @@ export default function Header() {
                 to="/"
                 className="text-white uppercase text-2xl hover:text-dark-gray"
               >
-                Home
+                {t("header.home")}
               </Link>
             </li>
             <li>
@@ -171,7 +171,7 @@ export default function Header() {
                 to="/the-group"
                 className="text-white uppercase text-2xl hover:text-dark-gray"
               >
-                The Group
+                {t("header.group")}
               </Link>
             </li>
             <li>
@@ -179,7 +179,7 @@ export default function Header() {
                 href="https://www.playtosky.com/offices-by-region"
                 className="text-white uppercase text-2xl hover:text-dark-gray"
               >
-                Our locations
+                {t("header.locations")}
               </a>
             </li>
             <li>
@@ -187,7 +187,7 @@ export default function Header() {
                 to="/about"
                 className="text-white uppercase text-2xl hover:text-dark-gray"
               >
-                About
+                {t("header.about")}
               </Link>
             </li>
             <li>
@@ -195,7 +195,7 @@ export default function Header() {
                 to="/contact"
                 className="text-white uppercase text-2xl hover:text-dark-gray"
               >
-                Contact
+                {t("header.contact")}
               </Link>
             </li>
             <li>
