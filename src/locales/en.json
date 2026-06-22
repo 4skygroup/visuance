@@ -169,12 +169,16 @@
     "getCalledBack": {
       "label": "Get called back",
       "pending": "Sending",
-      "cta": "Request a callback"
+      "cta": "Request a callback",
+      "success": "Demand successfully submitted !",
+      "failure": "An error occured. Please try again"
     },
     "sendMessage": {
       "label": "Send a message",
       "pending": "Sending",
-      "cta": "Send"
+      "cta": "Send",
+      "success": "Message successfully submitted !",
+      "failure": "An error occured. Please try again"
     },
     "inputs": {
       "firstname": {

@@ -181,12 +181,12 @@ function CallbackForm() {
 
       {status === "sent" && (
         <p className="text-sm text-green-400 text-center">
-          Demande successfully submitted !
+          {t("contact.getCalledBack.success")}
         </p>
       )}
       {status === "error" && (
         <p className="text-sm text-red-400 text-center">
-          An error occured. Please try again
+          {t("contact.getCalledBack.failure")}
         </p>
       )}
 
@@ -285,12 +285,12 @@ function MessageForm() {
 
       {status === "sent" && (
         <p className="text-sm text-green-400 text-center">
-          Message successfully submitted !
+          {t("contact.sendMessage.success")}
         </p>
       )}
       {status === "error" && (
         <p className="text-sm text-red-400 text-center">
-          A error occured. Please try again.
+          {t("contact.sendMessage.failure")}
         </p>
       )}
 
