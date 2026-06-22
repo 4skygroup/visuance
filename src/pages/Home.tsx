@@ -143,7 +143,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="max-md:items-center max-lg:static max-md:self-center fixed bottom-0 right-0 flex flex-col gap-y-5 pt-5 w-fit h-full">
+          <div className="max-md:items-center max-lg:static max-md:self-center fixed bottom-0 right-0 flex flex-col gap-y-5 pt-5 w-fit h-full -z-10">
             <p className="max-sm:text-center max-sm:px-5 text-2xl max-w-170">
               {t("home.catchPhrase")}
             </p>

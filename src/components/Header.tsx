@@ -5,7 +5,8 @@ import { Link } from "react-router";
 export default function Header() {
   const [burgerClicked, setBurgerClicked] = useState(false);
   const [languagesOpen, setLanguagesOpen] = useState<boolean>(false);
-
+  const [mobileLanguagesOpen, setMobileLanguagesOpen] =
+    useState<boolean>(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const { t, i18n } = useTranslation();
@@ -88,7 +89,7 @@ export default function Header() {
               </svg>
             </span>
             {languagesOpen && (
-              <ul className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-snackly-purple border border-white/10 rounded-md py-2 w-44 shadow-lg">
+              <ul className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-snackly-purple border border-white/10 rounded-md py-2 w-44 shadow-lg z-100">
                 {languages.map((lang) => (
                   <li
                     key={lang.language}
@@ -141,6 +142,7 @@ export default function Header() {
 
         <nav
           className={`${burgerClicked ? "flex" : "hidden"} w-screen h-screen max-sm:h-dvh fixed inset-0 z-10 bg-linear-to-r from-visuance-gradient-blue to-black`}
+          onClick={(e) => e.stopPropagation()}
         >
           <svg
             className="absolute top-6 right-10 w-6.25"
@@ -195,6 +197,51 @@ export default function Header() {
               >
                 Contact
               </Link>
+            </li>
+            <li>
+              <button
+                onClick={() => setMobileLanguagesOpen((prev) => !prev)}
+                className="font-glacial text-t3 text-white flex items-center gap-2 mx-auto uppercase cursor-pointer"
+              >
+                {languages.filter((lang) => lang.active)[0].label}
+                <svg
+                  className={`w-4 h-4 transition-transform duration-200 ${mobileLanguagesOpen ? "rotate-180" : ""}`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <ul
+                className={`overflow-hidden transition-all duration-300 flex flex-col items-center gap-3 ${mobileLanguagesOpen ? "max-h-40 mt-4" : "max-h-0"}`}
+              >
+                {languages.map((lang) => (
+                  <li
+                    key={lang.language}
+                    className={`block px-4 py-2 font-glacial text-t4 transition-colors duration-200 text-white hover:text-gray-white hover:bg-white/5 cursor-pointer`}
+                    onClick={() => {
+                      i18n.changeLanguage(lang.label);
+                      setLanguages(
+                        languages.map((language) => {
+                          if (language.label === lang.label) {
+                            return { ...language, active: true };
+                          }
+                          return { ...language, active: false };
+                        }),
+                      );
+                    }}
+                  >
+                    {lang.language}
+                  </li>
+                ))}
+              </ul>
             </li>
           </ul>
         </nav>
