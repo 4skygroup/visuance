@@ -3,14 +3,14 @@ import { useTranslation } from "react-i18next";
 export default function Footer() {
   const { t } = useTranslation();
   return (
-    <footer className="max-md:flex-col max-md:h-fit max-md:items-center max-md:gap-y-10 bg-linear-to-r from-visuance-gradient-blue to-black h-100 w-full flex md:max-lg:px-10 px-25 py-12.5 justify-between border-t-3 border-t-solid border-t-white">
+    <footer className="max-md:flex-col h-fit max-md:items-center max-md:gap-y-10 bg-linear-to-r from-visuance-gradient-blue to-black w-full flex md:max-lg:px-10 px-25 py-12.5 justify-between border-t-3 border-t-solid border-t-white">
       <img
         src="/images/Visuance Logo.webp"
         alt="Visuance Logo"
         className="min-w-52.5 w-52.5 h-17.5"
         loading="lazy"
       />
-      <div className="flex flex-col gap-y-25 items-center">
+      <div className="flex flex-col gap-y-15 items-center">
         <div className="flex flex-col gap-y-17.5">
           <div className="flex flex-col gap-y-6.25 items-center">
             <p className="text-base text-light-gray">{t("footer.presence")}</p>
@@ -129,6 +129,26 @@ export default function Footer() {
             <a href="">{t("footer.services")}</a>
             <a href="">{t("footer.group")}</a>
           </div>
+        </div>
+        <div className="mt-8 flex justify-center items-center gap-3 text-t4 font-regular text-white/60 tracking-normal">
+          <span>{t("footer.creators")}</span>
+          <a href=" https://www.visuanceagency.com/" target="_blank">
+            <img
+              src="/images/visuance2.webp"
+              alt="Visuance logo"
+              className="h-4"
+              loading="lazy"
+            />
+          </a>
+          <span>&</span>
+          <a href=" https://www.playtosky.com/" target="_blank">
+            <img
+              src="/images/play-to-sky.webp"
+              alt="Play To Sky logo"
+              className="h-6"
+              loading="lazy"
+            />
+          </a>
         </div>
         <span>&copy; 2026. {t("footer.rights")}</span>
       </div>
