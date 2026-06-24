@@ -13,33 +13,35 @@ export default function ConceptSection({
 }: ConceptSectionType) {
   const { t } = useTranslation();
   return (
-    <section
-      className={
-        additionnalClassName
-          ? `${className} ${additionnalClassName} group ${(index === "ai" || index === "digital") && ""}`
-          : `${className} group ${index === "drox360" && "border-b-white border-b-2 border-b-solid"}`
-      }
-      id={index}
-    >
-      <div className="flex flex-col gap-2.5 ">
-        <h2 className="text-3xl">{catchphrase}</h2>
-        <Link
-          to={link}
-          className="text-base text-light-gray hover:text-dark-gray"
-        >
-          {t("home.services.cta")} &gt;
-        </Link>
-      </div>
-      <img
-        src={src}
-        alt={alt}
-        loading="lazy"
-        className={`max-h-full object-cover object-bottom-left scale-105 transition-transform
+    <Link to={link}>
+      <section
+        className={
+          additionnalClassName
+            ? `${className} ${additionnalClassName} group ${(index === "ai" || index === "digital") && ""}`
+            : `${className} group ${index === "drox360" && "border-b-white border-b-2 border-b-solid"}`
+        }
+        id={index}
+      >
+        <div className="flex flex-col gap-2.5 ">
+          <h2 className="text-3xl">{catchphrase}</h2>
+          <Link
+            to={link}
+            className="text-base text-light-gray hover:text-dark-gray"
+          >
+            {t("home.services.cta")} &gt;
+          </Link>
+        </div>
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          className={`max-h-full object-cover object-bottom-left scale-105 transition-transform
              ${index === "ai" || index === "digital" ? "sm:self-end" : ""} 
              ${index === "print" || index === "video" || index === "identity" ? "w-75 relative right-15 max-md:right-0 min-w-62.5" : "w-100 min-w-62.5"}
              ${index === "identity"}
             `}
-      />
-    </section>
+        />
+      </section>
+    </Link>
   );
 }

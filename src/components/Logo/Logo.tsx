@@ -1,5 +1,5 @@
 export default function Logo({
-  src = "/logo/Snackly.webp",
+  src = "/images/visuance2.webp",
   alt = "Snackly logo",
   width = 350,
   height = 150,

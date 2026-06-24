@@ -15,6 +15,8 @@ import GrowthTechnology from "./pages/Services/GrowthTechnology";
 import CreativeTechnology from "./pages/Services/CreativeTechnology";
 import WebDesign from "./pages/Services/WebDesign";
 import "./i18n";
+import LegalNotices from "./pages/LegalNotices";
+import Policy from "./pages/Policy";
 
 const router = createBrowserRouter([
   {
@@ -68,6 +70,14 @@ const router = createBrowserRouter([
   {
     path: "/creative-technology",
     element: <CreativeTechnology />,
+  },
+  {
+    path: "/policy",
+    element: <Policy />,
+  },
+  {
+    path: "/legal-notices",
+    element: <LegalNotices />,
   },
 ]);
 
