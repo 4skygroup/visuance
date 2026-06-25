@@ -17,6 +17,7 @@ import WebDesign from "./pages/Services/WebDesign";
 import "./i18n";
 import LegalNotices from "./pages/LegalNotices";
 import Policy from "./pages/Policy";
+import Locations from "./pages/Locations";
 
 const router = createBrowserRouter([
   {
@@ -78,6 +79,10 @@ const router = createBrowserRouter([
   {
     path: "/legal-notices",
     element: <LegalNotices />,
+  },
+  {
+    path: "/locations",
+    element: <Locations />,
   },
 ]);
 

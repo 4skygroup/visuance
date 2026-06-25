@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export default function Footer() {
   const { t } = useTranslation();
   return (
-    <footer className="max-md:flex-col h-fit max-md:items-center max-md:gap-y-10 bg-linear-to-r from-visuance-gradient-blue to-black w-full flex md:max-lg:px-10 px-25 py-12.5 justify-between border-t-3 border-t-solid border-t-white">
+    <footer className="max-md:flex-col h-fit max-md:items-center max-md:gap-y-10 bg-linear-to-r from-visuance-gradient-blue to-black w-full flex md:max-lg:px-10 px-25 py-12.5 justify-between">
       <img
         src="/images/Visuance Logo.webp"
         alt="Visuance Logo"

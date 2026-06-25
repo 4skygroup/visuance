@@ -1,14 +1,14 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import ToggleLanguage from "./Language/ToggleLanguage";
 
 export default function Header() {
   const [burgerClicked, setBurgerClicked] = useState(false);
-  const [languagesOpen, setLanguagesOpen] = useState<boolean>(false);
+  // const [languagesOpen, setLanguagesOpen] = useState<boolean>(false);
   const [mobileLanguagesOpen, setMobileLanguagesOpen] =
     useState<boolean>(false);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const { t, i18n } = useTranslation();
 
@@ -25,13 +25,13 @@ export default function Header() {
     },
   ]);
 
-  const handleMouseEnter = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    setLanguagesOpen(true);
-  };
-  const handleMouseLeave = () => {
-    timeoutRef.current = setTimeout(() => setLanguagesOpen(false), 150);
-  };
+  // const handleMouseEnter = () => {
+  //   if (timeoutRef.current) clearTimeout(timeoutRef.current);
+  //   setLanguagesOpen(true);
+  // };
+  // const handleMouseLeave = () => {
+  //   timeoutRef.current = setTimeout(() => setLanguagesOpen(false), 150);
+  // };
 
   const handleBurgerClicked = () => {
     setBurgerClicked(!burgerClicked);
@@ -39,15 +39,10 @@ export default function Header() {
 
   return (
     <header
-      className={`relative z-20 max-md:-mx-20 max-md:px-0 max-md:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 max-md:w-screen flex items-center justify-between sm:max-md:px-5 xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl md:max-lg:px-5 px-10 py-3 rounded-full`}
+      className={`relative z-20 w-full max-md:-mx-20 max-md:px-0 max-md:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 max-md:w-screen flex items-center justify-between sm:max-md:px-5 xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl md:max-lg:px-5 px-10 py-3 rounded-full`}
     >
       <ul className="hidden md:flex items-center gap-10">
-        <a
-          href="https://www.playtosky.com/offices-by-region"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-glacial text-t5 text-white hover:text-gray-white transition-colors duration-200"
-        >
+        <Link to="/locations">
           <svg
             className=""
             width="20"
@@ -61,7 +56,7 @@ export default function Header() {
               fill="white"
             />
           </svg>
-        </a>
+        </Link>
 
         <ToggleLanguage />
       </ul>

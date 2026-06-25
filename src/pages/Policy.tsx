@@ -1,5 +1,3 @@
-import Logo from "../components/Logo/Logo";
-
 export default function Policy() {
   const collectedData = [
     "Remplissez un formulaire de contact",
@@ -9,25 +7,27 @@ export default function Policy() {
 
   const collectedFields = [
     "Nom",
+    "Prénom",
     "Adresse e-mail",
-    "Numéro de téléphone",
+    "Téléphone",
     "Entreprise",
-    "Besoin marketing",
+    "Message",
     "Adresse IP",
+    "Données de navigation",
   ];
 
   const purposes = [
-    "Répondre à vos demandes",
-    "Élaborer des propositions commerciales",
-    "Gérer la relation client",
-    "Améliorer les performances du site",
-    "Analyser les comportements utilisateurs",
+    "Répondre aux demandes de contact",
+    "Fournir des devis et prestations",
+    "Améliorer l’expérience utilisateur",
+    "Analyser les performances du site",
+    "Développer les services proposés",
   ];
 
   const legalBases = [
-    "Votre consentement",
-    "L’exécution d’une relation précontractuelle ou contractuelle",
-    "L’intérêt légitime lié à l’amélioration des services",
+    "Le consentement de l’utilisateur",
+    "L’exécution d’une relation précontractuelle",
+    "L’intérêt légitime de l’entreprise",
   ];
 
   const rights = [
@@ -39,19 +39,10 @@ export default function Policy() {
   ];
 
   return (
-    <main className="min-h-screen bg-linear-to-b from-white to-purple-50/30">
+    <main className="min-h-screen bg-linear-to-b from-white to-blue-50/40">
       <div className="mx-auto max-w-5xl px-6 py-16">
-        {/* Header */}
         <div className="mb-12 border-b border-slate-200 pb-10">
-          <div className="bg-visuance-gradient-blue mb-5">
-            <Logo />
-          </div>
-
-          <span className="inline-flex rounded-full bg-visuance-gradient-blue/10 px-4 py-1 text-sm font-medium text-visuance-gradient-blue">
-            Informations légales
-          </span>
-
-          <h1 className="mt-4 text-4xl font-bold text-snackly-dark-purple md:text-5xl">
+          <h1 className="mt-4 text-4xl font-bold text-visuance-gradient-blue md:text-5xl">
             Politique de confidentialité
           </h1>
 
@@ -68,15 +59,15 @@ export default function Policy() {
         <div className="space-y-8">
           {/* Collecte */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-snackly-blue/5 px-8 py-5">
-              <h2 className="text-xl font-semibold text-snackly-dark-purple">
+            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
+              <h2 className="text-xl font-semibold text-visuance-gradient-blue">
                 Quelles données collectons-nous ?
               </h2>
             </div>
 
             <div className="space-y-6 px-8 py-6">
               <p className="text-slate-700">
-                Snackly collecte des données lorsque vous :
+                Visuance peut collecter des données lorsque vous :
               </p>
 
               <ul className="space-y-3">
@@ -89,8 +80,8 @@ export default function Policy() {
               </ul>
 
               <div className="rounded-2xl bg-slate-50 p-5">
-                <p className="font-semibold text-snackly-dark-purple">
-                  Données susceptibles d'être collectées
+                <p className="font-semibold text-visuance-gradient-blue">
+                  Données susceptibles d’être collectées
                 </p>
 
                 <div className="mt-3 flex flex-wrap gap-2">
@@ -107,10 +98,10 @@ export default function Policy() {
             </div>
           </section>
 
-          {/* Finalité */}
+          {/* Utilisation */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-snackly-blue/5 px-8 py-5">
-              <h2 className="text-xl font-semibold text-snackly-dark-purple">
+            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
+              <h2 className="text-xl font-semibold text-visuance-gradient-blue">
                 Pourquoi utilisons-nous vos données ?
               </h2>
             </div>
@@ -129,8 +120,8 @@ export default function Policy() {
 
           {/* Base légale */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-snackly-blue/5 px-8 py-5">
-              <h2 className="text-xl font-semibold text-snackly-dark-purple">
+            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
+              <h2 className="text-xl font-semibold text-visuance-gradient-blue">
                 Sur quelle base légale reposent les traitements ?
               </h2>
             </div>
@@ -139,7 +130,7 @@ export default function Policy() {
               {legalBases.map((base) => (
                 <div
                   key={base}
-                  className="rounded-xl border-l-4 border-visuance-gradient-blue bg-purple-50 p-4 text-slate-700"
+                  className="rounded-xl border-l-4 border-visuance-gradient-blue bg-blue-50 p-4 text-slate-700"
                 >
                   {base}
                 </div>
@@ -149,8 +140,8 @@ export default function Policy() {
 
           {/* Conservation */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-snackly-blue/5 px-8 py-5">
-              <h2 className="text-xl font-semibold text-snackly-dark-purple">
+            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
+              <h2 className="text-xl font-semibold text-visuance-gradient-blue">
                 Combien de temps conservons-nous vos données ?
               </h2>
             </div>
@@ -158,29 +149,24 @@ export default function Policy() {
             <div className="space-y-6 p-8">
               <div className="flex gap-4">
                 <div className="mt-2 h-3 w-3 rounded-full bg-visuance-gradient-blue" />
-
                 <div>
-                  <p className="font-semibold text-snackly-dark-purple">
+                  <p className="font-semibold text-visuance-gradient-blue">
                     Prospects
                   </p>
-
                   <p className="text-slate-700">
-                    3 ans après le dernier contact.
+                    Jusqu’à 3 ans après le dernier contact.
                   </p>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <div className="mt-2 h-3 w-3 rounded-full bg-snackly-blue" />
-
+                <div className="mt-2 h-3 w-3 rounded-full bg-visuance-gradient-blue" />
                 <div>
-                  <p className="font-semibold text-snackly-dark-purple">
-                    Clients
+                  <p className="font-semibold text-visuance-gradient-blue">
+                    Clients / obligations légales
                   </p>
-
                   <p className="text-slate-700">
-                    Entre 5 et 10 ans selon les obligations légales, notamment
-                    celles liées à la facturation.
+                    Jusqu’à 10 ans selon les obligations légales applicables.
                   </p>
                 </div>
               </div>
@@ -189,33 +175,33 @@ export default function Policy() {
 
           {/* Partage */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-snackly-blue/5 px-8 py-5">
-              <h2 className="text-xl font-semibold text-snackly-dark-purple">
+            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
+              <h2 className="text-xl font-semibold text-visuance-gradient-blue">
                 Avec qui partageons-nous vos données ?
               </h2>
             </div>
 
             <div className="space-y-4 p-8">
-              <div className="rounded-2xl border border-slate-200 p-4">
-                Outils marketing (analytics, CRM, emailing)
+              <div className="rounded-2xl border border-slate-200 p-4 text-slate-700">
+                Prestataires techniques (hébergement, CRM, analytics)
               </div>
 
-              <div className="rounded-2xl border border-slate-200 p-4">
-                Prestataires techniques (hébergement, maintenance)
+              <div className="rounded-2xl border border-slate-200 p-4 text-slate-700">
+                Services nécessaires au fonctionnement du site
               </div>
 
               <div className="rounded-2xl border border-green-200 bg-green-50 p-5">
                 <p className="font-semibold text-green-800">
-                  Les données ne sont jamais revendues à des tiers.
+                  Aucune donnée n’est vendue ou cédée à des tiers.
                 </p>
               </div>
             </div>
           </section>
 
           {/* Cookies */}
-          {/* <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-snackly-blue/5 px-8 py-5">
-              <h2 className="text-xl font-semibold text-snackly-dark-purple">
+          <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
+              <h2 className="text-xl font-semibold text-visuance-gradient-blue">
                 Comment utilisons-nous les cookies ?
               </h2>
             </div>
@@ -224,33 +210,32 @@ export default function Policy() {
               <div className="rounded-2xl border border-visuance-gradient-blue/20 bg-visuance-gradient-blue/5 p-6">
                 <ul className="space-y-3 text-slate-700">
                   <li>• Mesurer l’audience</li>
-                  <li>• Optimiser l’expérience utilisateur</li>
-                  <li>• Suivre les performances marketing</li>
+                  <li>• Améliorer la navigation</li>
+                  <li>• Optimiser les performances marketing</li>
                 </ul>
               </div>
 
               <p className="mt-5 text-slate-600">
-                Un bandeau de consentement vous permet de gérer vos préférences
-                à tout moment.
+                Un bandeau de consentement permet de gérer vos préférences.
               </p>
             </div>
-          </section> */}
+          </section>
 
           {/* Droits */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-snackly-blue/5 px-8 py-5">
-              <h2 className="text-xl font-semibold text-snackly-dark-purple">
+            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
+              <h2 className="text-xl font-semibold text-visuance-gradient-blue">
                 Quels sont vos droits ?
               </h2>
             </div>
 
             <div className="p-8">
-              <div className="rounded-3xl border border-visuance-gradient-blue/20 bg-linear-to-r from-visuance-gradient-blue/5 to-snackly-blue/5 p-6">
+              <div className="rounded-3xl border border-visuance-gradient-blue/20 bg-visuance-gradient-blue/5 p-6">
                 <div className="grid gap-3 md:grid-cols-2">
                   {rights.map((right) => (
                     <div
                       key={right}
-                      className="rounded-xl bg-white/80 p-3 text-slate-700"
+                      className="rounded-xl bg-white p-3 text-slate-700"
                     >
                       {right}
                     </div>
@@ -258,55 +243,54 @@ export default function Policy() {
                 </div>
               </div>
 
-              <div className="mt-6 rounded-2xl bg-snackly-dark-purple p-6">
-                <p className="font-semibold text-white">Exercer vos droits</p>
+              <div className="mt-6 rounded-2xl bg-visuance-gradient-blue p-6 text-white">
+                <p className="font-semibold">Exercer vos droits</p>
 
-                <p className="mt-2 text-white/80">contact@snacklyagency.com</p>
+                <p className="mt-2 text-white/90">contact@visuanceagency.com</p>
               </div>
             </div>
           </section>
 
           {/* Sécurité */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-snackly-blue/5 px-8 py-5">
-              <h2 className="text-xl font-semibold text-snackly-dark-purple">
+            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
+              <h2 className="text-xl font-semibold text-visuance-gradient-blue">
                 Comment protégeons-nous vos données ?
               </h2>
             </div>
 
             <div className="p-8">
               <p className="leading-8 text-slate-700">
-                Snackly met en place des mesures techniques et
-                organisationnelles destinées à protéger vos données contre tout
-                accès, modification, divulgation ou destruction non autorisés.
+                Visuance met en œuvre des mesures techniques et
+                organisationnelles afin de protéger vos données contre toute
+                perte, accès non autorisé ou divulgation.
               </p>
             </div>
           </section>
 
-          {/* Mise à jour */}
+          {/* Modification */}
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-snackly-blue/5 px-8 py-5">
-              <h2 className="text-xl font-semibold text-snackly-dark-purple">
-                Mise à jour de cette politique
+            <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
+              <h2 className="text-xl font-semibold text-visuance-gradient-blue">
+                Cette politique peut-elle évoluer ?
               </h2>
             </div>
 
             <div className="p-8">
               <p className="leading-8 text-slate-700">
-                Cette politique de confidentialité peut être modifiée à tout
-                moment afin de rester conforme aux évolutions réglementaires et
-                aux changements apportés à nos services.
+                Cette politique peut être mise à jour à tout moment afin de
+                respecter les évolutions légales ou techniques.
               </p>
             </div>
           </section>
 
           {/* Footer */}
-          <section className="rounded-3xl bg-snackly-dark-purple p-8 text-white">
+          <section className="rounded-3xl bg-visuance-gradient-blue p-8 text-white">
             <h2 className="text-xl font-semibold">Contact</h2>
 
-            <p className="mt-3 text-white/80">contact@snacklyagency.com</p>
+            <p className="mt-3 text-white/90">contact@visuanceagency.com</p>
 
-            <div className="mt-8 border-t border-white/10 pt-6 text-sm text-white/60">
+            <div className="mt-8 border-t border-white/10 pt-6 text-sm text-white/70">
               Dernière mise à jour : 24 juin 2026
             </div>
           </section>
