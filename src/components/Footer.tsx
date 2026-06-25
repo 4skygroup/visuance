@@ -108,7 +108,7 @@ export default function Footer({
             <a href="">{t("footer.group")}</a>
           </div>
         </div>
-        <div className="mt-8 flex justify-center items-center gap-3 text-t4 font-regular text-white/60 tracking-normal">
+        <div className="mt-8 flex max-sm:flex-col justify-center items-center gap-3 text-t4 font-regular text-white/60 tracking-normal">
           <span>{t("footer.creators")}</span>
           <a href=" https://www.visuanceagency.com/" target="_blank">
             <img
@@ -137,7 +137,7 @@ export default function Footer({
           className="min-w-52.5"
           loading="lazy"
         />
-        <a href="https://play-to-sky-v1.vercel.app" className="text-dark-gray">
+        <a href="https://www.playtosky.com/" className="text-dark-gray">
           {t("footer.group")} &gt;
         </a>
       </div>
