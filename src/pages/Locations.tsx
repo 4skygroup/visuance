@@ -91,7 +91,8 @@ export default function Locations() {
       </div>
       <div className="bg-black">
         <Footer
-        //   color="bg-[radial-gradient(circle_at_top_left,rgba(82,98,255,0.18)_0%,transparent_50%),radial-gradient(circle_at_80%_70%,rgba(0,238,252,0.15)_0%,transparent_45%)]"
+          hasDarkGradient={true}
+          //   color="bg-[radial-gradient(circle_at_top_left,rgba(82,98,255,0.18)_0%,transparent_50%),radial-gradient(circle_at_80%_70%,rgba(0,238,252,0.15)_0%,transparent_45%)]"
         />
       </div>
     </div>

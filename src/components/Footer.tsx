@@ -1,10 +1,16 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 
-export default function Footer() {
+export default function Footer({
+  hasDarkGradient,
+}: {
+  hasDarkGradient?: boolean;
+}) {
   const { t } = useTranslation();
   return (
-    <footer className="max-md:flex-col h-fit max-md:items-center max-md:gap-y-10 bg-linear-to-r from-visuance-gradient-blue to-black w-full flex md:max-lg:px-10 px-25 py-12.5 justify-between">
+    <footer
+      className={`max-md:flex-col h-fit max-md:items-center max-md:gap-y-10 ${hasDarkGradient ? "bg-[radial-gradient(circle_at_top_left,rgba(82,98,255,0.18)_0%,transparent_50%),radial-gradient(circle_at_80%_70%,rgba(0,238,252,0.15)_0%,transparent_45%)]" : "bg-linear-to-r from-visuance-gradient-blue to-black"} w-full flex md:max-lg:px-10 px-25 py-12.5 justify-between`}
+    >
       <img
         src="/images/Visuance Logo.webp"
         alt="Visuance Logo"
