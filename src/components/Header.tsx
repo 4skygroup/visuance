@@ -39,7 +39,7 @@ export default function Header() {
 
   return (
     <header
-      className={`relative z-20 w-full max-md:-mx-20 max-md:px-0 max-md:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 max-md:w-screen flex items-center justify-between sm:max-md:px-5 xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl md:max-lg:px-5 px-10 py-3 rounded-full`}
+      className={`relative z-20 w-full max-md:-mx-20 max-md:px-0 max-md:rounded-none ${burgerClicked ? "" : "backdrop-blur-2xl"} bg-light-gray/20 max-md:w-screen flex items-center max-md:justify-end justify-between sm:max-md:px-5 xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl md:max-lg:px-5 px-10 py-3 rounded-full`}
     >
       <ul className="hidden md:flex items-center gap-10">
         <Link to="/locations">
@@ -183,12 +183,12 @@ export default function Header() {
               <a href="https://www.playtosky.com/">{t("header.group")}</a>
             </li>
             <li>
-              <a
-                href="https://www.playtosky.com/offices-by-region"
+              <Link
+                to="/locations"
                 className="text-white uppercase text-2xl hover:text-dark-gray"
               >
                 {t("header.locations")}
-              </a>
+              </Link>
             </li>
             <li>
               <Link

@@ -14,7 +14,7 @@ export default function Group() {
   return (
     <>
       <ScrollToTop />
-      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-full scroll-smooth">
+      <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-5 max-md:pt-0 w-full scroll-smooth">
         <Header />
         <div className="max-sm:-mx-20 max-sm:px-0 max-sm:rounded-none sm:w-full h-fit flex flex-col items-center backdrop-blur-2xl bg-light-gray/20 px-16 py-15 rounded-[50px] text-2xl gap-y-15">
           <img

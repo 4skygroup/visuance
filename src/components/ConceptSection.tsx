@@ -24,12 +24,9 @@ export default function ConceptSection({
       >
         <div className="flex flex-col gap-2.5 ">
           <h2 className="text-3xl">{catchphrase}</h2>
-          <Link
-            to={link}
-            className="text-base text-light-gray hover:text-dark-gray"
-          >
+          <span className="text-base text-light-gray hover:text-dark-gray">
             {t("home.services.cta")} &gt;
-          </Link>
+          </span>
         </div>
         <img
           src={src}

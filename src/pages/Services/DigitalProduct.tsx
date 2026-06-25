@@ -17,7 +17,7 @@ export default function DigitalProduct() {
     <div className="flex flex-col max-sm:gap-y-10 gap-y-25">
       <ScrollToTop />
       <section className="high:h-[calc(50vh)] flex w-fit h-fit bg-[url('/images/Services/DigitalProduct/ProductFond.webp')] high:bg-[url('/images/Services/DigitalProduct/ProductFond.webp')] bg-cover bg-no-repeat bg-center">
-        <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 px-20 py-5 max-sm:pt-0 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
+        <section className="high:h-[calc(50vh)] flex flex-col gap-y-12.5 items-center justify-center sm:px-20 py-5 max-md:pt-0 w-screen h-screen scroll-smooth bg-[rgba(0,0,0,0.5)]">
           <Header />
           <p className="m-auto text-4xl text-center uppercase">
             {t("services.digital.label")}
@@ -26,7 +26,7 @@ export default function DigitalProduct() {
       </section>
       <section className="text-black flex flex-col gap-y-12.5 w-full p-12.5">
         <p className="uppercase text-4xl font-bold">{t("services.title")}</p>
-        <div className="max-lg:flex-col-reverse max-lg:gap-y-15 lg:max-xl:gap-50 flex w-full px-25 justify-center items-center gap-x-75">
+        <div className="max-lg:flex-col-reverse max-lg:gap-y-15 lg:max-xl:gap-50 flex w-full sm:px-25 justify-center items-center gap-x-75">
           <ol className="flex flex-col gap-y-5">
             {services.map((service, index) => (
               <li
@@ -40,7 +40,7 @@ export default function DigitalProduct() {
           </ol>
           <img
             src="/images/Services/DigitalProduct/ProductFond2.webp"
-            className="min-w-70 aspect-407/343 object-cover max-w-101.75"
+            className="min-w-60 aspect-407/343 object-cover w-101.75 sm:max-w-101.75"
             alt="Colors"
             loading="lazy"
           />
