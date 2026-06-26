@@ -204,7 +204,7 @@ export default function Home() {
             src="/images/Link.webp"
             alt="Link"
             loading="lazy"
-            className="sm:max-md:w-20"
+            className="sm:max-md:w-20 md:w-25"
           />
         </Link>
       </div>
