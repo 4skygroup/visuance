@@ -106,9 +106,11 @@ export default function Footer({
           </div>
           <div className="max-md:flex-col max-md:gap-y-5 max-md:items-center md:max-lg:gap-x-5 flex gap-x-18 underline text-lg">
             <Link to="/legal-notices">{t("footer.legacy")}</Link>
-            <a href="">{t("footer.contact")}</a>
+            <Link to="/contact">{t("footer.contact")}</Link>
             <Link to="/policy">{t("footer.policy")}</Link>
-            <a href="">{t("footer.group")}</a>
+            <a href=" https://www.playtosky.com/" target="_blank">
+              {t("footer.group")}
+            </a>
           </div>
         </div>
         <div className="mt-8 flex max-sm:flex-col justify-center items-center gap-3 text-t4 font-regular text-white/60 tracking-normal">
