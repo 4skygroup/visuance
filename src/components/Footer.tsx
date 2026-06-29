@@ -23,7 +23,7 @@ export default function Footer({
             <p className="text-base text-light-gray">{t("footer.presence")}</p>
             <div className="medias flex gap-x-7.5">
               <a
-                href="https://www.linkedin.com/company/visuance/"
+                href="https://www.linkedin.com/company/visuanceagency/"
                 target="_blank"
               >
                 <svg
@@ -53,7 +53,10 @@ export default function Footer({
                   />
                 </svg>
               </a>
-              <a href="https://www.instagram.com/visuance/" target="_blank">
+              <a
+                href="https://www.instagram.com/visuanceagency/"
+                target="_blank"
+              >
                 <svg
                   width="35"
                   height="35"
@@ -85,7 +88,7 @@ export default function Footer({
                   />
                 </svg>
               </a>
-              <a href="https://www.tiktok.com/visuance/" target="_blank">
+              <a href="https://www.tiktok.com/@visuance/" target="_blank">
                 <svg
                   width="31"
                   height="35"
