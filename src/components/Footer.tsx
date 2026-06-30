@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
+import CreatedBy from "./CreatedBy";
 
 export default function Footer({
   hasDarkGradient,
@@ -20,7 +21,9 @@ export default function Footer({
       <div className="flex flex-col gap-y-15 items-center">
         <div className="flex flex-col gap-y-17.5">
           <div className="flex flex-col gap-y-6.25 items-center">
-            <p className="text-base text-light-gray">{t("footer.presence")}</p>
+            <p className="text-base text-light-gray text-center">
+              {t("footer.presence")}
+            </p>
             <div className="medias flex gap-x-7.5">
               <a
                 href="https://www.linkedin.com/company/visuanceagency/"
@@ -113,27 +116,8 @@ export default function Footer({
             </a>
           </div>
         </div>
-        <div className="mt-8 flex max-sm:flex-col justify-center items-center gap-3 text-t4 font-regular text-white/60 tracking-normal">
-          <span>{t("footer.creators")}</span>
-          <a href=" https://www.visuanceagency.com/" target="_blank">
-            <img
-              src="/images/visuance2.webp"
-              alt="Visuance logo"
-              className="h-4"
-              loading="lazy"
-            />
-          </a>
-          <span>&</span>
-          <a href=" https://www.playtosky.com/" target="_blank">
-            <img
-              src="/images/play-to-sky.webp"
-              alt="Play To Sky logo"
-              className="h-6"
-              loading="lazy"
-            />
-          </a>
-        </div>
-        <span>&copy; 2026. {t("footer.rights")}</span>
+        <CreatedBy />
+        <span className="text-center">&copy; 2026. {t("footer.rights")}</span>
       </div>
       <div className="flex flex-col items-center">
         <img

@@ -1,14 +1,18 @@
 import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import GlobeMap from "../components/Map/GlobeMap";
 
 export default function Locations() {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-black">
       <div className="bg-black text-white">
-        <section className="flex flex-col items-center justify-center gap-y-8 md:gap-y-12 pb-12 pt-5 md:pb-25 px-4 md:px-5 bg-linear-to-r from-visuance-gradient-blue to-black">
+        <section className="flex flex-col items-center justify-center gap-y-8 md:gap-y-12 pb-12 md:pt-5 md:pb-25 px-4 md:px-5 bg-linear-to-r from-visuance-gradient-blue to-black">
           <Header />
+
           <div className="flex flex-col items-center justify-center gap-6 md:gap-8">
             <span className="uppercase bg-white/5 flex justify-center items-center py-2 px-4 gap-3 md:gap-4 rounded-full w-fit text-xs md:text-sm">
               <svg
@@ -23,40 +27,45 @@ export default function Locations() {
                   fill="#ffffff"
                 />
               </svg>
-              GLOBAL NETWORK
+
+              {t("locations.badge")}
             </span>
 
             <p className="bg-linear-to-r from-white to-[#A0A0A0] bg-clip-text text-transparent text-center font-bold max-w-4xl text-3xl md:text-h4">
-              Visuance, une vision unique pour votre croissance.
+              {t("locations.title")}
             </p>
 
             <p className="text-[#CFC4C5] text-center text-base md:text-lg max-w-3xl">
-              Un écosystème créatif au service de votre identité visuelle pour
-              propulser votre marque à l'international.
+              {t("locations.description")}
             </p>
           </div>
 
           <hr className="w-full max-w-4xl border-white/10" />
 
-          <div className="grid grid-cols-2 md:flex md:flex-row gap-8 md:gap-25 w-fit max-w-4xl justify-items-center">
+          <div className="grid max-sm:grid-cols-1 grid-cols-3 md:flex md:flex-row gap-8 md:gap-25 w-fit max-w-4xl justify-items-center">
             <div className="flex flex-col gap-y-1 items-center justify-center">
               <span className="font-bold text-3xl md:text-h6">+250</span>
-              <span className="uppercase text-xs md:text-t5">Experts</span>
+              <span className="uppercase text-xs md:text-t5">
+                {t("locations.stats.experts")}
+              </span>
             </div>
 
             <div className="flex flex-col gap-y-1 items-center justify-center">
               <span className="font-bold text-3xl md:text-h6">+500</span>
-              <span className="uppercase text-xs md:text-t5">Clients</span>
+              <span className="uppercase text-xs md:text-t5">
+                {t("locations.stats.clients")}
+              </span>
             </div>
 
             <div className="flex flex-col gap-y-1 items-center justify-center">
               <span className="font-bold text-3xl md:text-h6">4</span>
-              <span className="uppercase text-xs md:text-t5">Continents</span>
+              <span className="uppercase text-xs md:text-t5">
+                {t("locations.stats.continents")}
+              </span>
             </div>
           </div>
         </section>
 
-        {/* Section Globe inchangée */}
         <section style={{ padding: "20px", backgroundImage: "#000" }}>
           <GlobeMap />
         </section>
@@ -64,14 +73,15 @@ export default function Locations() {
         <section className="w-full flex justify-center items-center p-4 md:p-5">
           <div className="max-lg:w-full lg:w-[calc(100%-20px)] max-w-7xl bg-white flex flex-col justify-center items-center py-12 md:py-20 px-5 gap-y-6 md:gap-y-7.5 rounded-r01">
             <p className="font-bold text-center text-black text-2xl md:text-h5">
-              Bâtir vos succès digitaux avec nous.
+              {t("locations.cta.title")}
             </p>
 
             <Link
               to="/contact"
               className="text-sm md:text-t2 py-4 md:py-5 px-8 md:px-10 bg-black text-white w-fit rounded-full flex justify-center items-center gap-3"
             >
-              Démarrer un projet
+              {t("locations.cta.button")}
+
               <svg
                 width="15"
                 height="15"
@@ -88,11 +98,9 @@ export default function Locations() {
           </div>
         </section>
       </div>
+
       <div className="bg-black">
-        <Footer
-          hasDarkGradient={true}
-          //   color="bg-[radial-gradient(circle_at_top_left,rgba(82,98,255,0.18)_0%,transparent_50%),radial-gradient(circle_at_80%_70%,rgba(0,238,252,0.15)_0%,transparent_45%)]"
-        />
+        <Footer hasDarkGradient={true} />
       </div>
     </div>
   );

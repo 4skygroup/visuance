@@ -150,6 +150,23 @@
     "title": "Our services",
     "overview": "Overview"
   },
+  "locations": {
+    "badge": "GLOBAL NETWORK",
+    "title": "Visuance, a unique vision for your growth.",
+    "description": "A creative ecosystem dedicated to your visual identity, helping your brand scale internationally.",
+    "agent": "Local Agent",
+    "stats": {
+      "experts": "Experts",
+      "clients": "Clients",
+      "continents": "Continents"
+    },
+
+    "cta": {
+      "title": "Building your digital success together.",
+      "button": "Start a project",
+      "link": "/contact"
+    }
+  },
   "privacy": {
     "title": "Privacy Policy",
     "description": "Learn what data we collect, why we use it, and what rights you have regarding its processing.",

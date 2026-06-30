@@ -150,6 +150,22 @@
     "title": "Nos services",
     "overview": "Vue d’ensemble"
   },
+  "locations": {
+    "badge": "GLOBAL NETWORK",
+    "title": "Visuance, une vision unique pour votre croissance.",
+    "description": "Un écosystème créatif au service de votre identité visuelle pour propulser votre marque à l'international.",
+    "agent": "Agent local",
+    "stats": {
+      "experts": "Experts",
+      "clients": "Clients",
+      "continents": "Continents"
+    },
+
+    "cta": {
+      "title": "Bâtir vos succès digitaux avec nous.",
+      "button": "Démarrer un projet"
+    }
+  },
   "privacy": {
     "title": "Politique de confidentialité",
     "description": "Découvrez quelles données nous collectons, pourquoi nous les utilisons et quels sont vos droits concernant leur traitement.",
