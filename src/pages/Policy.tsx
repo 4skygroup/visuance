@@ -1,41 +1,45 @@
+import { useTranslation } from "react-i18next";
+
 export default function Policy() {
+  const { t } = useTranslation();
+
   const collectedData = [
-    "Remplissez un formulaire de contact",
-    "Demandez un devis",
-    "Naviguez sur le site",
+    t("privacy.collectedData.item1"),
+    t("privacy.collectedData.item2"),
+    t("privacy.collectedData.item3"),
   ];
 
   const collectedFields = [
-    "Nom",
-    "Prénom",
-    "Adresse e-mail",
-    "Téléphone",
-    "Entreprise",
-    "Message",
-    "Adresse IP",
-    "Données de navigation",
+    t("privacy.collectedData.field1"),
+    t("privacy.collectedData.field2"),
+    t("privacy.collectedData.field3"),
+    t("privacy.collectedData.field4"),
+    t("privacy.collectedData.field5"),
+    t("privacy.collectedData.field6"),
+    t("privacy.collectedData.field7"),
+    t("privacy.collectedData.field8"),
   ];
 
   const purposes = [
-    "Répondre aux demandes de contact",
-    "Fournir des devis et prestations",
-    "Améliorer l’expérience utilisateur",
-    "Analyser les performances du site",
-    "Développer les services proposés",
+    t("privacy.purposes.item1"),
+    t("privacy.purposes.item2"),
+    t("privacy.purposes.item3"),
+    t("privacy.purposes.item4"),
+    t("privacy.purposes.item5"),
   ];
 
   const legalBases = [
-    "Le consentement de l’utilisateur",
-    "L’exécution d’une relation précontractuelle",
-    "L’intérêt légitime de l’entreprise",
+    t("privacy.legalBases.item1"),
+    t("privacy.legalBases.item2"),
+    t("privacy.legalBases.item3"),
   ];
 
   const rights = [
-    "Droit d’accès",
-    "Droit de rectification",
-    "Droit de suppression",
-    "Droit d’opposition",
-    "Droit à la portabilité",
+    t("privacy.rights.item1"),
+    t("privacy.rights.item2"),
+    t("privacy.rights.item3"),
+    t("privacy.rights.item4"),
+    t("privacy.rights.item5"),
   ];
 
   return (
@@ -43,16 +47,15 @@ export default function Policy() {
       <div className="mx-auto max-w-5xl px-6 py-16">
         <div className="mb-12 border-b border-slate-200 pb-10">
           <h1 className="mt-4 text-4xl font-bold text-visuance-gradient-blue md:text-5xl">
-            Politique de confidentialité
+            {t("privacy.title")}
           </h1>
 
           <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
-            Découvrez quelles données nous collectons, pourquoi nous les
-            utilisons et quels sont vos droits concernant leur traitement.
+            {t("privacy.description")}
           </p>
 
           <p className="mt-6 text-sm text-slate-500">
-            Dernière mise à jour : 24 juin 2026
+            {t("privacy.lastUpdate")}
           </p>
         </div>
 
@@ -61,13 +64,13 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
               <h2 className="text-xl font-semibold text-visuance-gradient-blue">
-                Quelles données collectons-nous ?
+                {t("privacy.collectedData.title")}
               </h2>
             </div>
 
             <div className="space-y-6 px-8 py-6">
               <p className="text-slate-700">
-                Visuance peut collecter des données lorsque vous :
+                {t("privacy.collectedData.description")}
               </p>
 
               <ul className="space-y-3">
@@ -81,7 +84,7 @@ export default function Policy() {
 
               <div className="rounded-2xl bg-slate-50 p-5">
                 <p className="font-semibold text-visuance-gradient-blue">
-                  Données susceptibles d’être collectées
+                  {t("privacy.collectedData.fieldsTitle")}
                 </p>
 
                 <div className="mt-3 flex flex-wrap gap-2">
@@ -102,7 +105,7 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
               <h2 className="text-xl font-semibold text-visuance-gradient-blue">
-                Pourquoi utilisons-nous vos données ?
+                {t("privacy.purposes.title")}
               </h2>
             </div>
 
@@ -122,7 +125,7 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
               <h2 className="text-xl font-semibold text-visuance-gradient-blue">
-                Sur quelle base légale reposent les traitements ?
+                {t("privacy.legalBases.title")}
               </h2>
             </div>
 
@@ -142,7 +145,7 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
               <h2 className="text-xl font-semibold text-visuance-gradient-blue">
-                Combien de temps conservons-nous vos données ?
+                {t("privacy.retention.title")}
               </h2>
             </div>
 
@@ -151,10 +154,10 @@ export default function Policy() {
                 <div className="mt-2 h-3 w-3 rounded-full bg-visuance-gradient-blue" />
                 <div>
                   <p className="font-semibold text-visuance-gradient-blue">
-                    Prospects
+                    {t("privacy.retention.prospectsTitle")}
                   </p>
                   <p className="text-slate-700">
-                    Jusqu’à 3 ans après le dernier contact.
+                    {t("privacy.retention.prospectsDescription")}
                   </p>
                 </div>
               </div>
@@ -163,10 +166,10 @@ export default function Policy() {
                 <div className="mt-2 h-3 w-3 rounded-full bg-visuance-gradient-blue" />
                 <div>
                   <p className="font-semibold text-visuance-gradient-blue">
-                    Clients / obligations légales
+                    {t("privacy.retention.clientsTitle")}
                   </p>
                   <p className="text-slate-700">
-                    Jusqu’à 10 ans selon les obligations légales applicables.
+                    {t("privacy.retention.clientsDescription")}
                   </p>
                 </div>
               </div>
@@ -177,22 +180,22 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
               <h2 className="text-xl font-semibold text-visuance-gradient-blue">
-                Avec qui partageons-nous vos données ?
+                {t("privacy.sharing.title")}
               </h2>
             </div>
 
             <div className="space-y-4 p-8">
               <div className="rounded-2xl border border-slate-200 p-4 text-slate-700">
-                Prestataires techniques (hébergement, CRM, analytics)
+                {t("privacy.sharing.item1")}
               </div>
 
               <div className="rounded-2xl border border-slate-200 p-4 text-slate-700">
-                Services nécessaires au fonctionnement du site
+                {t("privacy.sharing.item2")}
               </div>
 
               <div className="rounded-2xl border border-green-200 bg-green-50 p-5">
                 <p className="font-semibold text-green-800">
-                  Aucune donnée n’est vendue ou cédée à des tiers.
+                  {t("privacy.sharing.notice")}
                 </p>
               </div>
             </div>
@@ -202,21 +205,21 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
               <h2 className="text-xl font-semibold text-visuance-gradient-blue">
-                Comment utilisons-nous les cookies ?
+                {t("privacy.cookies.title")}
               </h2>
             </div>
 
             <div className="p-8">
               <div className="rounded-2xl border border-visuance-gradient-blue/20 bg-visuance-gradient-blue/5 p-6">
                 <ul className="space-y-3 text-slate-700">
-                  <li>• Mesurer l’audience</li>
-                  <li>• Améliorer la navigation</li>
-                  <li>• Optimiser les performances marketing</li>
+                  <li>• {t("privacy.cookies.item1")}</li>
+                  <li>• {t("privacy.cookies.item2")}</li>
+                  <li>• {t("privacy.cookies.item3")}</li>
                 </ul>
               </div>
 
               <p className="mt-5 text-slate-600">
-                Un bandeau de consentement permet de gérer vos préférences.
+                {t("privacy.cookies.description")}
               </p>
             </div>
           </section>
@@ -225,7 +228,7 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
               <h2 className="text-xl font-semibold text-visuance-gradient-blue">
-                Quels sont vos droits ?
+                {t("privacy.rights.title")}
               </h2>
             </div>
 
@@ -244,9 +247,13 @@ export default function Policy() {
               </div>
 
               <div className="mt-6 rounded-2xl bg-visuance-gradient-blue p-6 text-white">
-                <p className="font-semibold">Exercer vos droits</p>
+                <p className="font-semibold">
+                  {t("privacy.rights.contactTitle")}
+                </p>
 
-                <p className="mt-2 text-white/90">contact@visuanceagency.com</p>
+                <p className="mt-2 text-white/90">
+                  {t("privacy.company.email")}
+                </p>
               </div>
             </div>
           </section>
@@ -255,15 +262,13 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
               <h2 className="text-xl font-semibold text-visuance-gradient-blue">
-                Comment protégeons-nous vos données ?
+                {t("privacy.security.title")}
               </h2>
             </div>
 
             <div className="p-8">
               <p className="leading-8 text-slate-700">
-                Visuance met en œuvre des mesures techniques et
-                organisationnelles afin de protéger vos données contre toute
-                perte, accès non autorisé ou divulgation.
+                {t("privacy.security.description")}
               </p>
             </div>
           </section>
@@ -272,26 +277,27 @@ export default function Policy() {
           <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-visuance-gradient-blue/10 bg-linear-to-r from-visuance-gradient-blue/5 to-visuance-gradient-blue/10 px-8 py-5">
               <h2 className="text-xl font-semibold text-visuance-gradient-blue">
-                Cette politique peut-elle évoluer ?
+                {t("privacy.updates.title")}
               </h2>
             </div>
 
             <div className="p-8">
               <p className="leading-8 text-slate-700">
-                Cette politique peut être mise à jour à tout moment afin de
-                respecter les évolutions légales ou techniques.
+                {t("privacy.updates.description")}
               </p>
             </div>
           </section>
 
           {/* Footer */}
           <section className="rounded-3xl bg-visuance-gradient-blue p-8 text-white">
-            <h2 className="text-xl font-semibold">Contact</h2>
+            <h2 className="text-xl font-semibold">
+              {t("privacy.footer.title")}
+            </h2>
 
-            <p className="mt-3 text-white/90">contact@visuanceagency.com</p>
+            <p className="mt-3 text-white/90">{t("privacy.company.email")}</p>
 
             <div className="mt-8 border-t border-white/10 pt-6 text-sm text-white/70">
-              Dernière mise à jour : 24 juin 2026
+              {t("privacy.lastUpdate")}
             </div>
           </section>
         </div>

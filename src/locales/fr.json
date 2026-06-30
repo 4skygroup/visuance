@@ -150,6 +150,166 @@
     "title": "Nos services",
     "overview": "Vue d’ensemble"
   },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "description": "Découvrez quelles données nous collectons, pourquoi nous les utilisons et quels sont vos droits concernant leur traitement.",
+    "lastUpdate": "Dernière mise à jour : 24 juin 2026",
+    "company": {
+      "name": "Visuance Agency",
+      "email": "contact@visuanceagency.com"
+    },
+
+    "collectedData": {
+      "title": "Quelles données collectons-nous ?",
+      "description": "Visuance peut collecter des données lorsque vous :",
+      "item1": "Remplissez un formulaire de contact",
+      "item2": "Demandez un devis",
+      "item3": "Naviguez sur le site",
+      "fieldsTitle": "Données susceptibles d’être collectées",
+      "field1": "Nom",
+      "field2": "Prénom",
+      "field3": "Adresse e-mail",
+      "field4": "Téléphone",
+      "field5": "Entreprise",
+      "field6": "Message",
+      "field7": "Adresse IP",
+      "field8": "Données de navigation"
+    },
+
+    "purposes": {
+      "title": "Pourquoi utilisons-nous vos données ?",
+      "item1": "Répondre aux demandes de contact",
+      "item2": "Fournir des devis et prestations",
+      "item3": "Améliorer l’expérience utilisateur",
+      "item4": "Analyser les performances du site",
+      "item5": "Développer les services proposés"
+    },
+
+    "legalBases": {
+      "title": "Sur quelle base légale reposent les traitements ?",
+      "item1": "Le consentement de l’utilisateur",
+      "item2": "L’exécution d’une relation précontractuelle",
+      "item3": "L’intérêt légitime de l’entreprise"
+    },
+
+    "retention": {
+      "title": "Combien de temps conservons-nous vos données ?",
+      "prospectsTitle": "Prospects",
+      "prospectsDescription": "Jusqu’à 3 ans après le dernier contact.",
+      "clientsTitle": "Clients / obligations légales",
+      "clientsDescription": "Jusqu’à 10 ans selon les obligations légales applicables."
+    },
+
+    "sharing": {
+      "title": "Avec qui partageons-nous vos données ?",
+      "item1": "Prestataires techniques (hébergement, CRM, analytics)",
+      "item2": "Services nécessaires au fonctionnement du site",
+      "notice": "Aucune donnée n’est vendue ou cédée à des tiers."
+    },
+
+    "cookies": {
+      "title": "Comment utilisons-nous les cookies ?",
+      "item1": "Mesurer l’audience",
+      "item2": "Améliorer la navigation",
+      "item3": "Optimiser les performances marketing",
+      "description": "Un bandeau de consentement permet de gérer vos préférences."
+    },
+
+    "rights": {
+      "title": "Quels sont vos droits ?",
+      "item1": "Droit d’accès",
+      "item2": "Droit de rectification",
+      "item3": "Droit de suppression",
+      "item4": "Droit d’opposition",
+      "item5": "Droit à la portabilité",
+      "contactTitle": "Exercer vos droits"
+    },
+
+    "security": {
+      "title": "Comment protégeons-nous vos données ?",
+      "description": "Visuance met en œuvre des mesures techniques et organisationnelles afin de protéger vos données contre toute perte, accès non autorisé ou divulgation."
+    },
+
+    "updates": {
+      "title": "Cette politique peut-elle évoluer ?",
+      "description": "Cette politique peut être mise à jour à tout moment afin de respecter les évolutions légales ou techniques."
+    },
+
+    "footer": {
+      "title": "Contact"
+    }
+  },
+  "legal": {
+    "title": "Mentions légales",
+    "description": "Informations relatives à l’éditeur du site, à son hébergement, à son activité et aux conditions d’utilisation de Visuance.",
+
+    "publisher": {
+      "title": "Qui édite ce site ?",
+      "company": {
+        "label": "Société",
+        "value": "Visuance Agency"
+      },
+      "contact": {
+        "label": "Contact",
+        "value": "contact@visuanceagency.com"
+      }
+    },
+
+    "hosting": {
+      "title": "Où le site est-il hébergé ?",
+      "provider": {
+        "label": "Hébergeur",
+        "value": "OVH Cloud"
+      },
+      "website": {
+        "label": "Site web",
+        "value": "www.ovhcloud.com",
+        "url": "https://www.ovhcloud.com"
+      }
+    },
+
+    "activity": {
+      "title": "Quelle est l’activité de Visuance ?",
+      "description": "Visuance est une agence spécialisée dans la création et l’optimisation de solutions digitales.",
+      "item1": "Création de sites web",
+      "item2": "Branding & identité visuelle",
+      "item3": "UX/UI design",
+      "item4": "Stratégie digitale",
+      "item5": "Marketing et acquisition"
+    },
+
+    "intellectualProperty": {
+      "title": "Comment sont protégés les contenus ?",
+      "cardTitle": "Protection des contenus",
+      "cardDescription": "L’ensemble du contenu présent sur le site Visuance (textes, images, graphismes, logos, vidéos, structure, etc.) est protégé par le droit de la propriété intellectuelle.",
+      "description": "Toute reproduction, représentation, modification ou exploitation, totale ou partielle, sans autorisation écrite préalable est strictement interdite."
+    },
+
+    "responsibility": {
+      "title": "Quelle est notre responsabilité ?",
+      "description": "Visuance s’efforce de fournir des informations fiables et à jour. Cependant, l’éditeur ne peut être tenu responsable :",
+      "item1": "Des erreurs ou omissions",
+      "item2": "D’une indisponibilité temporaire du site",
+      "item3": "De l’utilisation faite des informations présentes"
+    },
+
+    "externalLinks": {
+      "title": "Qu’en est-il des sites tiers ?",
+      "description": "Le site peut contenir des liens vers d’autres sites web. Visuance décline toute responsabilité concernant le contenu de ces sites tiers."
+    },
+
+    "privacy": {
+      "title": "Comment sont traitées les données personnelles ?",
+      "description": "Les données personnelles collectées via le site sont traitées conformément à la réglementation en vigueur et à notre politique de confidentialité.",
+      "link": "Consulter la politique de confidentialité →",
+      "href": "/privacy-policy"
+    },
+
+    "applicableLaw": {
+      "title": "Droit applicable",
+      "description": "Le présent site est soumis au droit français. Tout litige sera soumis à la compétence des tribunaux du ressort du siège social de Visuance."
+    }
+  },
   "contact": {
     "catchPhrase": "Construisons votre croissance ensemble",
     "detailedPhrase": "Nos experts vous accompagnent dans la définition d’une stratégie digitale alignée sur vos objectifs. Contactez-nous selon le mode d’échange qui vous convient le mieux.",

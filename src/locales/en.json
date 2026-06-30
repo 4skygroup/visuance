@@ -150,6 +150,166 @@
     "title": "Our services",
     "overview": "Overview"
   },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "Learn what data we collect, why we use it, and what rights you have regarding its processing.",
+    "lastUpdate": "Last updated: June 24, 2026",
+    "company": {
+      "name": "Visuance Agency",
+      "email": "contact@visuanceagency.com"
+    },
+
+    "collectedData": {
+      "title": "What data do we collect?",
+      "description": "Visuance may collect data when you:",
+      "item1": "Complete a contact form",
+      "item2": "Request a quote",
+      "item3": "Browse the website",
+      "fieldsTitle": "Data that may be collected",
+      "field1": "Last name",
+      "field2": "First name",
+      "field3": "Email address",
+      "field4": "Phone number",
+      "field5": "Company",
+      "field6": "Message",
+      "field7": "IP address",
+      "field8": "Browsing data"
+    },
+
+    "purposes": {
+      "title": "Why do we use your data?",
+      "item1": "Respond to contact requests",
+      "item2": "Provide quotes and services",
+      "item3": "Improve the user experience",
+      "item4": "Analyze website performance",
+      "item5": "Develop and improve our services"
+    },
+
+    "legalBases": {
+      "title": "What are the legal bases for processing your data?",
+      "item1": "Your consent",
+      "item2": "The performance of a pre-contractual relationship",
+      "item3": "The company's legitimate interests"
+    },
+
+    "retention": {
+      "title": "How long do we retain your data?",
+      "prospectsTitle": "Prospects",
+      "prospectsDescription": "Up to 3 years after the last contact.",
+      "clientsTitle": "Clients / Legal obligations",
+      "clientsDescription": "Up to 10 years, depending on applicable legal requirements."
+    },
+
+    "sharing": {
+      "title": "Who do we share your data with?",
+      "item1": "Technical service providers (hosting, CRM, analytics)",
+      "item2": "Services required for the operation of the website",
+      "notice": "No personal data is sold or transferred to third parties."
+    },
+
+    "cookies": {
+      "title": "How do we use cookies?",
+      "item1": "Measure website traffic",
+      "item2": "Improve navigation",
+      "item3": "Optimize marketing performance",
+      "description": "A cookie consent banner allows you to manage your preferences."
+    },
+
+    "rights": {
+      "title": "What are your rights?",
+      "item1": "Right of access",
+      "item2": "Right to rectification",
+      "item3": "Right to erasure",
+      "item4": "Right to object",
+      "item5": "Right to data portability",
+      "contactTitle": "Exercise your rights"
+    },
+
+    "security": {
+      "title": "How do we protect your data?",
+      "description": "Visuance implements appropriate technical and organizational measures to protect your data against loss, unauthorized access, or disclosure."
+    },
+
+    "updates": {
+      "title": "Can this policy be updated?",
+      "description": "This Privacy Policy may be updated at any time to reflect legal or technical changes."
+    },
+
+    "footer": {
+      "title": "Contact"
+    }
+  },
+  "legal": {
+    "title": "Legal Notices",
+    "description": "Information about the website publisher, hosting provider, business activity, and the terms of use of Visuance.",
+
+    "publisher": {
+      "title": "Who publishes this website?",
+      "company": {
+        "label": "Company",
+        "value": "Visuance Agency"
+      },
+      "contact": {
+        "label": "Contact",
+        "value": "contact@visuanceagency.com"
+      }
+    },
+
+    "hosting": {
+      "title": "Where is the website hosted?",
+      "provider": {
+        "label": "Hosting Provider",
+        "value": "OVHcloud"
+      },
+      "website": {
+        "label": "Website",
+        "value": "www.ovhcloud.com",
+        "url": "https://www.ovhcloud.com"
+      }
+    },
+
+    "activity": {
+      "title": "What does Visuance do?",
+      "description": "Visuance is an agency specialized in the creation and optimization of digital solutions.",
+      "item1": "Website development",
+      "item2": "Branding & visual identity",
+      "item3": "UX/UI design",
+      "item4": "Digital strategy",
+      "item5": "Marketing & customer acquisition"
+    },
+
+    "intellectualProperty": {
+      "title": "How is the content protected?",
+      "cardTitle": "Content Protection",
+      "cardDescription": "All content available on the Visuance website (texts, images, graphics, logos, videos, structure, etc.) is protected by intellectual property laws.",
+      "description": "Any reproduction, representation, modification, or use, in whole or in part, without prior written authorization is strictly prohibited."
+    },
+
+    "responsibility": {
+      "title": "What is our liability?",
+      "description": "Visuance strives to provide accurate and up-to-date information. However, the publisher cannot be held liable for:",
+      "item1": "Errors or omissions",
+      "item2": "Temporary unavailability of the website",
+      "item3": "Any use made of the information provided"
+    },
+
+    "externalLinks": {
+      "title": "What about third-party websites?",
+      "description": "This website may contain links to external websites. Visuance accepts no responsibility for the content of these third-party websites."
+    },
+
+    "privacy": {
+      "title": "How is personal data handled?",
+      "description": "Personal data collected through the website is processed in accordance with applicable regulations and our Privacy Policy.",
+      "link": "View the Privacy Policy →",
+      "href": "/privacy-policy"
+    },
+
+    "applicableLaw": {
+      "title": "Applicable Law",
+      "description": "This website is governed by French law. Any dispute shall be subject to the jurisdiction of the courts within the district of Visuance's registered office."
+    }
+  },
   "contact": {
     "catchPhrase": "Let’s build your growth together",
     "detailedPhrase": "Our experts help you define a digital strategy aligned with your goals. Contact us using the communication method that suits you best.",

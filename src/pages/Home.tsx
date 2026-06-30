@@ -15,7 +15,7 @@ export default function Home() {
     canonical: "https://visuanceagency.com/",
   });
   const conceptSectionsClassName =
-    "flex w-full h-131.25 px-25 items-center justify-between gap-10 overflow-hidden max-sm:flex-col max-sm:items-center max-sm:py-10 max-sm:text-center";
+    "flex w-full h-131.25 px-25 max-sm:px-10 items-center justify-between gap-10 overflow-hidden max-sm:flex-col max-sm:items-center max-sm:py-10 max-sm:text-center";
   const conceptSections: ConceptSectionType[] = [
     {
       src: "/images/Identity.webp",
@@ -190,21 +190,17 @@ export default function Home() {
         {/* Link Section */}
         <Link
           to="/contact"
-          className="max-sm:rounded-none max-sm:-mx-20 max-sm:flex-col max-sm:gap-y-15 backdrop-blur-2xl bg-light-gray/20 sm:w-full flex items-center justify-between sm:pl-15 sm:pr-5 py-5 rounded-full xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl"
+          className="max-sm:rounded-none max-sm:-mx-20 max-sm:gap-y-15 backdrop-blur-2xl bg-light-gray/20 sm:w-full flex items-center justify-between sm:pl-15 sm:pr-5 py-5 rounded-full xl:w-[calc(90%)] xl:self-center xl:max-w-360 xl:min-w-7xl max-sm:px-7 gap-x-5"
         >
           <div className="flex flex-col gap-y-4">
-            <p className="max-sm:text-center text-3xl sm:max-md:text-xl">
-              {t("home.ctaTop")}
-            </p>
-            <p className="max-sm:text-center text-xl sm:max-md:text-lg">
-              {t("home.ctaBottom")}
-            </p>
+            <p className="text-3xl sm:max-md:text-xl">{t("home.ctaTop")}</p>
+            <p className="text-xl sm:max-md:text-lg">{t("home.ctaBottom")}</p>
           </div>
           <img
             src="/images/Link.webp"
             alt="Link"
             loading="lazy"
-            className="sm:max-md:w-20 md:w-25"
+            className="sm:max-md:w-20 md:w-25 max-sm:w-15"
           />
         </Link>
       </div>
