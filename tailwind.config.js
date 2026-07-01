@@ -23,6 +23,7 @@ module.exports = {
         "brown-light": "#5D341A",
         "light-gray": "#DEDEDE",
         "dark-gray": "#84888F",
+        "gray-white": "#E5E5E5",
       },
       fontFamily: {
         sans: ["Glacial Indifference", "sans-serif"],
