@@ -39,7 +39,7 @@ export default function Locations() {
                 {t("locations.stats.clients")}
               </span>
             </div>
-
+            {/*  */}
             <div className="flex flex-col gap-y-1 items-center justify-center">
               <span className="font-bold text-3xl md:text-h6">4</span>
               <span className="uppercase text-xs md:text-t5">
