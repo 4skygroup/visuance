@@ -23,7 +23,7 @@ jobs:
           npm audit --audit-level=high || true
           npm run lint --if-present
           npm run build
-          
+
       - name: 3. Configurer Nginx et SSL (premier déploiement uniquement)
         uses: appleboy/ssh-action@master
         with:
@@ -34,7 +34,6 @@ jobs:
             DOMAIN="visuanceagency.com"
             sudo mkdir -p /var/www/$DOMAIN
 
-            # Remove leftover gzip.conf from previous deployments to avoid duplicate directive errors
             sudo rm -f /etc/nginx/conf.d/gzip.conf
 
             sudo tee /etc/nginx/sites-available/$DOMAIN > /dev/null <<'NGINXEOF'
@@ -89,7 +88,6 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            # Comment out any existing gzip directive in nginx.conf to avoid duplicates
             sudo sed -i 's/^\(\s*\)gzip \(on\|off\);/\1# gzip \2;/' /etc/nginx/nginx.conf
             sudo tee /etc/nginx/conf.d/gzip.conf > /dev/null <<'GZIPEOF'
             gzip on;
