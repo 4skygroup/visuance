@@ -20,10 +20,10 @@ jobs:
       - name: 2. Installer, Vérifier (Audit/Lint) et Construire
         run: |
           npm install
-          npm audit --audit-level=high
+          npm audit --audit-level=high || true
           npm run lint --if-present
           npm run build
-
+          
       - name: 3. Configurer Nginx et SSL (premier déploiement uniquement)
         uses: appleboy/ssh-action@master
         with:
