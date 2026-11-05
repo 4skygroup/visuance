@@ -6,9 +6,9 @@ import { useSEO } from "../hooks/useSEO";
 
 export default function About() {
   useSEO({
-    title: "À propos | Visuance, studio de création",
+    title: "About Us | Visuance Creative Studio",
     description:
-      "Derrière chaque identité de marque forte, une équipe passionnée. Visuance réunit designers, stratèges et développeurs pour créer des expériences visuelles cohérentes et mémorables.",
+      "Behind every strong brand identity lies a passionate team. Visuance brings together designers, strategists and developers to craft cohesive, memorable visual experiences.",
     canonical: "https://visuanceagency.com/about",
   });
   const { t } = useTranslation();

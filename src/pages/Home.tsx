@@ -9,9 +9,9 @@ import { useTranslation } from "react-i18next";
 
 export default function Home() {
   useSEO({
-    title: "Visuance – Studio de création | Stratégie de marque, web et design digital",
+    title: "Visuance – Creative Studio | Brand Strategy, Web & Digital Design",
     description:
-      "Visuance est un studio de création 360° : identité de marque, sites web, print, vidéo, solutions IA et produits digitaux pour faire rayonner votre vision.",
+      "Visuance is a full-service creative studio. We design brand identities, web experiences, print, video, AI solutions and digital products that make your vision stand out.",
     canonical: "https://visuanceagency.com/",
   });
   const conceptSectionsClassName =
@@ -116,7 +116,7 @@ export default function Home() {
       <ScrollToTop />
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-5 px-20 py-5 max-md:pt-0 w-full scroll-smooth lg:h-screen">
         <Header />
-        <h1 className="sr-only">Visuance – Studio de création : stratégie de marque, web et design digital</h1>
+        <h1 className="sr-only">Visuance – Creative Studio: Brand Strategy, Web &amp; Digital Design</h1>
 
         {/* Second section top */}
         <div className="overflow-hidden max-sm:pt-12.5 max-sm:rounded-none max-sm:px-0 max-sm:-mx-20 max-lg:flex-col max-lg:items-center max-lg:h-fit relative xs:max-sm:w-lg sm:max-md:w-xl md:max-lg:w-3xl lg:max-xl:w-5xl xl:w-7xl h-145 flex grow px-12.5 backdrop-blur-2xl bg-light-gray/20 pl-16 pt-5 rounded-[50px] gap-x-12.5 self-center sm:max-lg:px-0">
