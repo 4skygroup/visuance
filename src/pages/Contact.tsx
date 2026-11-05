@@ -8,9 +8,9 @@ import { useTranslation } from "react-i18next";
 
 export default function Contact() {
   useSEO({
-    title: "Contact | Visuance, studio de création à Paris",
+    title: "Contact | Visuance Creative Studio – Paris",
     description:
-      "Contactez Visuance pour votre projet de marque, de site web ou de contenu. Notre équipe vous répond rapidement.",
+      "Get in touch with Visuance. Reach us at contact@visuance-playtosky.com, by phone at 01 25 47 54 12, or visit us at 56 avenue Monceau, 75008 Paris.",
     canonical: "https://visuanceagency.com/contact",
   });
   const { t } = useTranslation();

@@ -5,9 +5,9 @@ import { useSEO } from "../hooks/useSEO";
 
 export default function Group() {
   useSEO({
-    title: "Le Groupe | Visuance – L'écosystème créatif Play To Sky",
+    title: "The Group | Visuance – Play To Sky Creative Ecosystem",
     description:
-      "Découvrez le groupe Play To Sky : Visuance, Pulse X, Snackly, Seofy, CyberSky, Drox 360, Sky To Be Media – un écosystème qui réunit marque, médias, IT et technologies créatives.",
+      "Discover the Play To Sky group: Visuance, Pulse X Agency, Snackly, Seofy, CYBERSKY, Drox 360, Sky To Be Media – one ecosystem uniting brand, media, IT and creative technologies.",
     canonical: "https://visuanceagency.com/the-group",
     ogImage: "https://visuanceagency.com/images/Play%20To%20Sky-no-bg.webp",
   });
@@ -16,7 +16,7 @@ export default function Group() {
       <ScrollToTop />
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-12.5 px-20 py-5 max-md:pt-0 w-full scroll-smooth">
         <Header />
-        <h1 className="sr-only">Le groupe Play To Sky</h1>
+        <h1 className="sr-only">The Play To Sky Group</h1>
         <div className="max-sm:-mx-20 max-sm:px-0 max-sm:rounded-none sm:w-full h-fit flex flex-col items-center backdrop-blur-2xl bg-light-gray/20 px-16 py-15 rounded-[50px] text-2xl gap-y-15">
           <img
             src="/images/Play To Sky-no-bg.webp"
