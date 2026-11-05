@@ -6,9 +6,9 @@ import { useSEO } from "../hooks/useSEO";
 
 export default function About() {
   useSEO({
-    title: "About Us | Visuance Creative Studio",
+    title: "À propos | Visuance, studio de création",
     description:
-      "Behind every strong brand identity lies a passionate team. Visuance brings together designers, strategists and developers to craft cohesive, memorable visual experiences.",
+      "Derrière chaque identité de marque forte, une équipe passionnée. Visuance réunit designers, stratèges et développeurs pour créer des expériences visuelles cohérentes et mémorables.",
     canonical: "https://visuanceagency.com/about",
   });
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ export default function About() {
       <div className="bg-linear-to-r from-visuance-gradient-blue to-black top flex flex-col gap-y-5 px-20 py-5 max-md:pt-0 w-full scroll-smooth">
         <Header />
         <div className="max-sm:-mx-20 max-sm:rounded-none sm:w-full h-fit flex flex-col gap-12.5 backdrop-blur-2xl bg-light-gray/20 px-16 py-12 rounded-[50px] text-2xl">
-          <p className="text-center text-5xl">{t("about.title")}</p>
+          <h1 className="text-center text-5xl">{t("about.title")}</h1>
           <p className="flex flex-col gap-y-7 text-center max-w-5xl m-auto">
             <span>{t("about.sentence1")}</span>
             <span>{t("about.sentence2")}</span>

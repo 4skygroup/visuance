@@ -15,7 +15,7 @@ export default function Footer({
       <img
         src="/images/Visuance Logo.webp"
         alt="Visuance Logo"
-        className="min-w-52.5 w-52.5 h-17.5"
+        className="min-w-52.5 w-52.5 h-17.5 md:max-lg:min-w-40 md:max-lg:w-40 md:max-lg:h-auto"
         loading="lazy"
       />
       <div className="flex flex-col gap-y-15 items-center">
@@ -123,7 +123,7 @@ export default function Footer({
         <img
           src="/images/Play To Sky-no-bg.webp"
           alt="Play To Sky Logo"
-          className="min-w-52.5"
+          className="min-w-52.5 md:max-lg:min-w-40 md:max-lg:w-40"
           loading="lazy"
         />
         <a href="https://www.playtosky.com/" className="text-dark-gray">

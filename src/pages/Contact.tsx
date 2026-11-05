@@ -8,9 +8,9 @@ import { useTranslation } from "react-i18next";
 
 export default function Contact() {
   useSEO({
-    title: "Contact | Visuance Creative Studio – Paris",
+    title: "Contact | Visuance, studio de création à Paris",
     description:
-      "Get in touch with Visuance. Reach us at contact@visuance-playtosky.com, by phone at 01 25 47 54 12, or visit us at 56 avenue Monceau, 75008 Paris.",
+      "Contactez Visuance pour votre projet de marque, de site web ou de contenu. Notre équipe vous répond rapidement.",
     canonical: "https://visuanceagency.com/contact",
   });
   const { t } = useTranslation();
@@ -32,9 +32,9 @@ export default function Contact() {
               {/* ── Left column ── */}
               <div className="flex flex-col gap-10">
                 <div>
-                  <h2 className="text-t4 font-bold leading-tight tracking-tight text-white md:text-h7">
+                  <h1 className="text-t4 font-bold leading-tight tracking-tight text-white md:text-h7">
                     {t("contact.catchPhrase")}
-                  </h2>
+                  </h1>
                   <p className="mt-4 max-w-md text-base leading-relaxed text-white/50">
                     {t("contact.detailedPhrase")}
                   </p>
