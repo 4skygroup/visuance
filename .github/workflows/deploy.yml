@@ -36,7 +36,10 @@ jobs:
 
             sudo rm -f /etc/nginx/conf.d/gzip.conf
 
-            sudo tee /etc/nginx/sites-available/$DOMAIN > /dev/null <<'NGINXEOF'
+            # Premier deploiement seulement : on n'ecrase plus la config HTTPS a chaque mise en ligne.
+            # sudo obligatoire : /etc/letsencrypt/live n'est lisible qu'en root.
+            if ! sudo test -d /etc/letsencrypt/live/$DOMAIN; then
+              sudo tee /etc/nginx/sites-available/$DOMAIN > /dev/null <<'NGINXEOF'
             server {
                 server_name visuanceagency.com www.visuanceagency.com;
                 limit_req zone=mylimit burst=20 nodelay;
@@ -53,11 +56,16 @@ jobs:
                 listen [::]:80;
             }
             NGINXEOF
-            sudo ln -sf /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/$DOMAIN
-            sudo nginx -t && sudo systemctl reload nginx
-            sudo certbot --nginx -d $DOMAIN -d www.$DOMAIN \
-              --non-interactive --agree-tos -m ${{ secrets.CERTBOT_EMAIL }} \
-              --keep-until-expiring --expand
+              sudo ln -sf /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/$DOMAIN
+              sudo nginx -t && sudo systemctl reload nginx
+              sudo certbot --nginx -d $DOMAIN -d www.$DOMAIN \
+                --non-interactive --agree-tos -m ${{ secrets.CERTBOT_EMAIL }} \
+                --keep-until-expiring --expand
+            else
+              if [ ! -L /etc/nginx/sites-enabled/$DOMAIN ]; then
+                sudo ln -s /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/$DOMAIN
+              fi
+            fi
 
             sudo nginx -t && sudo systemctl reload nginx
 
